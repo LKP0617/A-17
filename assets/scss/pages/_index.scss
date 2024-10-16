@@ -1,3 +1,81 @@
-.index-title {
-  font-size: 100px;
+.carousel-item {
+  img {
+    height: 700px;
+  }
 }
+
+.index_brand {
+  background-image: url(../images/index_bg_image.png);
+  width: 100%;
+  aspect-ratio: 1920 / 838;
+  background-size: contain;
+  background-position: center;
+
+  .brand-content {
+    width: 416px;
+    border-radius: 24px;
+  }
+}
+
+.product_type_Bg {
+  background-image: url(../images/product_type_Bg.png);
+  background-position: center;
+  background-size: contain;
+  width: 306px;
+  aspect-ratio: 306 / 306;
+
+}
+
+.product_type {
+  border: 1px dashed #484848;
+  padding: 8px;
+  border-radius: 108px;
+  height: 444px;
+
+  .product_type01 {
+    background-image: url(../images/product_type01.png);
+    background-position: center;
+    border-radius: 108px;
+    max-width: 100%;
+    height: 428px;
+  }
+
+  .product_type02 {
+    background-image: url(../images/product_type02.png);
+    background-position: center;
+    border-radius: 108px;
+    max-width: 100%;
+    height: 428px;
+  }
+
+  .product_type03 {
+    background-image: url(../images/product_type03.png);
+    background-position: center;
+    border-radius: 108px;
+    max-width: 100%;
+    height: 428px;
+  }
+}
+
+/* 首頁類別 */
+
+// box-sizing: border-box;
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: row;
+// align-items: center;
+// padding: 8px;
+// gap: 8px;
+
+// width: 306px;
+// height: 444px;
+
+// /* Black/100% (main text) */
+// border: 1px dashed #484848;
+// border-radius: 108px;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;

@@ -9,13 +9,100 @@
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
+  <!-- <%- include('./layout/header'); -%> -->
 
-    <h1 class="index-title">我是新的首頁標題</h1>
+  <div class="container">
 
-    <%- include('./layout/footer'); -%>
+    <div class="margin-bottom-1">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="../assets/images/brands_sos.png" class="d-block w-100" alt="brands_sos">
+          </div>
+          <div class="carousel-item active">
+            <img src="../assets/images/brands_negaflower.png" class="d-block w-100" alt="brands_negaflower">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/brands_陶之家.png" class="d-block w-100" alt="brands_陶之家">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
-      <script type="module" src="../main.js"></script>
+  </div>
+
+  <div class="index_brand margin-bottom-1">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <div class="brand-content bg-white p-4">
+          <h5 class="margin-bottom-2">在時光的流轉中，我們拾起那些微小而珍貴的瞬間，將它們凝結成為日常中的詩意與美好。讓你在平凡的生活中尋找到溫柔與浪漫的所在，邀請你一同拾取屬於你的光陰之美。</h5>
+          <h4 class="float-end">——拾柒</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="d-flex align-items-start align-items-center gap-4 margin-bottom-1">
+
+      <div class="col">
+        <div class="product_type_Bg d-flex align-items-center">
+          <div class="d-flex flex-column m-auto">
+            <h3 class="m-auto text-white fw-bold">拾柒</h3>
+            <h3 class="m-auto text-white fw-bold">主打選品</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="product_type col">
+        <div class="product_type01 d-flex align-items-center">
+          <div class="d-flex flex-column m-auto">
+            <h4 class="text-white fw-bold">花藝</h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="product_type col">
+        <div class="product_type02 d-flex align-items-center">
+          <div class="d-flex flex-column m-auto">
+            <h4 class="text-white fw-bold">香水</h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="product_type col">
+        <div class="product_type03 d-flex align-items-center">
+          <div class="d-flex flex-column m-auto">
+            <h4 class="text-white fw-bold">陶藝</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- <%- include('./layout/footer'); -%> -->
+
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>
