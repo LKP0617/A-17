@@ -5,3 +5,9 @@
 .margin-bottom-2 {
     margin-bottom: 40px;
 }
+
+@media (max-width: 576px) {
+    .margin-bottom-mobile-1 {
+        margin-bottom: 40px;
+    }
+}
