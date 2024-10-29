@@ -111,7 +111,6 @@
   }
 
   @media (max-width: 765px) {
-
     .swiper-button-next,
     .swiper-button-prev {
       display: none;
@@ -199,6 +198,7 @@
     position: none;
     background-image: url(../images/brandsr_mobile_bg.png);
     max-width: 100%;
+    height: 530px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
