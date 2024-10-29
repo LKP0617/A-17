@@ -33,6 +33,10 @@ header {
         display: none;
     }
 
+    .mobile-list-btn {
+        display: none;
+    }
+
     .menuBTN,
     .closeBTN {
         display: none;
@@ -160,9 +164,8 @@ header {
         height: 100vh;
         position: absolute;
         top: -100%;
-        background-color: #F6F2E8;
-        display: flex;
-        flex-direction: column;
+        background-color: #FFFFFF;
+        z-index: 9999;
     }
 
     .mobileList {
@@ -172,9 +175,7 @@ header {
         padding: 16.5px 44px;
         padding-bottom: 16.5px;
     }
-    .navBAR{
-        z-index: 9999;
-    }
+
     .mobileList .closeBTN {
         display: flex;
         flex-direction: column;
@@ -184,30 +185,59 @@ header {
         height: 40px;
     }
 
-    .navBAR .mobileNav li {
+    .mobileNav {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .navBAR .mobileNav-section li {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
+        width: 95%;
         height: 37px;
-        margin: 0 44px;
         padding: 24px 0;
     }
 
-    .navBAR .mobileNav a {
+    .navBAR .mobileNav li:last-child {
+        padding-bottom: 48px;
+        border-bottom: 1px solid #4848481A;
+    }
+
+    .navBAR .mobileNav-section a {
         font-size: 15px;
         line-height: 1.4;
         font-weight: 700;
         color: #484848;
     }
 
-    .navBAR .mobileNav a:hover,
-    .navBAR .mobileNav a:active {
+    .navBAR .mobileNav-section a:hover,
+    .navBAR .mobileNav-section a:active {
         color: #4848484D;
     }
 
+    .mobile-list-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
-
+    .mobile-list-btn a {
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        height:45px;
+        width: 93%;
+        text-align: center;
+        border-radius: 100px;
+        font-weight: 700;
+        font-size: 15px;
+        height: 1.4;
+        color: #484848;
+        background: #F6F2E8;
+    }
     /* navBAR 滑入動畫 */
     .navBAR-RUN-IN {
         animation: slider-in 1s;
