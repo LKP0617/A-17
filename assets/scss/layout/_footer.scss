@@ -1,4 +1,156 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+/* 頁尾 */
+footer {
+  background-color: #F8F7F6;
+  width: 100%;
+  color: #000;
+}
+
+/*pc*/
+@media (min-width:992px) {
+  .mobileLogoSlogan {
+      display: none !important;
+  }
+
+  .logoSlogan {
+      width: 25%;
+  }
+
+  .logoSlogan .logo {
+      margin: 0 auto;
+      margin-bottom: 38px;
+  }
+
+  .logoSlogan p {
+      margin: 0 auto;
+      color: #484848;
+  }
+
+  footer .row {
+      width: 75%;
+      margin-bottom: 80px;
+  }
+
+  footer .row h6 {
+      font-weight: 700;
+  }
+
+  footer .row a {
+      font-size: 14px;
+      line-height: 1.4;
+      display: inline-block;
+      width: 100px;
+      padding: 6px 0;
+      color: #484848;
+  }
+
+  footer .row p {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #484848;
+  }
+
+  footer .row a:hover,
+  footer .row a:active {
+      color: #1666df;
+      filter: brightness(2.5) sepia(1) hue-rotate(90deg);
+  }
+
+  .footerBorder {
+      border: 1px solid #4848481A;
+      padding-top: 80px;
+  }
+
+  .copyright {
+      padding: 42px 0;
+  }
+
+  .container .copyright p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      font-size: 14px;
+      line-height: 19.6px;
+  }
+}
+
+/*平板&手機*/
+@media (max-width: 991px) {
+  .logoSlogan {
+      display: none !important;
+  }
+
+  .mobileLogoSlogan .logo {
+      margin: 0 auto;
+      margin-bottom: 38px;
+      padding-top: 40px;
+  }
+
+  .mobileLogoSlogan h6 {
+      margin: 0 auto;
+      color: #484848;
+      margin-bottom: 40px;
+      font-weight: 700;
+  }
+
+  footer .row {
+      margin-bottom: 40px;
+      /* width: 327px; */
+  }
+
+  footer .row {
+      display: block;
+  }
+
+  footer .row h6 {
+      font-weight: 700;
+  }
+
+  footer .row a {
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 700;
+      display: inline-block;
+      padding: 6px 0;
+      padding-right: 16px;
+      color: #484848;
+  }
+
+  footer .row .service {
+      width: 327px;
+      flex-wrap: wrap;
+  }
+
+  footer .row p {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #484848;
+  }
+
+  footer .row a:hover,
+  footer .row a:active {
+      color: #1666df;
+  }
+
+  footer .container {
+      /* border-top: 1px solid #000; */
+  }
+
+  .footerBorder {
+      border-top: 1px solid #EAE6DD;
+      border-bottom: 1px solid #EAE6DD;
+  }
+
+  .copyright {
+      padding: 26px 0;
+  }
+
+  .container .copyright p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      font-size: 14px;
+      line-height: 19.6px;
+  }
 }
