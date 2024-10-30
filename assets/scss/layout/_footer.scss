@@ -64,15 +64,19 @@ footer {
     }
 
     .footerBorder {
-        border: 1px solid #4848481A;
+        border-bottom: 1px solid #4848481A;
+        border-top: 1px solid #4848481A;
         padding-top: 80px;
+        background: #F8F7F6;
     }
+
     .footerBorder .container{
         display: flex;
         justify-content: space-between;
     }
     .copyright {
         padding: 42px 0;
+        background: #F8F7F6;
     }
 
     .container .copyright p {
@@ -165,12 +169,12 @@ footer {
     .footerBorder {
         border-top: 1px solid #EAE6DD;
         border-bottom: 1px solid #EAE6DD;
+        background: #F8F7F6;
     }
 
     .copyright {
-        padding: 26px 0;
+        padding: 206px 0;
     }
-
     .container .copyright p {
         display: flex;
         justify-content: center;
