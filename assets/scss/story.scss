@@ -340,4 +340,10 @@ img {
         margin-top: 40px;
         margin-bottom: 40px;
     }
+    
+    .values a:hover, .values a:active{
+        border: none;
+        background: #F5EFDF;
+        color: #48484880;
+    }
 }

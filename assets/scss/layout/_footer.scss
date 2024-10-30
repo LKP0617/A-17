@@ -158,7 +158,10 @@ footer {
         color: #1666df;
         filter: brightness(2.5) sepia(1) hue-rotate(90deg);
     }
-
+    footer .footerIcon a:hover,
+    footer .footerIcon a:active {
+        filter: brightness(2.5) sepia(1) hue-rotate(90deg);
+    }
     .footerBorder {
         border-top: 1px solid #EAE6DD;
         border-bottom: 1px solid #EAE6DD;
