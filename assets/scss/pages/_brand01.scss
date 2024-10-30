@@ -1,0 +1,560 @@
+
+*, *::before, *::after  {
+    box-sizing: border-box;
+}
+img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle/*基準線對齊*/;
+}
+/*字體字型*/
+@font-face{
+    font-family: 'gensen-b';
+    src: url(/assets/fonts/GenSenRounded2TW-B.otf);
+}
+@font-face{
+    font-family: 'gensen-r';
+    src: url(/assets/fonts/GenSenRounded2TW-R.otf);
+}
+@font-face{
+    font-family: 'chenyuluoyan';
+    src: url(/assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf);
+}
+@font-face{
+    font-family: 'AR Brush2 Ultra';
+    src: url(/assets/fonts/b287fa9818ecd1e48da5d579b5655e68.ttf);
+}
+
+
+a{
+    text-decoration: none;
+}
+.h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h2{
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h3{
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h4{
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h5{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h6{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.title{
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.subtitle{
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.button{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.placeholder{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.body-1{
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.body-2{
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.minumum{
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.branding-h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h2{
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h3{
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h4{
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h5{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h6{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+
+.font-family-gensen{
+    font-family: 'gensen';
+}
+.font-family-chenyuluoyan{
+    font-family: 'chenyuluoyan';
+}
+.font-family-arbrush2ultra{
+    font-family: 'AR Brush2 Ultra';
+}
+/*顏色*/
+.main-text{
+    color: #484848;
+}
+.white{
+    color: #ffffff;
+}
+
+
+
+.d-flex{
+    display: flex;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-direction-row{
+    flex-direction: row;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-start{
+    text-align: start;
+}
+.align-items-center{
+    align-items: center;
+}
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1320px;
+    text-align: center;
+}
+.w25{
+    width: 25%;
+}
+.p-12{
+    padding-left: -12px;
+    padding-right: -12px;
+}
+.m12{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/*banner*/
+.banner{
+    width: 100%;
+}
+.main-banner-m{
+    display: none;
+}
+@media (max-width: 576px) {
+    .main-banner{
+        display: none;
+    }
+    .main-banner-m{
+        display: block;
+    }
+}
+
+
+/*brand*/
+.brand-name{
+    text-align: center;
+    background-color: #F8E7D81A;
+}
+.brand-logo{
+    width: 107px;
+    padding-top: 90.5px;
+}
+.brand-title{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    -webkit-text-stroke: 0.5px #484848 ;
+}
+.brand-story{
+    padding-bottom: 90.5px;
+}
+.brand-story-m{
+    display: none;
+}
+/* 手機版 RWD 調整 */
+@media (max-width: 576px) {
+    .brand-logo{
+        padding-top: 80px;
+    }
+    .brand-story{
+        display: none;
+    }
+    .brand-story-m{
+        display: block;
+        padding-bottom: 80px;
+        padding-left: 12px; 
+        padding-right: 12px;
+    }
+}
+
+
+/*輪播廣告*/
+.brand-ads {
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    padding-top: 32.1%; /* 設置比例高度 */
+    overflow: hidden;
+}
+
+.ad-banner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ad-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持圖片比例，裁剪溢出的部分 */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.ad-banner.active {
+    opacity: 1;
+}
+
+.ad-banner-leftarrow,
+.ad-banner-rightarrow {
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* 左箭頭默認圖片 */
+.ad-banner-leftarrow {
+    left: 60px;
+    background-image: url('assets/images/arrow-left.png');
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 右箭頭默認圖片 */
+.ad-banner-rightarrow {
+    right: 60px;
+    background-image: url('assets/images/arrow-right.png');
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 左箭頭 hover 狀態 */
+.ad-banner-leftarrow:hover {
+    background-image: url('assets/images/arrow-left-h.png'); /* 替換為 hover 狀態的圖片 */
+}
+
+/* 右箭頭 hover 狀態 */
+.ad-banner-rightarrow:hover {
+    background-image: url('assets/images/arrow-right-h.png'); /* 替換為 hover 狀態的圖片 */
+}
+
+.banner-dot {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+}
+
+.dot {
+    background-color: #48484880;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.dot-active {
+    background-color: #382511;
+}
+
+/* 手機版 RWD 調整 */
+@media (max-width: 768px) {
+    .brand-ads {
+        padding-top: 97.1%; /* 改為手機版圖片比例 */
+        overflow: visible; /* 允許溢出 */
+    }
+
+    .ad-banner-leftarrow,
+    .ad-banner-rightarrow {
+        display: none; /* 手機版隱藏左右按鍵 */
+    }
+
+    .banner-dot {
+        bottom: -24px; /* 手機版下方點點的位置調整 */
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/*產品分類*/
+
+.product-category-title{
+    padding-top: 80px;
+    padding-bottom: 16px;
+}
+.product-category-title-hr{
+    border: 1.5px solid #484848;
+    width: 227px;
+    margin: 0 auto;
+}
+.product-category-img{
+    gap: 24px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.product-categary-l{
+    max-width: 856px;
+    height: 100%;
+    position: relative;
+}
+.product-categary-l span, .product-category-b span, .product-category-t span{
+    position: absolute;
+}
+.product-category-r{
+    gap: 24px;
+}
+.product-category-t{
+    max-width: 416px;
+    height: 100%;
+    position: relative;
+}
+.product-category-b{
+    max-width: 416px;
+    height: 100%;
+    position: relative;
+}
+
+/* 設置遮罩層的樣式 */
+.product-category-l-hover, .product-category-t-hover, .product-category-b-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    ; /* 半透明黑色 */
+    opacity: 0; /* 默認隱藏 */
+    transition: opacity 0.3s ease; /* 平滑的顯示效果 */
+}
+/* 父元素 hover 時顯示遮罩 */
+.product-categary-l:hover .product-category-l-hover,
+.product-category-t:hover .product-category-t-hover,
+.product-category-b:hover .product-category-b-hover {
+    opacity: 1; /* 顯示遮罩 */
+}
+
+/* 手機版 RWD 調整 */
+@media (max-width: 768px) {
+    .product-category-img{
+        flex-direction: column;
+    }
+    .product-category-img{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .product-category-t, .product-category-b{
+        max-width: 768px;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+/*熱銷推薦*/
+.hot-product-container{
+    max-width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hot-product-title{
+    padding-bottom: 16px;
+}
+.hot-product-title-hr{
+    border: 1.5px solid #484848;
+    width: 122px;
+    margin: 0 auto;
+}
+.hot-product-box{
+    margin-top: 80px;
+    row-gap: 24px;
+    padding-bottom: 80px;
+    align-items: stretch;
+}
+.product-card{
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.product-card-top{
+    border-top: 1px solid #4848481A;
+    border-left: 1px solid #4848481A;
+    border-right: 1px solid #4848481A;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+}
+.product-card-img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-card-top {
+    position: relative;
+    overflow: hidden; /* 確保遮罩不會超出圖片的範圍 */
+}
+/* 設置遮罩層的樣式 */
+.product-card-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000033; /* 半透明黑色遮罩 */
+    opacity: 0; /* 默認透明 */
+    transition: opacity 0.3s ease; /* 添加過渡效果 */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* 當滑鼠懸停在 .product-card-img 上時顯示遮罩 */
+.product-card:hover .product-card-img-hover {
+    opacity: 1;
+}
+
+.product-card-img-heart{
+    position: absolute;
+    right: 11px;
+    bottom: 12.5px;
+    cursor: pointer;
+}
+.product-card-img-heart.active {
+    content: url(assets/images/heart-red.png); /* 切換成紅色愛心 */
+    cursor: pointer;
+}
+
+
+.product-card-content{
+    padding: 16px;
+    background-color: #ffffff;
+    border-right: 1px solid #4848481A;
+    border-left: 1px solid #4848481A;
+    border-bottom: 1px solid #4848481A;
+}
+.product-card-logo{
+    width: 61px;
+    height: 100%;
+    margin-right: 16px;
+}
+.product-card-text{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.product-card-name{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* 手機版 RWD 調整 */
+@media (max-width: 768px) {
+    .product-card{
+        width: 50%;
+    }
+    .hot-product-box{
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+}
