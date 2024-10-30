@@ -1,0 +1,345 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+a {
+  color: #484848;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "GenSen";
+  src: url("/assets/font/GenSenRounded2TW-R.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ChenYuluoyan";
+  src: url("/assets/font/ChenYuluoyan-Thin-Monospaced.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "GenSen", sans-serif;
+}
+
+p {
+  font-family: GenSen, sans-serif;
+}
+
+.ChenYuluoyan {
+  font-family: "ChenYuluoyan", sans-serif;
+}
+
+.bold-text {
+  font-weight: bold; // 使用 "源泉圓體" 的粗體
+}
+
+.margin-top-32 {
+  margin-top: 32px;
+}
+
+.border {
+  border: 1px solid rgba(72, 72, 72, 0.3);
+}
+
+.border-radius-small {
+  border-radius: 48px;
+}
+
+.border-radius-none {
+  border-radius: 0;
+}
+
+.info {
+  .carousel-item {
+    height: 500px;
+    max-width: 636px;
+    max-height: 500px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 80%;
+    }
+  }
+
+  .buy-btn {
+    padding: 12px;
+    border-radius: 100px;
+    img {
+      max-width: 24px;
+    }
+  }
+}
+
+.collection-btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 100px;
+
+  &:hover {
+    svg {
+      fill: #d33e41;
+      transition: fill 0.5s ease;
+    }
+  }
+  svg {
+    max-width: 24px;
+  }
+}
+
+.info-bottom {
+  max-width: 1296px;
+}
+.info-bottom-item {
+  max-width: 636px;
+}
+
+.share-icon {
+  gap: 18px;
+  li {
+    img {
+      max-width: 28px;
+    }
+  }
+}
+
+.img-detail {
+  max-width: 344px;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.add-content {
+  gap: 80px;
+  .card {
+    max-width: 196px;
+    .btn {
+      img {
+        max-width: 24px;
+      }
+    }
+  }
+}
+
+.shop {
+  .shop-icon {
+    max-width: 107px;
+    margin-left: 86px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  .btn {
+    border-radius: 100px;
+    padding: 13.5px 32px;
+    img {
+      max-width: 24px;
+    }
+  }
+}
+
+.detail-nav {
+  gap: 256px;
+  .nav-link {
+    &.active {
+      border-bottom: 2px solid #484848;
+    }
+  }
+}
+
+.info-table {
+  margin: 0 auto;
+  th {
+    background-color: #f6f2e8;
+  }
+
+  th,
+  td {
+    padding: 12px 0;
+    width: 428px;
+    max-width: 428px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.container-text {
+  max-width: 854px;
+  margin: 0 auto;
+}
+
+.product-img {
+  .img {
+    width: 1296px;
+    height: 856px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.rate {
+  hr {
+    margin-bottom: 0;
+  }
+}
+
+.avatar {
+  img {
+    width: 62px;
+    height: 62px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+}
+
+.user-rate {
+  gap: 4px;
+  img {
+    max-width: 24px;
+  }
+}
+
+.comment-img {
+  img {
+    width: 109px;
+    height: 71px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.rate {
+  .btn {
+    border-radius: 100px;
+    padding: 17.5px 40px;
+  }
+}
+
+.other {
+  .card {
+    width: 306px;
+    max-width: 306px;
+  }
+}
+
+.other {
+  .card-body {
+    img {
+      max-width: 61px;
+      height: 61px;
+    }
+  }
+}
+
+.other {
+  .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    filter: drop-shadow(0 2px 20px rgba(0, 0, 0, 0.1))
+      drop-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+  }
+}
+
+.heart {
+  right: 8px;
+  bottom: 8px;
+  svg {
+    &:hover {
+      fill: #d33e41;
+    }
+
+    path {
+      color: #f8f7f6;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .share-row {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    p {
+      margin-right: 32px;
+    }
+  }
+
+  .add {
+    .carousel-item {
+      display: block;
+      // max-width: 164px;
+      flex: 0 0 164px;
+      margin-right: 16px;
+
+      .card-img-top {
+        height: 164px;
+      }
+
+      .add-icon {
+        max-width: 24px;
+        max-height: 24px;
+      }
+    }
+
+    .add-content {
+      gap: 0;
+    }
+  }
+
+  .share-icon {
+    gap: 40px;
+  }
+
+  .shop {
+    padding-left: 40.5px;
+    padding-right: 40.5px;
+    gap: 16px;
+    .shop-icon {
+      max-width: 70px;
+      margin: 0;
+    }
+
+    .shop-name {
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .detail-nav {
+    gap: 40px;
+  }
+
+  .product-img {
+    .img {
+      width: 351px;
+      height: 258px;
+    }
+  }
+}
