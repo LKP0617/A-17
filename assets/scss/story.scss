@@ -14,7 +14,7 @@ img {
     background: #F6F2E8;
 }
 
-
+/*pc*/
 @media (min-width:992px) {
     .forMobileWhite{
         display: none !important;
@@ -141,6 +141,12 @@ img {
         border: 1px solid;
         margin-bottom: 194px;
         margin-top: 40px;
+    }
+
+    .values a:hover{
+        color:#48484880 ;
+        background: #F5E9CB;
+        border: none;
     }
 }
 
