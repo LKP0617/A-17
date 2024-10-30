@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>拾柒商品詳情頁</title>
+    <script type="module" crossorigin src="/A-17/assets/main-63439a1a.js"></script>
+    <link rel="stylesheet" href="/A-17/assets/main-c0cc4fa0.css">
+  </head>
+
+  <body>
+    <header>
+    <div class="container-fluid">
+        <div class="header">
+            <a href="#" class="pcLogo">
+                <img src="data:image/png;base64,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" alt="">
+            </a>
+            <div class="mobileLogo">
+                <a href="#" class="">
+                    <img src="data:image/png;base64,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" alt="">
+                </a>
+            </div>
+            <div class="mobileIcon">
+                <a href="#" class="menuBTN">
+                    <img src="/A-17/assets/search-17ba0460.svg" alt="">
+                </a>
+                <a href="#" class="menuBTN forJs">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA+SURBVHgB7dIxDQAgDETRgxrCRHekstcEhi4hDCiAhebe9AV8QNIrJ9y9mVnHAyRHRMzdFZKeLpJ7ukg+sABf0BgKpn1rkgAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+            <div class="navBAR">
+                <div class="mobileList">
+                    <a href="#" class="mobileLogo">
+                        <img src="data:image/png;base64,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" alt="">
+                    </a>
+                    <a href="#" class="closeBTN">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACVSURBVHgB7ZLBDYAgEATRq4QObIICrNQCeNmBFfC2CRKzJiY8PLJn5AWbGIEcMwTOuZE+E0JY8P1RP2ubRGRjJKhBrcp5W0wpnd77HRvxx7wGzzmvMcaDFjASBl4V1CQsHJkckRJ4n4qE04JSgjELR2bXOM2vSCxwANkWpgRat1gkYoVbJfIFbpGoXcQ+Imqexx/pNBeycLI3aQlMngAAAABJRU5ErkJggg==" alt="">
+                    </a>
+                </div>
+                <ul class="pcNav">
+                    <li><a href="#" class="navIcon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAzrAAAM6wHl1kTSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIjSURBVHgB7Za/TgJBEMbnTgh08gAkQgLBTh4BC/500loJlaX6BGKnFVppJ1SWSAeE4qzUjussIG5p55UQAviNWQyGuz24C43xSzZzt8zOb29ndxaiv64tWlOFQiEWjUZJCDEkD9LcHBgAc4RWQovN+2ezmaVpWg+PtVarVacV5QjMZDKRUCh0jqCneDXQOKgxHA6tcDgcYTh+KwJ8IIeUATbIC5C/CoEa3w6aduYWCP4VmHO0CnwvVL5LOeQvCwQCzwC9jkajw263+0Yu6vf7Rjweb2LMXSKRGA0GgxdaVfl8vooZv5MH5XK5IsZ/yrzbSl98YUeZs33yoE6n8whjIEZ1JSBUQWsiD4I8CrAb5L/IqXEFwnEPpkE+JDeYwE4uugIxu/RkMjHJv544lhI4T/R4PBbkXwKrta0E8oFmKw+1LwHmGOMHaBiGxeWKFsqXV2E59xDLVAKlI9fGDPkUYGkZSw2E6nA+IR/CXigBZjmVw19AONXYWdZGL7AYyZrq5KPb9JV5UDabTdOawupUeR+orqul4o1CLFCA8aHabTKZ/MC767nkqpJKpR74usLrlap42974XP256uPxEtBdPJvosxxAx8FgkFPB/wDYXsJfOE1UeePLnFTQjrBUPV3X+UCbCBrhMsi7UbpetNvtazmmBHOPVrJbWte/GHPwdDpNA8iAHe7jCQBs2u1GFXQloBc5QXXakPiIwZSxEqf0r03qC39F9Wr0Wck9AAAAAElFTkSuQmCC" alt=""></a>
+                    </li>
+                    <li><a href="#" class="navIcon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAzrAAAM6wHl1kTSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG8SURBVHgB5ZbbbcIwFIaPAwgeMwIbNJ0g5gEBU1RM0I5AJyidoHQC+ojgoWEC0gmaEfLIRZD+p3KkJOTikKQv/aTIlmPn94nPxUR/jAg7w+HQarVaJvdXq5VDDSEiYrvI+KBJ0Rjj8XgxmUzm1BBGciAIAhfPHTXElaAQggUtaogrwf1+70LU5HOlBhBpg6PRaMeWorulGrhcLv7xeHSA386Ys8VvfYBon2rAMAzZ6XTu0XVTBdU52giNAVUEXi/ZJzabjfsrnjHPgaglpTSpOlIdD2UKwjIPu/J7vV4djmNTxBeyLKwtPNQ3nEJBTPyCaKUEwKHFIcahpiPooJFUAeRnizMXh0OhIMcNmn5Fx4k5TK6g2pXX7XZtuhGVkx0tQcU7nhliqU8lwRpOHOwwsWzVzluEw57DQt7lNz5AZeCwguCUQyw6LnQWR28DOpzPZ/90OnlRZ/k/FP5STr4oL2ZYXkiDcM16vf5Ivsv1UlWEP3H4b8irS9IAtfQJDrNESXqB8Cz5PtdLuY5xpsBup4lbXR42NsiWeZSSqXIFD4fDApY9KrFn0gBir2wh99FO6RbKpjeeX1Mtrc4PIe/FEMnywSwAAAAASUVORK5CYII="
+                                alt=""></a></li>
+                    <li><a href="#" class="logInBtn" type="button" data-toggle="modal"
+                            data-target="#loginModal">註冊/登入</a></li>
+                </ul>
+                <div class="mobileNav">
+                    <ul class="mobileNav-section">
+                        <li><a href="#">商品總覽</a></li>
+                        <li><a href="#">嚴選品牌</a></li>
+                        <li><a href="#">最新消息</a></li>
+                        <li><a href="#">關於拾柒</a></li>
+                        <li><a href="#">Q&A</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-list-btn" type="button" data-toggle="modal" data-target="#loginModal">
+                    <a href="#">註冊/登入</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- 彈出視窗 -->
+<div class="modal fade ortherModal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- 關閉按鈕 -->
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACVSURBVHgB7ZLBDYAgEATRq4QObIICrNQCeNmBFfC2CRKzJiY8PLJn5AWbGIEcMwTOuZE+E0JY8P1RP2ubRGRjJKhBrcp5W0wpnd77HRvxx7wGzzmvMcaDFjASBl4V1CQsHJkckRJ4n4qE04JSgjELR2bXOM2vSCxwANkWpgRat1gkYoVbJfIFbpGoXcQ+Imqexx/pNBeycLI3aQlMngAAAABJRU5ErkJggg==" alt=""></span>
+                </button>
+            </div>
+            <!-- 彈出視窗內容 -->
+            <div class="modal-body">
+                <!-- Logo -->
+                <div class="modal-title">
+                    <img class="modal-logo" src="/A-17/assets/footer_logo-c9cbd273.png" alt="拾柒">
+                </div>
+                <form>
+                    <!-- 帳號欄位 -->
+                    <div class="form-group my-4 ">
+                        <label for="username" class="my-2">登入會員</label>
+                        <input type="text" class="form-control" id="username" placeholder="登入拾柒帳號">
+                    </div>
+                    <!-- 密碼欄位 -->
+                    <div class="form-group  my-4 ">
+                        <label for="password" class="my-2">輸入密碼</label>
+                        <input type="password" class="form-control" id="password" placeholder="輸入密碼">
+                    </div>
+                    <!-- 登入按鈕 -->
+                    <button type="submit" class="btn btn-dark btn-block">登入拾柒</button>
+                </form>
+                <!-- 額外選項 -->
+                <div class=" extra-option">
+                    <a href="#">忘記密碼？</a>
+                    <div>
+                        <p>還不是會員嗎？</p>
+                        <a href="#">立即加入會員</a>
+                    </div>
+                </div>
+                <!-- Facebook 登入按鈕 -->
+                <button class="btn btn-facebook btn-block">使用 Facebook 登入</button>
+                <!-- Google 登入按鈕 -->
+                <button class="btn btn-google btn-block">使用 Google 登入</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" secondaryNav ">
+    <ul class="list ">
+        <li><a href="#" class="h6">商品總覽</a></li>
+        <li><a href="#" class="h6">嚴選品牌</a></li>
+        <li><a href="#" class="h6">最新消息</a></li>
+        <li><a href="#" class="h6">關於拾柒</a></li>
+        <li><a href="#" class="h6">Q&A</a></li>
+    </ul>
+</div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <div class="container">
+      <!-- 第一部分 -->
+      <!-- 麵包屑 -->
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="mt-3 mt-md-7"
+      >
+        <ol class="breadcrumb bold-text">
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
+          <li class="breadcrumb-item"><a href="#">商品總覽</a></li>
+          <li class="breadcrumb-item active" aria-current="page">花藝</li>
+        </ol>
+      </nav>
+
+      <!-- 商品展示圖片 -->
+
+      <div class="row info">
+        <div class="col-12 col-md-6">
+          <div
+            id="carouselControls"
+            class="carousel slide mb-4"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/A-17/assets/開幕花禮｜奶油燕麥盆花-b8eeb11a.jpeg"
+                  class="d-block w-100"
+                  alt="開幕花禮｜奶油燕麥盆花"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                  class="d-block w-100"
+                  alt="奶油燕麥＿詳細1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                  class="d-block w-100"
+                  alt="奶油燕麥＿詳細2"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="info-bottom-item d-md-none d-block .info-bottom-sm-img my-4 mt-md-6"
+          >
+            <ul class="img-detail d-flex justify-content-center">
+              <li>
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                  alt="奶油燕麥＿詳細1"
+                />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                  alt="奶油燕麥＿詳細2"
+                />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細3.png"
+                  alt="奶油燕麥＿詳細3"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h1 class="fs-4 mb-3 bold-text">開幕花禮 | 奶油燕麥盆花</h1>
+          <p class="mb-5">
+            奶油燕麥盆花，結合柔和奶油色與天然燕麥材質傳遞低調優雅的開幕祝福，營造溫馨氛圍
+            #開幕花禮 #花藝 #盆花
+          </p>
+          <p class="fs-3 mb-5 bold-text">NT$1,680</p>
+
+          <select class="form-select mb-5" aria-label="Default select example">
+            <option selected>請選擇商品規格</option>
+            <option value="1">奶油燕麥</option>
+          </select>
+
+          <select class="form-select mb-5" aria-label="Default select example">
+            <option selected>數量</option>
+            <option value="1">數量：1</option>
+            <option value="2">數量：2</option>
+            <option value="3">數量：3</option>
+            <option value="3">數量：4</option>
+            <option value="3">數量：5</option>
+          </select>
+
+          <div class="info-btn d-flex row gx-3 mb-5">
+            <div class="col-6">
+              <div
+                class="buy-btn btn btn-primary-100 d-flex justify-content-center align-items-center fs-8 bold-text"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                  class="me-2"
+                  alt="shopping-cart"
+                />加入購物車
+              </div>
+            </div>
+            <div class="col-6">
+              <div
+                class="buy-btn btn btn-secondary-100 d-flex justify-content-center align-items-center fs-8 bold-text"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPJSURBVHgB7Zs9VttAEIDHSgrouEGU9+jhCEsFVDEniHOCcIOIE+QIKCeIqaDgPcQJID3FpktJBxVkxsyaNQ80WkkrS2a+9xStNrZYf1qNVvsDoCiKsjxG0AJ7e3sT3H2CfmHPzs5+QUMaC0I5Ge5+QD85QkkZNKCRIJRjcHcB/WYHJRVQk9qCUE4KT3JoD4+Pj9ej0WgKPQDLMcbybPOhhSdJFmrwEepzDCyHCoGFOqhbiLbBi0exx1082qisO1CDD1ADjjsTd0xXDOX8gZ5wc3Nzu7m5SeWZcFaKxyPMLyCQYEEcd469rKyNp0XboAyLUihpOMvg8SXlQwBBMehl3EEKlFOr6nYFlpnKa/jQQmA8SiCMhbiD2zfoP1RGy+kUFmu/SOVbrO9x5y2axqNKgoYSd96iSTwSY9AQ485b1IlHVdpBftyZnRj/UF9fLSSsl06hQvuotAbxS2hQUBsgk7JwIT3F+vaGHoO07D9DXjUK3lYBA8+xqJQgQVgVj2AFwNBBO1Pls6ENxXeHChJQQQIqSEAFCaggARUkEFUQvarg9hUiEfv8RDRB3ntcHuNHxD6/I2YN8t/jUmif2OefEVPQXy+dQvukLoFjYLcQiZiCrEt4g3itgV2+83MmSXINkYgmaG1tbV5o+jHGmA1oCerl9KXf3d1F6xuPJmg6nVK1L9wxCvsOLYHC/XMVyCBvMWLePYJX/JD7txvB55h4WTlEJKognlVBG111usXa6L49RtnudrWxR1e6aEn7nWwGa0BtSfjdHBY7uqKPrkQXxLUo87Ko9XsRcrvRZ3nIxm8QZl3MJunkXYy7ajMvy+BtcrW7u/uzTBQ9+WhEF2/PK1isOVlX3b9N5gcFQT+I+4Iz+odj0iFtKIomX1GzwPLHZ49x19bBtH+qrMu+8c4EESzJn9w0g0UsNCYx7+XXC8zLTk9PL6FDOhVEcNz4zC+bFFOM8JWliHF0LsiBonLc5RRn1tfXtzC97T++UYqlFnLMRmAVlibIwQIueesd2qMooIIEVJCAChJQQQIqSEAFCaggARUkoIIEVJCAChJQQQIqSEAFCVQW5HVmvSskQfMZGv5kgRXAuASt1i77YKkgHE/3l3kbXjc2aPb398fgCcILXzrxoVQQT0DI3THa/o1DNF9goLyyMDCXBh/FBXXj8Xjj/v6eBu5SL7uAAS1sofjJIcJ42RYqLKirtOr5lVWHQ8dCxdXPldas8sLYE0zSk2zowTrHO+Lg/Pz8X5UPB62bJ6g2JUmy9fDwMDRRFsWcLHucTVEUJYT/pJ5lVUVNON4AAAAASUVORK5CYII="
+                  class="me-2"
+                  alt="shopping-bag"
+                />立即購買
+              </div>
+            </div>
+          </div>
+
+          <div class="collection row">
+            <div class="col">
+              <div
+                class="collection-btn btn btn-white-100 border border-black-100 d-flex justify-content-center align-items-center fs-8 bold-text"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="#ffffff"
+                  class="me-2"
+                >
+                  <path
+                    d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                    stroke="#484848"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                加入收藏清單
+              </div>
+            </div>
+          </div>
+
+          <div class="share-row row">
+            <div
+              class="d-flex justify-content-center align-items-center position-absolute d-md-none"
+            >
+              <p class="me-md-4 bold-text fs-6">分享到:</p>
+              <ul class="share-icon d-flex">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="data:image/png;base64,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"
+                      alt="line"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="/A-17/assets/Instagram-c0104979.png"
+                      alt="Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="data:image/png;base64,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"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATLSURBVHgB7Vu9ThtBEB6ggc7p0uUigZQCKeYNjgLx08RvwPEEOE+A6dIFniB2FaWK0/AjkHC6dNgdkZBYuqSKO0wBZMa3i5fjbnfvOOxbvJ908v3MLtrvdmZnvxsAHBwcHEaHCXhBWFpaKk9NTZXx9A2/dXlzc9M+OjpqQ0ZYT5Dv+6Xp6enqxMTE5t3dXSnBjOGz3evr63qr1epCClhN0MrKio8/X/DwDJswPDYODg5ahvb2EoTkBBCScw+cRV2cKU0IiaDrMl6Ty3mR5gGS1AADWEkQnzkn4poTU00aNCdzCx4StWgyk6wjiMecUxgMlkE4WKZqhySR/YncrtfrLehi0iRYhpmZmQBSkkPgNos02/gtD4ne1LWzjiB0JXlQNRNyBMgW23+U+qrq2ljlYmtra+Xb29tTfslwwG8hA1ZXV/+JlADzpAVVnmTVDEJyyuIcB5g5+eMrXR+YWL5X2drmYiJDppUrM0HA0wAOT2VoXQwaNmwj6FI69yAjKIGULpnK1iqCJicn790K40gFMoJn131gkO6obK0iaG9vry3yGPwtYfK3DinBs2qPXzLdTt8agiiDxuV5R96x4/kOz5CNwG235Pa6NlYQhAOrYQZ9EUkS+7MIf05MSIrbaqD8od2wTkGBQZvS2dlZGhTFm2lxny/xr/klkVRBu+75+XknoZ8A23yX2lAflePj49+gQSEzaf62ScrwI48YDizY39//GSd3QCiMtaUcySMiYoQ0O+WOJHWQyxk7OKht2T6LYCYINrQvDkHcDT5H3zYRg7FiO0mWqFQqJXy+zjeeXpyNIBjljd2hSq55iOR8FtDK4kcetXBgtTRvm29maW/l8VsMc6cOpQeQEakJykskp35wZarFrExKdXDYSEVQXiI5LdtJcSaLGzwnjAnKQyRXENyCkEgGBYMRQXmI5Hz5LUdMU68qw4aWoBxF8sEfTVi2iwjtViNHkbwPIubq6uqtDeQQtFsNTOG/QpjOE8itjN0BU/8utv8L4VaByOkeHh4uMsZ6YAmULjYKkbxoULrYKETyokEXg4YukhcNTrTXQEfQ0EXyokFJ0ChE8qJBSdAoRPKiwSQPIqnTp3OcCf7c3Nw3ym/AAJIyKPKoEvbn4dEx7WPU0AZp3GbswmAz+hSRXCCg+8vLy1WwANoZdHZ21qM3DuHACFlFcsqF3ok+8HoF+whU/RQBT5I7IKVIjpn5B0w+d+DxrKrjsW2t3CGQl0iOW48qVxK9iD1tYOtFIirVdzF0BTY/P9/ApfoPhO4SK7nyle8TqoMbcd+esJ9f6Fo/eHs5R/JB477DxpNE+zxEcgrmFK/kXEn0BYbSisCLrrRPKNUl1EERn8aq0p6+caFbUmyqRR4xPBpI0oP7Y1tpL1VhBJFHDMLK1oartId+jItNC4gESifE9dhX2ivSAgKDca+0xzyKZtEihAFbBoNnrrS3YgbJwJlwAYNZYBxLpPYB8NjFPyK8Utm7SntXaf8YrtJeDyadeypDJ9pr4CrtXaX9Y7hKewVebKW9gFwd7yrtY5DjRwSjSnvrCGo2m+RiG9ItD0KSEt2Nf0SQi8CI3MBEG7JuqyEwlpX2aTGMSvtC/zOLDnl9RFDB6hkUxXNU2js4ODiMEv8BUWByYU3bFaIAAAAASUVORK5CYII=" alt="share" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-bottom position-relative">
+        <div class="info-bottom-item info-bottom-img d-none d-md-block mt-6">
+          <ul class="img-detail d-flex justify-content-center">
+            <li>
+              <img
+                src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                alt="奶油燕麥＿詳細1"
+              />
+            </li>
+            <li>
+              <img
+                src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                alt="奶油燕麥＿詳細2"
+              />
+            </li>
+            <li>
+              <img
+                src="../assets/images/negaflower/奶油燕麥＿詳細3.png"
+                alt="奶油燕麥＿詳細3"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="info-bottom-item d-md-flex d-none justify-content-end align-items-end position-absolute bottom-0 end-0"
+        >
+          <p class="me-4 bold-text">分享到:</p>
+          <ul class="share-icon d-flex">
+            <li>
+              <a href="#"
+                ><img src="data:image/png;base64,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" alt="line"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="/A-17/assets/Instagram-c0104979.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="data:image/png;base64,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"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATLSURBVHgB7Vu9ThtBEB6ggc7p0uUigZQCKeYNjgLx08RvwPEEOE+A6dIFniB2FaWK0/AjkHC6dNgdkZBYuqSKO0wBZMa3i5fjbnfvOOxbvJ908v3MLtrvdmZnvxsAHBwcHEaHCXhBWFpaKk9NTZXx9A2/dXlzc9M+OjpqQ0ZYT5Dv+6Xp6enqxMTE5t3dXSnBjOGz3evr63qr1epCClhN0MrKio8/X/DwDJswPDYODg5ahvb2EoTkBBCScw+cRV2cKU0IiaDrMl6Ty3mR5gGS1AADWEkQnzkn4poTU00aNCdzCx4StWgyk6wjiMecUxgMlkE4WKZqhySR/YncrtfrLehi0iRYhpmZmQBSkkPgNos02/gtD4ne1LWzjiB0JXlQNRNyBMgW23+U+qrq2ljlYmtra+Xb29tTfslwwG8hA1ZXV/+JlADzpAVVnmTVDEJyyuIcB5g5+eMrXR+YWL5X2drmYiJDppUrM0HA0wAOT2VoXQwaNmwj6FI69yAjKIGULpnK1iqCJicn790K40gFMoJn131gkO6obK0iaG9vry3yGPwtYfK3DinBs2qPXzLdTt8agiiDxuV5R96x4/kOz5CNwG235Pa6NlYQhAOrYQZ9EUkS+7MIf05MSIrbaqD8od2wTkGBQZvS2dlZGhTFm2lxny/xr/klkVRBu+75+XknoZ8A23yX2lAflePj49+gQSEzaf62ScrwI48YDizY39//GSd3QCiMtaUcySMiYoQ0O+WOJHWQyxk7OKht2T6LYCYINrQvDkHcDT5H3zYRg7FiO0mWqFQqJXy+zjeeXpyNIBjljd2hSq55iOR8FtDK4kcetXBgtTRvm29maW/l8VsMc6cOpQeQEakJykskp35wZarFrExKdXDYSEVQXiI5LdtJcSaLGzwnjAnKQyRXENyCkEgGBYMRQXmI5Hz5LUdMU68qw4aWoBxF8sEfTVi2iwjtViNHkbwPIubq6uqtDeQQtFsNTOG/QpjOE8itjN0BU/8utv8L4VaByOkeHh4uMsZ6YAmULjYKkbxoULrYKETyokEXg4YukhcNTrTXQEfQ0EXyokFJ0ChE8qJBSdAoRPKiwSQPIqnTp3OcCf7c3Nw3ym/AAJIyKPKoEvbn4dEx7WPU0AZp3GbswmAz+hSRXCCg+8vLy1WwANoZdHZ21qM3DuHACFlFcsqF3ok+8HoF+whU/RQBT5I7IKVIjpn5B0w+d+DxrKrjsW2t3CGQl0iOW48qVxK9iD1tYOtFIirVdzF0BTY/P9/ApfoPhO4SK7nyle8TqoMbcd+esJ9f6Fo/eHs5R/JB477DxpNE+zxEcgrmFK/kXEn0BYbSisCLrrRPKNUl1EERn8aq0p6+caFbUmyqRR4xPBpI0oP7Y1tpL1VhBJFHDMLK1oartId+jItNC4gESifE9dhX2ivSAgKDca+0xzyKZtEihAFbBoNnrrS3YgbJwJlwAYNZYBxLpPYB8NjFPyK8Utm7SntXaf8YrtJeDyadeypDJ9pr4CrtXaX9Y7hKewVebKW9gFwd7yrtY5DjRwSjSnvrCGo2m+RiG9ItD0KSEt2Nf0SQi8CI3MBEG7JuqyEwlpX2aTGMSvtC/zOLDnl9RFDB6hkUxXNU2js4ODiMEv8BUWByYU3bFaIAAAAASUVORK5CYII=" alt="share" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 第二部分 -->
+      <div class="container add border my-5 my-md-7">
+        <div class="row bg-grey-100 py-4 fs-6">
+          <div class="col">
+            <div class="Title text-center bg-grey-100 bold-text">
+              <p>可加購商品</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- bootstrap -->
+        <div id="carouselSwiper" class="carousel slide d-block d-md-none">
+          <div class="carousel-inner mt-5 mb-4 d-flex">
+            <div class="carousel-item active">
+              <img
+                src="../assets/images/透明提袋.png"
+                class="card-img-top border-radius-none mb-3"
+                alt="透明提袋"
+              />
+              <div class="d-flex flex-column align-items-center">
+                <p class="card-title mb-3 fs-9 fs-md-7">透明提袋50cm</p>
+                <div class="fs-7 fs-md-6 mb-3">NT$150</div>
+              </div>
+
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option selected>數量：1</option>
+                <option value="1">數量：2</option>
+                <option value="2">數量：3</option>
+                <option value="3">數量：4</option>
+              </select>
+
+              <a
+                href="#"
+                class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                  class="add-icon me-2"
+                  alt="shopping-cart"
+                />加入購物車</a
+              >
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/剪刀.png"
+                class="card-img-top border-radius-none mb-3"
+                alt="剪刀"
+              />
+              <div class="d-flex flex-column align-items-center">
+                <p class="card-title mb-3 fs-9 fs-md-7">花卉剪刀</p>
+                <div class="fs-7 fs-md-6 mb-3">NT$800</div>
+              </div>
+
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option selected>數量：1</option>
+                <option value="1">數量：2</option>
+                <option value="2">數量：3</option>
+                <option value="3">數量：4</option>
+              </select>
+
+              <a
+                href="#"
+                class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                  class="add-icon me-2"
+                  alt="shopping-cart"
+                />加入購物車</a
+              >
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/噴罐.png"
+                class="card-img-top border-radius-none mb-3"
+                alt="噴罐"
+              />
+              <div class="d-flex flex-column align-items-center">
+                <p class="card-title mb-3 fs-9 fs-md-7">迷你噴壺</p>
+                <div class="fs-7 fs-md-6 mb-3">NT$160</div>
+              </div>
+
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option selected>數量：1</option>
+                <option value="1">數量：2</option>
+                <option value="2">數量：3</option>
+                <option value="3">數量：4</option>
+              </select>
+
+              <a
+                href="#"
+                class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                  class="add-icon me-2"
+                  alt="shopping-cart"
+                />加入購物車</a
+              >
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/卡片.png"
+                class="card-img-top border-radius-none mb-3"
+                alt="手工花藝卡片"
+              />
+              <div class="d-flex flex-column align-items-center">
+                <p class="card-title mb-3 fs-9 fs-md-7">手工花藝卡片</p>
+                <div class="fs-7 fs-md-6 mb-3">NT$300</div>
+              </div>
+
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option selected>數量：1</option>
+                <option value="1">數量：2</option>
+                <option value="2">數量：3</option>
+                <option value="3">數量：4</option>
+              </select>
+
+              <a
+                href="#"
+                class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                  class="add-icon me-2"
+                  alt="shopping-cart"
+                />加入購物車</a
+              >
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselSwiper"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselSwiper"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="add-content d-none d-md-flex justify-content-center">
+          <div class="card border-0 my-md-5 bold-text">
+            <img
+              src="../assets/images/透明提袋.png"
+              class="card-img-top border-radius-none mb-3"
+              alt="透明提袋"
+            />
+            <p class="card-title mb-3">透明提袋50cm</p>
+            <div class="fs-6 mb-3">NT$150</div>
+
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>數量：1</option>
+              <option value="1">數量：2</option>
+              <option value="2">數量：3</option>
+              <option value="3">數量：4</option>
+            </select>
+
+            <a
+              href="#"
+              class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                class="me-md-2"
+                alt="shopping-cart"
+              />加入購物車</a
+            >
+          </div>
+
+          <div class="card border-0 my-md-5 bold-text">
+            <img
+              src="../assets/images/剪刀.png"
+              class="card-img-top border-radius-none mb-3"
+              alt="剪刀"
+            />
+            <p class="card-title mb-3">花卉剪刀</p>
+            <div class="fs-6 mb-3">NT$800</div>
+
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>數量：1</option>
+              <option value="1">數量：2</option>
+              <option value="2">數量：3</option>
+              <option value="3">數量：4</option>
+            </select>
+
+            <a
+              href="#"
+              class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                class="me-md-2"
+                alt="shopping-cart"
+              />加入購物車</a
+            >
+          </div>
+
+          <div class="card border-0 my-md-5 bold-text">
+            <img
+              src="../assets/images/噴罐.png"
+              class="card-img-top border-radius-none mb-3"
+              alt="噴罐"
+            />
+            <p class="card-title mb-3">迷你噴壺</p>
+            <div class="fs-6 mb-3">NT$160</div>
+
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>數量：1</option>
+              <option value="1">數量：2</option>
+              <option value="2">數量：3</option>
+              <option value="3">數量：4</option>
+            </select>
+
+            <a
+              href="#"
+              class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                class="me-md-2"
+                alt="shopping-cart"
+              />加入購物車</a
+            >
+          </div>
+
+          <div class="card border-0 my-md-5 bold-text">
+            <img
+              src="../assets/images/卡片.png"
+              class="card-img-top border-radius-none mb-3"
+              alt="卡片"
+            />
+            <p class="card-title mb-3">手工花藝卡片</p>
+            <div class="fs-6 mb-3">NT$300</div>
+
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>數量：1</option>
+              <option value="1">數量：2</option>
+              <option value="2">數量：3</option>
+              <option value="3">數量：4</option>
+            </select>
+
+            <a
+              href="#"
+              class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7ZpNdtowEMcH0veSrJqeoNwg6QmiLvJeyKbJCUpO0NcbJCdoe4LmBqErvhZVTlA4QTkCO2ABdIZIoBhBZXtMZFu/9xqrtiGTv6XRfBggEAgEXo+K7eTl5aXAQ812bT6fj7rdbhNKwoZAKE4ND393fWixWHztdDrfoQRULedq8B8qlconKAnWJVav17/gLDmzXGrQD7w2whn0DkpAJc7NuPxo6dVoPJvNPvR6vT4UnGrM++Xqg9XqOZSAWAKh7+kb4zMoAbEEQt8zMP4roATEEujo6Mj0OTUhxAkUnFgCNZvNkbnMULDCL7O4TpqQeoBL7hQKTmyByuaHUs0gCAJt0m63h+iHRjTG48nV1dV7KDBJZhAts5WjxuxeQIF5AwmgnQxFEmp8jSlIrJTFR7aVcRL9YZjMXqNAj1A87tCF3JsnEi2xw8NDCcVERE8kWmIUMOKyGoLK7HE2NbXjziEC1jUwGb2YSCDjyxp6jFPzB+QQfNC/QQmED1lGrydaYurLipLZCz0Yj8eD6MXEAhUholbNiSUUukgpN9xEYoGKkNnjzD81xtbqaGKBCpLZC2MsbTckFij6pXnM7M3GBNbYB7Z7UgmUZz+k+n/0b9ml2daAYJtBkDOBzJ13m/8hUgmU88ze7MrIbTelnUG5zexN/2MLEDWpBTKn55ZurK8IPbAFiJrUAiFPepCXiNolQNSkFsjM7PMyg1wCRE1qgShgxMNQ/bKTi4uLPIgkjLHcdSPHEnvxSw4ODrwPGF0CRA2LQJFpKsBjXANEDYtAZkTtux9yDRA1LAKZmT0Z4Hlm7xQgalgEylNm7xogaricNCFhbYTPjlrowa4AUcMmkOmHqFcGHhInQNRkMoMQ4Wk89FkPXBw0wSYQZfbwMh56VFuqF6Atd7DuwhD3Lp9jbRmTIPhk/uD0NXexBzDytX2D9rzFKkMjkidudFC3fh6YQZHImG8RkXziAcW5db05k5cO1NJaNeR8gAp7OJPuOp1OrAZnpm9l1Ov1c/UWSA1eCUonyCFPJpNfLrtWIBAIBAKBQOCZzAJFKi1Qe0WlHE8Y3kvYMxw2sAtE5VasKNIrwsI8Ty96TqfT231Es5w2cNaDlhwfH/8ES2eDimjK6MzhtIG73CHgOUnVPKhjwzj3Mcvlxm1DmteAbZgdg1VZAY2mQ4N+qHq1hOxgtYF1ibm8TE7tacgQbhtYZ1DklbyGemrLsR64tFp8siGLiiKtf2G7RrsIFqxuIGM4bWDfxXCXuMEn1LRckrTFwh7gtCGzQFFXE5VP6Ldarb0X7n2wIRAIBNLwDxUkv7mQYFA/AAAAAElFTkSuQmCC"
+                class="me-md-2"
+                alt="shopping-cart"
+              />加入購物車</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 第三部分 -->
+      <section
+        class="shop border d-flex flex-wrap justify-content-start align-items-center py-4"
+      >
+        <div class="shop-name d-flex align-items-center">
+          <a href="#"
+            ><img
+              class="shop-icon me-4"
+              src="/A-17/assets/nega-81d18053.jpg"
+              alt="negaflower"
+          /></a>
+          <a href="#"><p class="me-md-5 ChenYuluoyan">Nega Flower品牌館</p></a>
+        </div>
+
+        <div
+          class="btn btn-primary-100 d-flex justify-content-center align-items-center fs-8 bold-text"
+        >
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB7dmxCcJAFIDhpw6iRXpXsEzpBrqJOom4RUpXsE8RN/ECKQIiPxwpnvB/8LhLmR+uuYuQJEmSJCmZTSTStu25aZp93/evSCJNoDFOWe5ljiXSkCXSOvLYzva7SCJToJQMBAwEDAQMBAwEDAQMBAwEDAQMBAwEDAQMBAwEDAQMBAwEVlFpukPexnIO04ye0yxl6LruERWqAs0u2P/JuSaSRwx4xEB1oKWV4JeyXKfPa/mhWyTgEQMGAgYCBgIGAgYCBgIGAgYCBgIGAgYCBgIGAgYCBgIGAgYCmQK9Z/sh9G18CChzCkmSJEmS9NsHLZAo2AKQpbkAAAAASUVORK5CYII=" alt="plus" />加入關注
+        </div>
+      </section>
+
+      <div class="detail">
+        <!-- 分頁 -->
+        <ul class="detail-nav nav justify-content-center my-7 fs-6 bold-text">
+          <li class="nav-item active">
+            <a
+              class="nav-link text-black-100 active"
+              aria-current="page"
+              data-bs-toggle="tab"
+              href="#information"
+              >商品介紹</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-100" data-bs-toggle="tab" href="#spec"
+              >商品規格</a
+            >
+          </li>
+        </ul>
+
+        <!-- 分頁內容 -->
+        <div class="tab-content">
+          <div id="information" class="tab-pane fade in show active">
+            <div class="container-text text-center mb-7">
+              <p>
+                開幕花禮中的經典選擇。柔和的奶油色調，搭配天然燕麥材質，為新事業的開展帶來一股清新與自然的氣息。奶油色象徵著純潔與美好，傳遞出對新起點的祝福，而燕麥材質則以其質樸與柔和，展現了對長久發展的期許與支持。
+              </p>
+              <p>
+                盆花的設計兼具視覺效果與質感，奶油色的花卉與燕麥色的材質互相襯托，營造出一種低調而奢華的氛圍。不論是放置在入口迎賓，還是作為櫃台的展示品，都能為空間增添一抹雅緻與溫馨，讓人一見難忘。不僅適合開幕儀式，也非常適合作為其他重要場合的祝賀禮物。既展現了送禮者的品味，又傳遞了深厚的祝福與心意。選擇這款花禮，為重要時刻增添更多儀式感，讓您的祝福以最溫柔且具質感的方式傳遞到受禮者的心中。
+              </p>
+            </div>
+            <div class="product-img">
+              <div class="row">
+                <div class="img col mb-7">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                    alt="奶油燕麥＿詳細1"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="img col mb-7">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                    alt="奶油燕麥＿詳細2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="spec" class="tab-pane fade">
+            <table class="info-table text-center mb-7">
+              <tr>
+                <th>材質</th>
+                <td>乾燥花</td>
+              </tr>
+              <tr>
+                <th>花材種類</th>
+                <td>7~8項不同花材</td>
+              </tr>
+              <tr>
+                <th>尺寸</th>
+                <td>25 cm x 24 cm</td>
+              </tr>
+              <tr>
+                <th>重量</th>
+                <td>560 g</td>
+              </tr>
+              <tr>
+                <th>產地</th>
+                <td>台灣</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第四部份 -->
+      <div class="rate">
+        <div class="title">
+          <h4 class="bold-text">商品評價</h4>
+          <hr class="mb-5" />
+        </div>
+        <div class="content">
+          <div class="user">
+            <div class="user-top d-flex">
+              <div class="avatar">
+                <img
+                  src="../assets/images/hong-nguyen-J4TEzb9mb3A-unsplash.png"
+                  alt="avatar1"
+                />
+              </div>
+              <div class="user-info ms-4">
+                <p class="user-name mb-3">a****5</p>
+                <ul class="user-rate d-flex">
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-bottom">
+              <div class="comment my-3">
+                <p>真的超級美質感非常好！期待開幕的時候！</p>
+              </div>
+
+              <ul class="comment-img d-flex mb-4">
+                <li class="me-3">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                    alt="奶油燕麥＿詳細1"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                    alt="奶油燕麥＿詳細2"
+                  />
+                </li>
+              </ul>
+
+              <hr />
+            </div>
+          </div>
+
+          <div class="user margin-top-32">
+            <div class="user-top d-flex">
+              <div class="avatar">
+                <img
+                  src="../assets/images/rachel-mcdermott-0fN7Fxv1eWA-unsplash.png"
+                  alt="avatar2"
+                />
+              </div>
+              <div class="user-info ms-4">
+                <p class="user-name mb-3">j****2</p>
+                <ul class="user-rate d-flex">
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-bottom">
+              <div class="comment mt-3 mb-4">
+                <p>貼心迅速的服務 產品優質~</p>
+              </div>
+
+              <hr />
+            </div>
+          </div>
+
+          <div class="user margin-top-32">
+            <div class="user-top d-flex">
+              <div class="avatar">
+                <img
+                  src="../assets/images/ben-den-engelsen-eNyXK17so6A-unsplash.png"
+                  alt="avatar3"
+                />
+              </div>
+              <div class="user-info ms-4">
+                <p class="user-name mb-3">j****2</p>
+                <ul class="user-rate d-flex">
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ3SURBVHgB7ZpNT+pAFIaHloJw+TJEbvwN7nTlTjcm/gD9O/4gty5NdKcbY+LChVtNTCAiH+VyoZTe99wwG0ItbY+dkcyTGEBK23n7zjlnPoQwGAwGg+GnYguNODs7K+DF7nQ6vtAES2hEt9ut7u7uVoVGaOMgco/neVXLsuxisTjVxUXaOIjcI9/r5CItHCTdIz/r5CItHAQhysv/08VFyh0E99i+7zeW/6+Li5Q7CAKEOkUHFyl1UJh7JDq4SKmDvnKPRLWLlDkoyj0S1S5S5qB13CNR6SIlDlrXPRKVLlLioDjukahyUeYOiuseiSoXZe6gJO6RtFqtssiYTAUi98AFJZEQ+i2dQ2RIpgKlcQ/nOeKQiUBBEORoxJ7GPRI6x9HRUZ7OKTKA7SJ0w+fn55brunkE4fx0OnVms1muXC47uVzuW7rFZDIJbNv2CoWCh2v6eD8bj8f+7e3tTDARWyCKAVIE3JA9HA7t7xQhKY7jeBArkOK9vb15CPLzuOKFCnR6elrs9XpWo9FwdBUhKavEe35+nq46NjQGVSoVq1arNebz+S+wtSniEJi9dPL5fIHahnbV9vb2QtsW+gUUne3v7/vo51tig4EJepeXl+Ow7yNj0MHBgVOtVpvIHplkjaygAN9ut7thXUsS2W3e39/nzWZzgnhcgi03QiQSB3H14+npyYs6dq24skkiSXEeHh4ixSHWDrybIFJccYhYmUmKVCqVioj+Wi1bR5FEHCJ2I+kC9Xr9A5WzNhsMoqB73dnZ6cQVh0hU2yDyBygB/oIt3Z1E4tADRSpP9EATF38/QaS04hCpqmOdReIQh0g9fNBRJC5xCJbxlU4icYpDsA1AdRCJWxyCveCj+aLBYNASCkCt0+GcLCPYn/T29vaPKiCjYG/My8uLsnkjOMgRzHzH084LRaBaZr82u0AYzBaFIhD72N3LLhDmeZXFIFy7IJhhbczFxYWFeV5lXYzmzbnXy1gFQi2kTBzJ8fExazfj7g7KVz64MxmrQFhQZE+zceHOZKwC0XKzUAx3JmMVCIuUiQWiKVH8DXGOPyIF3JmMTSDKYEnXzkgUmhLFOMq9vr7uYzGvnVQo7kzG1l8TZrAJxOgvj74Xn/sY+Lqfn58VFJ+xdpZhKZmcPBUMsCl9cnLyf517zcMnr6+vbtSqpmQxQ1DH27WqdMdx+ldXV6m6qoTNQbQVBkVi1GGxhJEsHNWlTVj9fr8RtZGCNnwKJtgEogyGBcWwrxMJswyEot+3Dw8PS1UQJtRoNGIL1GwCUQZbFohm+LBYN7y7uxsLRhbnG4cJheuytYslBlEGu7+//y0/U8quVCoDrjgQxSqhKBNyTL2yKC0zGAmDF/fm5maEmw1ERkhHUaLAKyUL+/Hxke4ptUAsDqIniBrIzlqYVSz2UdNuWv+rjVEGg8FgMBgMBkMq/gGJsXOGOhUQMQAAAABJRU5ErkJggg=="
+                      alt="star-null"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ3SURBVHgB7ZpNT+pAFIaHloJw+TJEbvwN7nTlTjcm/gD9O/4gty5NdKcbY+LChVtNTCAiH+VyoZTe99wwG0ItbY+dkcyTGEBK23n7zjlnPoQwGAwGg+GnYguNODs7K+DF7nQ6vtAES2hEt9ut7u7uVoVGaOMgco/neVXLsuxisTjVxUXaOIjcI9/r5CItHCTdIz/r5CItHAQhysv/08VFyh0E99i+7zeW/6+Li5Q7CAKEOkUHFyl1UJh7JDq4SKmDvnKPRLWLlDkoyj0S1S5S5qB13CNR6SIlDlrXPRKVLlLioDjukahyUeYOiuseiSoXZe6gJO6RtFqtssiYTAUi98AFJZEQ+i2dQ2RIpgKlcQ/nOeKQiUBBEORoxJ7GPRI6x9HRUZ7OKTKA7SJ0w+fn55brunkE4fx0OnVms1muXC47uVzuW7rFZDIJbNv2CoWCh2v6eD8bj8f+7e3tTDARWyCKAVIE3JA9HA7t7xQhKY7jeBArkOK9vb15CPLzuOKFCnR6elrs9XpWo9FwdBUhKavEe35+nq46NjQGVSoVq1arNebz+S+wtSniEJi9dPL5fIHahnbV9vb2QtsW+gUUne3v7/vo51tig4EJepeXl+Ow7yNj0MHBgVOtVpvIHplkjaygAN9ut7thXUsS2W3e39/nzWZzgnhcgi03QiQSB3H14+npyYs6dq24skkiSXEeHh4ixSHWDrybIFJccYhYmUmKVCqVioj+Wi1bR5FEHCJ2I+kC9Xr9A5WzNhsMoqB73dnZ6cQVh0hU2yDyBygB/oIt3Z1E4tADRSpP9EATF38/QaS04hCpqmOdReIQh0g9fNBRJC5xCJbxlU4icYpDsA1AdRCJWxyCveCj+aLBYNASCkCt0+GcLCPYn/T29vaPKiCjYG/My8uLsnkjOMgRzHzH084LRaBaZr82u0AYzBaFIhD72N3LLhDmeZXFIFy7IJhhbczFxYWFeV5lXYzmzbnXy1gFQi2kTBzJ8fExazfj7g7KVz64MxmrQFhQZE+zceHOZKwC0XKzUAx3JmMVCIuUiQWiKVH8DXGOPyIF3JmMTSDKYEnXzkgUmhLFOMq9vr7uYzGvnVQo7kzG1l8TZrAJxOgvj74Xn/sY+Lqfn58VFJ+xdpZhKZmcPBUMsCl9cnLyf517zcMnr6+vbtSqpmQxQ1DH27WqdMdx+ldXV6m6qoTNQbQVBkVi1GGxhJEsHNWlTVj9fr8RtZGCNnwKJtgEogyGBcWwrxMJswyEot+3Dw8PS1UQJtRoNGIL1GwCUQZbFohm+LBYN7y7uxsLRhbnG4cJheuytYslBlEGu7+//y0/U8quVCoDrjgQxSqhKBNyTL2yKC0zGAmDF/fm5maEmw1ERkhHUaLAKyUL+/Hxke4ptUAsDqIniBrIzlqYVSz2UdNuWv+rjVEGg8FgMBgMBkMq/gGJsXOGOhUQMQAAAABJRU5ErkJggg=="
+                      alt="star-null"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-bottom">
+              <div class="comment mt-3 mb-4">
+                <p>等太久了</p>
+              </div>
+
+              <hr />
+            </div>
+          </div>
+
+          <div class="user margin-top-32">
+            <div class="user-top d-flex">
+              <div class="avatar">
+                <img
+                  src="../assets/images/sean-kong-oV1C7MaiZTM-unsplash.png"
+                  alt="avatar4"
+                />
+              </div>
+              <div class="user-info ms-4">
+                <p class="user-name mb-3">s****p</p>
+                <ul class="user-rate d-flex">
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                  <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPMSURBVHgB7ZtfVtNQEIfnhtTnsALTRzlQ2gWo6Q7YAbAEVwDuQFZg3YErsJf2HF+t4tFHywrsu23GmZZUBBLyZ5J7ybnfOZ5GKKV8/O5M7iQAOBwOh8PhEOAqiqIv9A8swgebQHXmx8hHGizBA0vg9ABCBEpZlSJrBHF6kkN/BWdgCVYI2qYnwaIUWSFIoXd892O2pEiBYX5GUbiM1a+HPrf0cDjQWoNBjCdohV5qUmxIkdEEZaUnwXSKjCYoKz0JplNkLEF50pNgMkXGEpQnPQkmU2QkQUXSk2AqRUYSVCQ9CaZS1HiCyqQnwUSKGk9QmfQkdFb3z7jrptEEVUlPgu9h94XWc2iIRhNUJT3b11h5jdaiRhJEO/OAJnN9iNUYBFAeDv4AzKkeLaBmxASxBHoIdkiEiuE5KnoEL1CAfUQIoR4WNAqY0evP6AeZowfXtCTm+1rPQIjCgkhEuJUAECrlhTVLKMuM5C0SeUsPvnZIaFF5qYK+RdERPQQQw6HFEspyT17a6UPW0D5QsXq/PqJXQmgVfRrxcjoi/k8nxpO0J2YuMUrRyVZSS6GVcbI/0R/SP/8I36Ooj5vuE0C74CV21JuOL7OelKtIt1DSgk4VhnkKdu4u1iJJueUwhdp8CyQVksMU2mrwC/M3oI42h6dHYTlMqTPp9ckiJYm+OIQnAP9CV5tRyRwKUnqr8VQkVZHDVNqL2S6pqhym8mbVVkkSchiR3bxtkqTkMJLjDiskScphRAdmpiVJy2HEJ4osya84dy4LXfUYDASHZYz4TLrTsk2tuKDYYA3q0HAPhBEXpGp4k3mJeRAmjPxlH6UiMISqYSQsLwjN1SBUSjxB0m0+oA72GwxCnWxX8nqZaIL8GmpACUIQRFQQWrDVkO5ksjXIYAf79xZkUywqSNVQJAu/B7R4idEaqyKICiueo8IRVEC6k4kJSm5egBIg4oj3UQcT/bZ3qU/puFtWFG+Ub96LCGKCSnUwRM0yelN9ensHzscVRYmlSG6JFSnQJIauakYHU505mrgtipavhpz4gs1C7C8O17fCPPokEgPqnBJzCQW4kTj88XL4eqlg9Ni8SfJ0Q0zQuoOl3QJSUsxd9jbX0bt8UwXE6ixNlEK5JSa21bh6NeQtxn/FkSd8HnWmrLsnqpAhanEwGe+CAFJD+7t7sHXLpq50AQ3wkKidpQr3Pn+6hoqIFOlbHWwthotqU3KYntaj3mTcjRHfJJfFcScWWWYiNWhToFkMXDRx52kah1P9jtL88VnsHdPpQdvuZ3I4HA6Hw+Fw2MRf24XlKMCfuKMAAAAASUVORK5CYII=" alt="star" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-bottom">
+              <div class="comment my-3">
+                <p>質感很好 出貨快速</p>
+              </div>
+
+              <ul class="comment-img d-flex mb-4">
+                <li class="me-3">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                    alt="奶油燕麥＿詳細1"
+                  />
+                </li>
+              </ul>
+
+              <hr />
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="btn border border-black-100 mt-5 mb-7 bold-text">
+              <a href="#">查看所有評價(23)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第五部份 -->
+      <div class="other">
+        <div class="title">
+          <h4 class="bold-text">其他人也看了</h4>
+          <hr class="mb-7" />
+        </div>
+        <div class="row mb-7 position-relative">
+          <div class="col-3">
+            <div class="card">
+              <a href="#">
+                <div class="card-img position-relative">
+                  <img
+                    src="/A-17/assets/婚禮胸花｜人造花胸花-38c6e224.jpg"
+                    class="card-img-top"
+                    alt="婚禮胸花｜人造花胸花"
+                  />
+                  <a
+                    href="#"
+                    class="heart d-flex align-items-center position-absolute"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="rgba(48,48,48,0.5)"
+                    >
+                      <path
+                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                        stroke="#f8f7f6"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <a href="#" class="d-flex">
+                    <img
+                      src="/A-17/assets/nega-81d18053.jpg"
+                      alt="Nega Flower"
+                    />
+                    <div class="content ms-3">
+                      <p class="fs-9 mb-2">Nega Flower</p>
+                      <h5 class="fs-7 mb-1 bold-text">婚禮胸花｜人造花胸花</h5>
+                      <p class="card-text bold-text">NT$399</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <a href="#">
+                <div class="card-img position-relative">
+                  <img
+                    src="/A-17/assets/美拉德永生花束-01ea8f46.jpg"
+                    class="card-img-top"
+                    alt="美拉德永生花束"
+                  />
+                  <a
+                    href="#"
+                    class="heart d-flex align-items-center position-absolute"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="rgba(48,48,48,0.5)"
+                    >
+                      <path
+                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                        stroke="#f8f7f6"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="d-flex">
+                    <img
+                      src="/A-17/assets/nega-81d18053.jpg"
+                      alt="Nega Flower"
+                    />
+                    <div class="content ms-3">
+                      <p class="fs-9 mb-2">Nega Flower</p>
+                      <h5 class="fs-7 mb-1 bold-text">美拉德永生花束</h5>
+                      <p class="card-text bold-text">NT$1,500</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <a href="#">
+                <div class="card-img position-relative">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                    class="card-img-top"
+                    alt="開幕花禮 | 奶油燕麥盆花"
+                  />
+                  <a
+                    href="#"
+                    class="heart d-flex align-items-center position-absolute"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="rgba(48,48,48,0.5)"
+                    >
+                      <path
+                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                        stroke="#f8f7f6"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <a href="#" class="d-flex">
+                    <img
+                      src="/A-17/assets/nega-81d18053.jpg"
+                      alt="Nega Flower"
+                    />
+                    <div class="content ms-3">
+                      <p class="fs-9 mb-2">Nega Flower</p>
+                      <h5 class="fs-7 mb-1 bold-text">
+                        開幕花禮 | 奶油燕麥盆花
+                      </h5>
+                      <p class="card-text bold-text">NT$1,680</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <a href="#">
+                <div class="card-img position-relative">
+                  <img
+                    src="/A-17/assets/鈔票花束｜奶茶色-d62b4b15.jpg"
+                    class="card-img-top"
+                    alt="鈔票花束｜奶茶色"
+                  />
+                  <a
+                    href="#"
+                    class="heart d-flex align-items-center position-absolute"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="rgba(48,48,48,0.5)"
+                    >
+                      <path
+                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                        stroke="#f8f7f6"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <a href="#" class="d-flex">
+                    <img
+                      src="/A-17/assets/nega-81d18053.jpg"
+                      alt="Nega Flower"
+                    />
+                    <div class="content ms-3">
+                      <p class="fs-9 mb-2">Nega Flower</p>
+                      <h5 class="fs-7 mb-1 bold-text">鈔票花束｜奶茶色</h5>
+                      <p class="card-text bold-text">NT$4,500</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-white-100 d-flex align-items-center position-absolute top-50 translate-middle"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFOSURBVHgB7dqxccIADEZhkaziPitQuswGySZxJsgIuWzhMmwAvQtGQbozdxRAh/TreN+dz+DylZLMAAAAAAAA8ExerZlxHD+HYXhbluVgCVoF8jiTv378efdIx4xIL9bEGufLkrUIdCXONM/znyXYmLgbcb4tiXSg6jhBNpBCnCAZSCVOkAukFCdIBVKLE2QCKcYJEoFU44TyQMpxQmkg9TihLFCHOKEkUJc4IT1QpzghNVC3OCEtUMc4ISVQjEn99XvxqUWcUDUwk59DnaXMpH12vPcZcvzcrp+2/n/j3/9NXNrQ3mPsOkZK3Wp0jJS+9ukWqWQv1ilS2eKwS6TSzWqHSOWrZ/VIErt55UgyxwuqkaSuOxQjyZ2/qEWSvA9SiiR7QKUSSfrCTCGS/AledaQWN4o3InGjeGkd0U6G+2K+7c+HAQAAAAAAAA9wAmNG8iPmrDTPAAAAAElFTkSuQmCC"
+              alt="chevron-left"
+            />
+          </a>
+          <a
+            href="#"
+            class="btn btn-white-100 d-flex align-items-center position-absolute top-50 start-100 translate-middle"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgB7dqxjcJQEITh5a4V59cCocPrADoBKkF04RA6gNwBpbAjgURCAMHujJhPsmy98PfKwcoRZmZmZmZmZmb2TX6jyDiO62EY/uZ5voSQkkCIk7d9Xv8ZaZGRjiHiJ+ptMtg2RJRMUE7MOScHj8v70VJlksq+QRnjpBipLBAoRioNBGqRygOBUqSWQKASqS0QKERqDQTskdoDAXMkikDAGokmEDBGogoEbJHoAgFTJMpAwBKJNhAwRKIOBN2R6APBi0jXivVtx0bxU4toIBHovqLdPB1tp2k6RIGWt/KOF3F2UYQ6UHccoA3EEAcoA7HEAbpATHGAKhBbHKAJxBgHKAKxxoH2QMxxoDUQexxoC6QQB1oCqcSB8kBKcaA0kFocKAukGAdKAj39o/ggEQc6FmYycUphivJahZmZmZmZmZmZGbEbeS/xIw03D9IAAAAASUVORK5CYII="
+              alt="chevron-right"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <div class=" mobileLogoSlogan d-flex flex-column ">
+                    <a href="javascript:;" class="logo">
+                        <img src="../../assets/images/header_footer/footer_logo.png" alt="" class="">
+                    </a>
+                    <h6>
+                        手工的溫暖，品牌的堅持
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="footerBorder">
+            <div class="container  ">
+                <div class="logoSlogan d-flex flex-column me-5 wwe">
+                    <a href="javascript:;" class="logo">
+                        <img src="/A-17/assets/footer_logo-c9cbd273.png" alt="" class="">
+                    </a>
+                    <p>
+                        手工的溫暖，品牌的堅持
+                    </p>
+                </div>
+                <div class="row">
+                    <div class=" bt-40 col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column">
+                        <h6 class="h6 my-3">網站地圖</h6>
+                        <div class="forMobile">
+                            <a href="javascript:;">商品總覽</a>
+                            <a href="javascript:;">最新消息</a>
+                            <a href="javascript:;">關於拾柒</a>
+                        </div>
+                    </div>
+                    <div class="bt-40 col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column">
+                        <h6 class="h6 my-3">幫助/政策</h6>
+                        <div class="forMobile">
+                        <a href="javascript:;">服務條款</a>
+                        <a href="javascript:;">隱私政策</a>
+                        <a href="javascript:;">退貨政策</a>
+                        <a href="javascript:;">防詐騙宣導</a>
+                    </div>
+                    </div>
+                    <div class="bt-40 service col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column flex-wrap">
+                        <h6 class="h6 my-3">客戶服務</h6>
+                        <div class="forMobile">
+                        <a href="javascript:;">常見問題</a>
+                        <a href="javascript:;">退換貨須知</a>
+                        <a href="javascript:;">訂貨進度查詢</a>
+                        <a href="javascript:;">折價卷說明</a>
+                        <a href="javascript:;">品牌合作窗口</a>
+                    </div>
+                    </div>
+                    <div class="  col-xl-3 col-lg-3 col-md-12 col-sm-12 ">
+                        <h6 class=" h6 my-4 ">聯絡我們</h6>
+                        <div class=" footerIcon  d-flex gap-4 my-4">
+                            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHHSURBVHgBtVXNdYJAEB5W3tObdhBSQUwH5ODPLVqBSwWhA0kFeVYgHSQ56S1bgiWQCuSoBzXf6GJ8BFwI+L23LOzMfDM7M7sQ3RhWemE4HDpUAcvlMsp0AGL3cDi8W5bVoWqIMDw4UvwhLgTzGsgZDgeafBwd6LQ4VBM40CTVtkkZ0cQw+MC8wvgWQsSYH7D2iPnZtGvbEMlss9kESqk4JVL80FFKjOl/HHiLxSK8Ik86JoAjnudZOiLH9hXGIRUE6yJdsyxZ3g7CXq/XtW1bYhd+v98fIfdtrEukbNxqtbhLFJ3So+DA2263AdZfyLQDLiZvvdFodPDePioJwYW8x3BB8kanjuPvSDsiXafI6KDAWXAudONUcLHRARO4rtvZ7XasLAeDwVobr3l3ePU4UibDGOF9zHLuKDjspskya4A0+EhTQH/vqqSQT3r2L2STLK68LpoiogkVhNYNyjhghDCcUjHyME9uuir4EEnMar/ff6KbVsl1zHVqNpscgH+NQJAZDoYEOfe+pFPULsi/UFTfZGy87FK4A3mIeQLyQgZlHUgqiXMY3O81/XAYEWrFJ/23BiDnAxNRRejT7J150wp1//Rvjh/X/rJLTLbV+gAAAABJRU5ErkJggg==" alt=""></a>
+                            <a href="javascript:;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF3SURBVHgB7VXLUYNQFL0wzMAyVmDoQCsQVsBKOgArMB2IHZAKJBU4roBhAVYQrSBagWzZgOfKIzo6CTCwcnJmLvfxPud+HxCd0AOpGxiGsVBV1ZMk6YwmoGmaD3A8JUnyxu8yP2zbXmqatsXCBU0EOC6hcnaY3xVh1cVCAas3NAPgcIRs+BiGirC6oBkBvhLqOwIBH5ZZ33f5GwtOC1IdIiMe8/Cc3C1icg31DslhyKORsCzrFmnZsfeQdTe/N8AL8DzA0IQEjuM8cvH7iHkPJMd5t65rM47jFZwt/xjowOmB6Nj0Ctni8B0d8Roqxz5uSzPLspffe+RDhzka0XI6jOx+RoOxAXJua5cjTtM0PMSj0BGIYnPxfWprU0BL8Pga5Cusb6gHMg0AiCJqa/PMaauqSh9CzlBoIEQ0EY3EoAim4J8YEBfjnObDsrtsX0VGV0T8uUYbPlD7uZhEDrlCGwf8sv/h8EUS/T35hwOHN0VRlHTCEHwCWtGhUzMpVBcAAAAASUVORK5CYII=" alt=""></a>
+                            <a href="javascript:;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF5SURBVHgB7VTNdYMwDBYkA3QEOkHJBIUDPI7ZgHaStpMk3aC58XOoO0HoBmzQTgD9lBiecYyB9JrvPT1btiV9smUR3TABZ+pAkiQBhhTCo8drbdtWjuNUTdMciqL4uCoAHHsYdtKxDTUkzLKsnh0giiLfdd1PsLyjGUBGv8gmLMuymgzAzGFwtDgX2Ptmp5AHzLddEMw3eiZrgwMb8zc4eNUItSemZxu+0lDdd1UljmNm49EIc925AYEsih6DDHDvW4vxl0oEjHcjmXLFid6nusN3SjMAIr7lGoPBWVWBkU//hzfwqSrdg2ngGheG9VM5r1aro76O871fV9uraQGQsaev8S9Xdb1M+SF1o1RWhugykTrLI10GtQbY07kKVDwpcyHHAPJCBiCDQW8aXJFkKOh61HmeH0YDSDzzt6eFkDahvn4RgHsJN64lQbpmZ+qopgyIuyI3LppXVdz8NqZOyliPWUk297ItpJBaYfwDfY/p+9gfuWE2/gDTfJ+9aOKEkAAAAABJRU5ErkJggg=="
+                                    alt=""></a>
+                            <a href="javascript:;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHkSURBVHgB7VXLbcJAEF2bCHGLO8BUEEqwL8ANp4K4A0gFIRUAFUAqCD7xubAdQCoAOjA3hATkDRqizbJrLM48yRrbM/Pm49mxEA/cgGNT1Gq1qFAoBKfT6RmPvtHZcVKIDWwWk8nkK1eARqPhQ8wV0rXIhmoXItA/+yeDwxwZecgu3u12iZQyFTeApGL4dOFDiVVUnaMbQgxwxbaSNXsfpF2Q97mSAe6j6XSaGCuAsgoHYSIHGX2Pl3NWjvMDG4lbehdBpqj2vVQqDVzXDfFsDgCUhdbzIAg8OH7TLQVXAg6JtFgspvv9XlIr8W7NQyGMAUDgaQEFyHtM3odz73A4eJguyvoDOh+VhJqLbw2gg9oC8YbrczwedxTVsl6v0yC0yIbbZYQrMkDfhCSyHuk6kPdUm7sCXICWXI0qtSqHa3YAZLkkiSxbhqBN1caGzG9AvUWPJUjakCmyTqgaDtjGNczqv6mCjW6AUXyFoHPRAfkCckUBISWNqYFzK2wVILMUzj7N/mVFsIxp7g0HTQed7CQrALWjhfluctZ/YEIT6Rm8Zohjob43bdMVL7t2nn3EJz3iZZfCp2KtgBHyVhxSW0TOdQ0fstNPtf2HQyXDqXo8HsumFcJYQ7fFdMnZbDYSD9yDX63y8EBAmnH6AAAAAElFTkSuQmCC"
+                                    alt=""></a>
+                        </div>
+                        <div class="footerMail">
+                        <p>seventeen17@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyrightBorder">
+        <div class="container">
+            <div class="copyright d-flex justify-content-center ">
+                <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIeSURBVHgBtVVBbsJADNwkSHDkB00FiN4KL2g4IOBU8YKSW2/0Bw0/oC+gvAB6Q+LQ9AUNd6SGF5SegAOiY+SFdLWhiRCWIm9s79jetb1CXJiMJEb1er1iWVYFS5tF4Xa7DabTafDf3lgHjuPkc7lcd7fbPRmGsYTIx7cgHWS35AzyPNb9zWYz9H1/mdhBs9l0wAYMOpxMJn6MnQ3m4bvD5+rsDM2mB97kxgGfCMjDnmGsg4hhDYahSEGczbsamCkXdOYM7qYFJ+I9LmEw1p4suSiXy4+4tDUMX4Q+QqdQKNyXSqVWsVgU8/k8VG1IBl01k8ncYO2TLCOVAO+C1dRNXE0jWpumOSOOyhm0Wq1gtVq5mup5hZ7svYOE6rzRaHwKDUE+QvSeJiOPC0KX7RdhHjLgJlpoDB2wCo6treog80Q8fTBmIC/Zph+NoYOjexPpKWTMYxXpCGe5FGeSGfF4pSoRfcBjIRXxnvDggAYXmKMayobBXTyrOpLFXTLIZsxjJ6NavhFxWx0PVKbZbHYAXUXeh8xqvV631TKVHQ2ca/qP9gE1GEX0xwEDtKmiAEwfBTI+Mac82Bya1YhGioaiXkg85FSSswyZVWVmphLpfpZwmmnBbcGzLHpsVtSIZ8kPGYLPdPPmROQ0HnrIfhzVJXlwenHTle06Is2DI4mrp0NDkBoOgy4En7GaeoYuPE/FgTPvp3oyVTrn0b84/QKUMRl6JvbTiwAAAABJRU5ErkJggg==" alt=""></p>
+                <p>seventeen 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+  </body>
+</html>
