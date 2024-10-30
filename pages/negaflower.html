@@ -10,15 +10,14 @@
 
 <body>
 
-    <body>
-        <%- include('./layout/header'); -%>
+    <%- include('./layout/header'); -%>
             <div class="banner">
                 <img class="main-banner" src="/assets/images/negaflower/store01banner.png" alt="negaflower十月新品上市">
                 <img class="main-banner-m" src="/assets/images/negaflower/store01banner_m.png" alt="negaflower十月新品上市">
             </div>
 
             <div class="brand-name">
-                <div class="container p12">
+                <div class="container text-align-center p12">
                     <img class="brand-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
                     <h1 class="brand-title branding-h3 main-text">Nega Flower 品牌館</h1>
                     <p class="brand-story branding-h4 main-text">Nega Flower
@@ -51,7 +50,7 @@
             </div>
 
             <div class="product-category p-12">
-                <div class="container">
+                <div class="container text-align-center">
                     <h2 class="product-category-title h4">Nega Flower產品</h2>
                     <hr class="product-category-title-hr">
                     <div class="product-category-img d-flex justify-content-center m12">
@@ -227,6 +226,7 @@
 
                     </div>
                 </div>
+            </div>
                 <%- include('./layout/footer'); -%>
                     <script>
 
@@ -295,9 +295,9 @@
                                 const isMobile = window.innerWidth <= 768;
                                 banners.forEach((banner, index) => {
                                     if (isMobile) {
-                                        banner.src = `/images/negaflower/negaflower_ad0${index + 1}_m.png`;
+                                        banner.src = `assets/images/negaflower/negaflower_ad0${index + 1}_m.png`;
                                     } else {
-                                        banner.src = `/images/negaflower/negaflower_ad0${index + 1}.png`;
+                                        banner.src = `assets/images/negaflower/negaflower_ad0${index + 1}.png`;
                                     }
                                 });
                             }
