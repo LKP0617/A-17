@@ -3,6 +3,7 @@ import './assets/scss/layout/standard.scss';/*讓我放最下面覆蓋 */
 
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import 'brand01.js';
 
 
 /*cliff*/
