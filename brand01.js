@@ -17,7 +17,31 @@ document.addEventListener('DOMContentLoaded', function () {
     const dots = document.querySelectorAll('.dot');
     let currentIndex = 0; // 當前顯示的圖片索引
 
-    // 初始化顯示第一張圖片和指示點
+    // 初始化加載圖片（根據設備類型）
+    function loadImages() {
+        const isMobile = window.innerWidth <= 768;
+        banners.forEach((banner, index) => {
+            const imgSrc = isMobile
+                ? `/A-17/assets/images/negaflower/negaflower_ad0${index + 1}_m.png`
+                : `/A-17/assets/images/negaflower/negaflower_ad0${index + 1}.png`;
+
+            // 設置圖片 src
+            banner.src = imgSrc;
+
+            // 處理加載錯誤
+            banner.onerror = () => {
+                console.error(`圖片加載失敗: ${imgSrc}`);
+                banner.style.display = 'none'; // 隱藏加載失敗的圖片
+            };
+
+            // 加載成功時顯示圖片
+            banner.onload = () => {
+                banner.style.display = 'block'; // 顯示圖片
+            };
+        });
+    }
+
+    // 顯示指定索引的圖片和指示點
     function showBanner(index) {
         banners.forEach((banner, i) => {
             banner.classList.toggle('active', i === index);
@@ -27,21 +51,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // 顯示指定索引的圖片
+    // 更新當前圖片
     function updateBanner(index) {
-        currentIndex = (index + banners.length) % banners.length; // 確保索引在範圍內循環
+        currentIndex = (index + banners.length) % banners.length; // 確保索引循環
         showBanner(currentIndex);
     }
 
     // 左箭頭點擊事件
-    leftArrow.addEventListener('click', () => {
-        updateBanner(currentIndex - 1);
-    });
+    if (leftArrow) {
+        leftArrow.addEventListener('click', () => {
+            updateBanner(currentIndex - 1);
+        });
+    }
 
     // 右箭頭點擊事件
-    rightArrow.addEventListener('click', () => {
-        updateBanner(currentIndex + 1);
-    });
+    if (rightArrow) {
+        rightArrow.addEventListener('click', () => {
+            updateBanner(currentIndex + 1);
+        });
+    }
 
     // 輪播指示點點擊事件
     dots.forEach((dot, i) => {
@@ -50,39 +78,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 初始化顯示第一張圖片
-    showBanner(currentIndex);
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const banners = document.querySelectorAll('.ad-banner');
-    let currentIndex = 0; // 當前顯示的圖片索引
-
-    // 檢測是否為手機版，並加載對應的圖片
-    function loadImages() {
-        const isMobile = window.innerWidth <= 768;
-        banners.forEach((banner, index) => {
-            if (isMobile) {
-                banner.src = `/A-17/assets/images/negaflower/negaflower_ad0${index + 1}_m.png`;
-            } else {
-                banner.src = `/A-17/assets/images/negaflower/negaflower_ad0${index + 1}.png`;
-            }
-        });
-    }
-
-    // 初始化圖片
-    loadImages();
-
     // 當視窗大小改變時，動態切換圖片
     window.addEventListener('resize', loadImages);
 
-    // 初始化顯示第一張圖片和指示點
-    function showBanner(index) {
-        banners.forEach((banner, i) => {
-            banner.classList.toggle('active', i === index);
-        });
-    }
-
-    // 顯示第一張圖片
+    // 初始化圖片和顯示第一張圖片
+    loadImages();
     showBanner(currentIndex);
 });
