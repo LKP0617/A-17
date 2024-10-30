@@ -22,8 +22,25 @@ document.addEventListener('DOMContentLoaded', function () {
         const isMobile = window.innerWidth <= 768;
         banners.forEach((banner, index) => {
             const imgSrc = isMobile
-                ? `/A-17/assets/images/negaflower/negaflower_ad0${index + 1}_m.png`
-                : `/A-17/assets/images/negaflower/negaflower_ad0${index + 1}.png`;
+                ? new URL(`./assets/images/negaflower/negaflower_ad0${index + 1}_m.png`, import.meta.url).href
+                : new URL(`./assets/images/negaflower/negaflower_ad0${index + 1}.png`, import.meta.url).href;
+    
+            // 設置圖片 src
+            banner.src = imgSrc;
+    
+            // 圖片加載錯誤處理
+            banner.onerror = () => {
+                console.error(`圖片加載失敗: ${imgSrc}`);
+                banner.style.display = 'none'; // 隱藏加載失敗的圖片
+            };
+    
+            // 圖片加載成功時顯示
+            banner.onload = () => {
+                banner.style.display = 'block';
+            };
+        });
+    }
+    
 
             // 設置圖片 src
             banner.src = imgSrc;
