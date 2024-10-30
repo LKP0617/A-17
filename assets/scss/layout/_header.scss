@@ -13,6 +13,34 @@ header {
   width: 100%;
   margin: 0 auto;
 } */
+/*彈出視窗按鈕*/
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal-ogo {
+    margin: 20px 0;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.btn-google {
+    background-color: #db4a39;
+    color: #fff;
+}
+
+/* 左對齊樣式 */
+.form-group label {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+}
 
 /*pc*/
 @media (min-width:992px) {
@@ -110,7 +138,7 @@ header {
         text-align: center;
     }
 
-    .secondaryNav .list li a:hover{
+    .secondaryNav .list li a:hover {
         color: #4848484D;
     }
 }
@@ -161,7 +189,9 @@ header {
     .menuBTN:active {
         background: #F5E9CB;
     }
-
+    .ortherModal{
+        z-index: 9999;
+    }
 
     .navBAR {
         width: 100%;
@@ -169,7 +199,7 @@ header {
         position: absolute;
         top: -100%;
         background-color: #FFFFFF;
-        z-index: 9999;
+        z-index: 9998;
     }
 
     .mobileList {
@@ -230,9 +260,9 @@ header {
 
     .mobile-list-btn a {
         display: flex;
-        justify-content: center;    
+        justify-content: center;
         align-items: center;
-        height:45px;
+        height: 45px;
         width: 93%;
         text-align: center;
         border-radius: 100px;
@@ -242,6 +272,7 @@ header {
         color: #484848;
         background: #F6F2E8;
     }
+
     /* navBAR 滑入動畫 */
     .navBAR-RUN-IN {
         animation: slider-in 1s;

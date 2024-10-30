@@ -27,26 +27,70 @@
                     </a>
                 </div>
                 <ul class="pcNav">
-                    <li><a href="#" class="navIcon"><img src="../assets/images/header_footer/search.png" alt=""></a></li>
-                    <li><a href="#" class="navIcon"><img src="../assets/images/header_footer/shopping-cart.png" alt=""></a></li>
-                    <li><a href="#" class="logInBtn">註冊/登入</a></li>
+                    <li><a href="#" class="navIcon"><img src="../assets/images/header_footer/search.png" alt=""></a>
+                    </li>
+                    <li><a href="#" class="navIcon"><img src="../assets/images/header_footer/shopping-cart.png"
+                                alt=""></a></li>
+                    <li><a href="#" class="logInBtn" type="button" data-toggle="modal" data-target="#loginModal">註冊/登入</a></li>
                 </ul>
                 <div class="mobileNav">
-                <ul class="mobileNav-section">
-                    <li><a href="#">商品總覽</a></li>
-                    <li><a href="#">嚴選品牌</a></li>
-                    <li><a href="#">最新消息</a></li>
-                    <li><a href="#">關於拾柒</a></li>
-                    <li><a href="#">Q&A</a></li>
-                </ul>
-            </div>
-                <div class="mobile-list-btn">
+                    <ul class="mobileNav-section">
+                        <li><a href="#">商品總覽</a></li>
+                        <li><a href="#">嚴選品牌</a></li>
+                        <li><a href="#">最新消息</a></li>
+                        <li><a href="#">關於拾柒</a></li>
+                        <li><a href="#">Q&A</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-list-btn" type="button" data-toggle="modal" data-target="#loginModal">
                     <a href="#">註冊/登入</a>
                 </div>
             </div>
         </div>
     </div>
 </header>
+<!-- 彈出視窗 -->
+<div class="modal fade ortherModal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- 關閉按鈕 -->
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- 彈出視窗內容 -->
+            <div class="modal-body">
+                <!-- Logo -->
+                <img src="logo.png" alt="拾柒" class="modal-logo" width="80">
+                <h5>登入會員</h5>
+                <form>
+                    <!-- 帳號欄位 -->
+                    <div class="form-group">
+                        <label for="username">登入拾柒帳號</label>
+                        <input type="text" class="form-control" id="username" placeholder="輸入帳號">
+                    </div>
+                    <!-- 密碼欄位 -->
+                    <div class="form-group">
+                        <label for="password">輸入密碼</label>
+                        <input type="password" class="form-control" id="password" placeholder="輸入密碼">
+                    </div>
+                    <!-- 登入按鈕 -->
+                    <button type="submit" class="btn btn-dark btn-block">登入拾柒</button>
+                </form>
+                <!-- 額外選項 -->
+                <div class="mt-3">
+                    <a href="#">忘記密碼？</a><br>
+                    還不是會員？<a href="#">立即加入會員</a>
+                </div>
+                <!-- Facebook 登入按鈕 -->
+                <button class="btn btn-facebook btn-block">使用 Facebook 登入</button>
+                <!-- Google 登入按鈕 -->
+                <button class="btn btn-google btn-block">使用 Google 登入</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class=" secondaryNav ">
     <ul class="list ">
@@ -57,3 +101,7 @@
         <li><a href="#" class="h6">Q&A</a></li>
     </ul>
 </div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
