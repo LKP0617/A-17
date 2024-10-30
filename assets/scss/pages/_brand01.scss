@@ -305,7 +305,7 @@ a{
 /* 左箭頭默認圖片 */
 .ad-banner-leftarrow {
     left: 60px;
-    background-image: url('assets/images/arrow-left.png');
+    background-image: url('/assets/images/arrow-left.png');
     width: 60px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -313,9 +313,9 @@ a{
 }
 
 /* 右箭頭默認圖片 */
-.ad-banner-rightarrow {
+.ad-banner-rightarrow 
     right: 60px;
-    background-image: url('assets/images/arrow-right.png');
+    background-image: url('/assets/images/arrow-right.png');
     width: 60px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -324,12 +324,12 @@ a{
 
 /* 左箭頭 hover 狀態 */
 .ad-banner-leftarrow:hover {
-    background-image: url('assets/images/arrow-left-h.png'); /* 替換為 hover 狀態的圖片 */
+    background-image: url('/assets/images/arrow-left-h.png'); /* 替換為 hover 狀態的圖片 */
 }
 
 /* 右箭頭 hover 狀態 */
 .ad-banner-rightarrow:hover {
-    background-image: url('assets/images/arrow-right-h.png'); /* 替換為 hover 狀態的圖片 */
+    background-image: url('/assets/images/arrow-right-h.png'); /* 替換為 hover 狀態的圖片 */
 }
 
 .banner-dot {
@@ -521,7 +521,7 @@ a{
     cursor: pointer;
 }
 .product-card-img-heart.active {
-    content: url(assets/images/heart-red.png); /* 切換成紅色愛心 */
+    content: url(/assets/images/heart-red.png); /* 切換成紅色愛心 */
     cursor: pointer;
 }
 
