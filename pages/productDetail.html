@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>拾柒商品詳情頁</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container">
+      <!-- 第一部分 -->
+      <!-- 麵包屑 -->
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="mt-3 mt-md-7"
+      >
+        <ol class="breadcrumb bold-text">
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
+          <li class="breadcrumb-item"><a href="#">商品總覽</a></li>
+          <li class="breadcrumb-item active" aria-current="page">花藝</li>
+        </ol>
+      </nav>
+
+      <!-- 商品展示圖片 -->
+
+      <div class="row info">
+        <div class="col-12 col-md-6">
+          <div
+            id="carouselControls"
+            class="carousel slide mb-4"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg"
+                  class="d-block w-100"
+                  alt="開幕花禮｜奶油燕麥盆花"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                  class="d-block w-100"
+                  alt="奶油燕麥＿詳細1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                  class="d-block w-100"
+                  alt="奶油燕麥＿詳細2"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="info-bottom-item d-md-none d-block .info-bottom-sm-img my-4 mt-md-6"
+          >
+            <ul class="img-detail d-flex justify-content-center">
+              <li>
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                  alt="奶油燕麥＿詳細1"
+                />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                  alt="奶油燕麥＿詳細2"
+                />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/negaflower/奶油燕麥＿詳細3.png"
+                  alt="奶油燕麥＿詳細3"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h1 class="fs-4 mb-3 bold-text">開幕花禮 | 奶油燕麥盆花</h1>
+          <p class="mb-5">
+            奶油燕麥盆花，結合柔和奶油色與天然燕麥材質傳遞低調優雅的開幕祝福，營造溫馨氛圍
+            #開幕花禮 #花藝 #盆花
+          </p>
+          <p class="fs-3 mb-5 bold-text">NT$1,680</p>
+
+          <select class="form-select mb-5" aria-label="Default select example">
+            <option selected>請選擇商品規格</option>
+            <option value="1">奶油燕麥</option>
+          </select>
+
+          <select class="form-select mb-5" aria-label="Default select example">
+            <option selected>數量</option>
+            <option value="1">數量：1</option>
+            <option value="2">數量：2</option>
+            <option value="3">數量：3</option>
+            <option value="3">數量：4</option>
+            <option value="3">數量：5</option>
+          </select>
+
+          <div class="info-btn d-flex row gx-3 mb-5">
+            <div class="col-6">
+              <div
+                class="buy-btn btn btn-primary-100 d-flex justify-content-center align-items-center fs-8 bold-text"
+              >
+                <img
+                  src="../assets/images/icons/shopping-cart.png"
+                  class="me-2"
+                  alt="shopping-cart"
+                />加入購物車
+              </div>
+            </div>
+            <div class="col-6">
+              <div
+                class="buy-btn btn btn-secondary-100 d-flex justify-content-center align-items-center fs-8 bold-text"
+              >
+                <img
+                  src="../assets/images/icons//shopping-bag.png"
+                  class="me-2"
+                  alt="shopping-bag"
+                />立即購買
+              </div>
+            </div>
+          </div>
+
+          <div class="collection row">
+            <div class="col">
+              <div
+                class="collection-btn btn btn-white-100 border border-black-100 d-flex justify-content-center align-items-center fs-8 bold-text"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="#ffffff"
+                  class="me-2"
+                >
+                  <path
+                    d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                    stroke="#484848"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                加入收藏清單
+              </div>
+            </div>
+          </div>
+
+          <div class="share-row row">
+            <div
+              class="d-flex justify-content-center align-items-center position-absolute d-md-none"
+            >
+              <p class="me-md-4 bold-text fs-6">分享到:</p>
+              <ul class="share-icon d-flex">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="../assets/images/icons/line (green).png"
+                      alt="line"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="../assets/images/icons/Instagram.png"
+                      alt="Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="../assets/images/icons/facebook 1.png"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/icons/share-2.png" alt="share" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-bottom position-relative">
+        <div class="info-bottom-item info-bottom-img d-none d-md-block mt-6">
+          <ul class="img-detail d-flex justify-content-center">
+            <li>
+              <img
+                src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                alt="奶油燕麥＿詳細1"
+              />
+            </li>
+            <li>
+              <img
+                src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                alt="奶油燕麥＿詳細2"
+              />
+            </li>
+            <li>
+              <img
+                src="../assets/images/negaflower/奶油燕麥＿詳細3.png"
+                alt="奶油燕麥＿詳細3"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="info-bottom-item d-md-flex d-none justify-content-end align-items-end position-absolute bottom-0 end-0"
+        >
+          <p class="me-4 bold-text">分享到:</p>
+          <ul class="share-icon d-flex">
+            <li>
+              <a href="#"
+                ><img src="../assets/images/icons/line (green).png" alt="line"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../assets/images/icons/Instagram.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../assets/images/icons/facebook 1.png"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/share-2.png" alt="share" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 第二部分 -->
+      <div class="container add border my-5 my-md-7">
+        <div class="row bg-grey-100 py-4 fs-6">
+          <div class="col">
+            <div class="Title text-center bg-grey-100 bold-text">
+              <p>可加購商品</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- bootstrap -->
+        <div id="carouselSwiper" class="carousel slide d-block d-md-none">
+          <div class="carousel-inner mt-5 mb-4 d-flex">
+            <div class="carousel-item active">
+              <img
+                src="../assets/images/透明提袋.png"
+                class="card-img-top border-radius-none mb-3"
+                alt="透明提袋"
+              />
+              <div class="d-flex flex-column align-items-center">
+                <p class="card-title mb-3 fs-9 fs-md-7">透明提袋50cm</p>
+                <div class="fs-7 fs-md-6 mb-3">NT$150</div>
+              </div>
+
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option selected>數量：1</option>
+                <option value="1">數量：2</option>
+                <option value="2">數量：3</option>
+                <option value="3">數量：4</option>
+              </select>
+
+              <a
+                href="#"
+                class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+              >
+                <img
+                  src="../assets/images/icons/shopping-cart.png"
+                  class="add-icon me-2"
+                  alt="shopping-cart"
+                />加入購物車</a
+              >
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/剪刀.png"
+                class="card-img-top border-radius-none mb-3"
+                alt="剪刀"
+              />
+              <div class="d-flex flex-column align-items-center">
+                <p class="card-title mb-3 fs-9 fs-md-7">花卉剪刀</p>
+                <div class="fs-7 fs-md-6 mb-3">NT$800</div>
+              </div>
+
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option selected>數量：1</option>
+                <option value="1">數量：2</option>
+                <option value="2">數量：3</option>
+                <option value="3">數量：4</option>
+              </select>
+
+              <a
+                href="#"
+                class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+              >
+                <img
+                  src="../assets/images/icons/shopping-cart.png"
+                  class="add-icon me-2"
+                  alt="shopping-cart"
+                />加入購物車</a
+              >
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/噴罐.png"
+                class="card-img-top border-radius-none mb-3"
+                alt="噴罐"
+              />
+              <div class="d-flex flex-column align-items-center">
+                <p class="card-title mb-3 fs-9 fs-md-7">迷你噴壺</p>
+                <div class="fs-7 fs-md-6 mb-3">NT$160</div>
+              </div>
+
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option selected>數量：1</option>
+                <option value="1">數量：2</option>
+                <option value="2">數量：3</option>
+                <option value="3">數量：4</option>
+              </select>
+
+              <a
+                href="#"
+                class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+              >
+                <img
+                  src="../assets/images/icons/shopping-cart.png"
+                  class="add-icon me-2"
+                  alt="shopping-cart"
+                />加入購物車</a
+              >
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/images/卡片.png"
+                class="card-img-top border-radius-none mb-3"
+                alt="手工花藝卡片"
+              />
+              <div class="d-flex flex-column align-items-center">
+                <p class="card-title mb-3 fs-9 fs-md-7">手工花藝卡片</p>
+                <div class="fs-7 fs-md-6 mb-3">NT$300</div>
+              </div>
+
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option selected>數量：1</option>
+                <option value="1">數量：2</option>
+                <option value="2">數量：3</option>
+                <option value="3">數量：4</option>
+              </select>
+
+              <a
+                href="#"
+                class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+              >
+                <img
+                  src="../assets/images/icons/shopping-cart.png"
+                  class="add-icon me-2"
+                  alt="shopping-cart"
+                />加入購物車</a
+              >
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselSwiper"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselSwiper"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="add-content d-none d-md-flex justify-content-center">
+          <div class="card border-0 my-md-5 bold-text">
+            <img
+              src="../assets/images/透明提袋.png"
+              class="card-img-top border-radius-none mb-3"
+              alt="透明提袋"
+            />
+            <p class="card-title mb-3">透明提袋50cm</p>
+            <div class="fs-6 mb-3">NT$150</div>
+
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>數量：1</option>
+              <option value="1">數量：2</option>
+              <option value="2">數量：3</option>
+              <option value="3">數量：4</option>
+            </select>
+
+            <a
+              href="#"
+              class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+            >
+              <img
+                src="../assets/images/icons/shopping-cart.png"
+                class="me-md-2"
+                alt="shopping-cart"
+              />加入購物車</a
+            >
+          </div>
+
+          <div class="card border-0 my-md-5 bold-text">
+            <img
+              src="../assets/images/剪刀.png"
+              class="card-img-top border-radius-none mb-3"
+              alt="剪刀"
+            />
+            <p class="card-title mb-3">花卉剪刀</p>
+            <div class="fs-6 mb-3">NT$800</div>
+
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>數量：1</option>
+              <option value="1">數量：2</option>
+              <option value="2">數量：3</option>
+              <option value="3">數量：4</option>
+            </select>
+
+            <a
+              href="#"
+              class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+            >
+              <img
+                src="../assets/images/icons/shopping-cart.png"
+                class="me-md-2"
+                alt="shopping-cart"
+              />加入購物車</a
+            >
+          </div>
+
+          <div class="card border-0 my-md-5 bold-text">
+            <img
+              src="../assets/images/噴罐.png"
+              class="card-img-top border-radius-none mb-3"
+              alt="噴罐"
+            />
+            <p class="card-title mb-3">迷你噴壺</p>
+            <div class="fs-6 mb-3">NT$160</div>
+
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>數量：1</option>
+              <option value="1">數量：2</option>
+              <option value="2">數量：3</option>
+              <option value="3">數量：4</option>
+            </select>
+
+            <a
+              href="#"
+              class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+            >
+              <img
+                src="../assets/images/icons/shopping-cart.png"
+                class="me-md-2"
+                alt="shopping-cart"
+              />加入購物車</a
+            >
+          </div>
+
+          <div class="card border-0 my-md-5 bold-text">
+            <img
+              src="../assets/images/卡片.png"
+              class="card-img-top border-radius-none mb-3"
+              alt="卡片"
+            />
+            <p class="card-title mb-3">手工花藝卡片</p>
+            <div class="fs-6 mb-3">NT$300</div>
+
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>數量：1</option>
+              <option value="1">數量：2</option>
+              <option value="2">數量：3</option>
+              <option value="3">數量：4</option>
+            </select>
+
+            <a
+              href="#"
+              class="btn border border-black-100 d-flex justify-content-center align-items-center fs-8 fs-md-8 border-radius-small bold-text"
+            >
+              <img
+                src="../assets/images/icons/shopping-cart.png"
+                class="me-md-2"
+                alt="shopping-cart"
+              />加入購物車</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 第三部分 -->
+      <section
+        class="shop border d-flex flex-wrap justify-content-start align-items-center py-4"
+      >
+        <div class="shop-name d-flex align-items-center">
+          <a href="#"
+            ><img
+              class="shop-icon me-4"
+              src="../assets/images/negaflower/logo/nega.jpg"
+              alt="negaflower"
+          /></a>
+          <a href="#"><p class="me-md-5 ChenYuluoyan">Nega Flower品牌館</p></a>
+        </div>
+
+        <div
+          class="btn btn-primary-100 d-flex justify-content-center align-items-center fs-8 bold-text"
+        >
+          <img src="../assets/images/icons/plus.png" alt="plus" />加入關注
+        </div>
+      </section>
+
+      <div class="detail">
+        <!-- 分頁 -->
+        <ul class="detail-nav nav justify-content-center my-7 fs-6 bold-text">
+          <li class="nav-item active">
+            <a
+              class="nav-link text-black-100 active"
+              aria-current="page"
+              data-bs-toggle="tab"
+              href="#information"
+              >商品介紹</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-100" data-bs-toggle="tab" href="#spec"
+              >商品規格</a
+            >
+          </li>
+        </ul>
+
+        <!-- 分頁內容 -->
+        <div class="tab-content">
+          <div id="information" class="tab-pane fade in show active">
+            <div class="container-text text-center mb-7">
+              <p>
+                開幕花禮中的經典選擇。柔和的奶油色調，搭配天然燕麥材質，為新事業的開展帶來一股清新與自然的氣息。奶油色象徵著純潔與美好，傳遞出對新起點的祝福，而燕麥材質則以其質樸與柔和，展現了對長久發展的期許與支持。
+              </p>
+              <p>
+                盆花的設計兼具視覺效果與質感，奶油色的花卉與燕麥色的材質互相襯托，營造出一種低調而奢華的氛圍。不論是放置在入口迎賓，還是作為櫃台的展示品，都能為空間增添一抹雅緻與溫馨，讓人一見難忘。不僅適合開幕儀式，也非常適合作為其他重要場合的祝賀禮物。既展現了送禮者的品味，又傳遞了深厚的祝福與心意。選擇這款花禮，為重要時刻增添更多儀式感，讓您的祝福以最溫柔且具質感的方式傳遞到受禮者的心中。
+              </p>
+            </div>
+            <div class="product-img">
+              <div class="row">
+                <div class="img col mb-7">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                    alt="奶油燕麥＿詳細1"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="img col mb-7">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                    alt="奶油燕麥＿詳細2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="spec" class="tab-pane fade">
+            <table class="info-table text-center mb-7">
+              <tr>
+                <th>材質</th>
+                <td>乾燥花</td>
+              </tr>
+              <tr>
+                <th>花材種類</th>
+                <td>7~8項不同花材</td>
+              </tr>
+              <tr>
+                <th>尺寸</th>
+                <td>25 cm x 24 cm</td>
+              </tr>
+              <tr>
+                <th>重量</th>
+                <td>560 g</td>
+              </tr>
+              <tr>
+                <th>產地</th>
+                <td>台灣</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第四部份 -->
+      <div class="rate">
+        <div class="title">
+          <h4 class="bold-text">商品評價</h4>
+          <hr class="mb-5" />
+        </div>
+        <div class="content">
+          <div class="user">
+            <div class="user-top d-flex">
+              <div class="avatar">
+                <img
+                  src="../assets/images/hong-nguyen-J4TEzb9mb3A-unsplash.png"
+                  alt="avatar1"
+                />
+              </div>
+              <div class="user-info ms-4">
+                <p class="user-name mb-3">a****5</p>
+                <ul class="user-rate d-flex">
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-bottom">
+              <div class="comment my-3">
+                <p>真的超級美質感非常好！期待開幕的時候！</p>
+              </div>
+
+              <ul class="comment-img d-flex mb-4">
+                <li class="me-3">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                    alt="奶油燕麥＿詳細1"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細2.png"
+                    alt="奶油燕麥＿詳細2"
+                  />
+                </li>
+              </ul>
+
+              <hr />
+            </div>
+          </div>
+
+          <div class="user margin-top-32">
+            <div class="user-top d-flex">
+              <div class="avatar">
+                <img
+                  src="../assets/images/rachel-mcdermott-0fN7Fxv1eWA-unsplash.png"
+                  alt="avatar2"
+                />
+              </div>
+              <div class="user-info ms-4">
+                <p class="user-name mb-3">j****2</p>
+                <ul class="user-rate d-flex">
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-bottom">
+              <div class="comment mt-3 mb-4">
+                <p>貼心迅速的服務 產品優質~</p>
+              </div>
+
+              <hr />
+            </div>
+          </div>
+
+          <div class="user margin-top-32">
+            <div class="user-top d-flex">
+              <div class="avatar">
+                <img
+                  src="../assets/images/ben-den-engelsen-eNyXK17so6A-unsplash.png"
+                  alt="avatar3"
+                />
+              </div>
+              <div class="user-info ms-4">
+                <p class="user-name mb-3">j****2</p>
+                <ul class="user-rate d-flex">
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img
+                      src="../assets/images/icons/star-null.png"
+                      alt="star-null"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="../assets/images/icons/star-null.png"
+                      alt="star-null"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-bottom">
+              <div class="comment mt-3 mb-4">
+                <p>等太久了</p>
+              </div>
+
+              <hr />
+            </div>
+          </div>
+
+          <div class="user margin-top-32">
+            <div class="user-top d-flex">
+              <div class="avatar">
+                <img
+                  src="../assets/images/sean-kong-oV1C7MaiZTM-unsplash.png"
+                  alt="avatar4"
+                />
+              </div>
+              <div class="user-info ms-4">
+                <p class="user-name mb-3">s****p</p>
+                <ul class="user-rate d-flex">
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                  <li>
+                    <img src="../assets/images/icons/star.png" alt="star" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-bottom">
+              <div class="comment my-3">
+                <p>質感很好 出貨快速</p>
+              </div>
+
+              <ul class="comment-img d-flex mb-4">
+                <li class="me-3">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                    alt="奶油燕麥＿詳細1"
+                  />
+                </li>
+              </ul>
+
+              <hr />
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="btn border border-black-100 mt-5 mb-7 bold-text">
+              <a href="#">查看所有評價(23)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第五部份 -->
+      <div class="other">
+        <div class="title">
+          <h4 class="bold-text">其他人也看了</h4>
+          <hr class="mb-7" />
+        </div>
+        <div class="row mb-7 position-relative">
+          <div class="col-3">
+            <div class="card">
+              <a href="#">
+                <div class="card-img position-relative">
+                  <img
+                    src="../assets/images/negaflower/婚禮胸花｜人造花胸花.jpg"
+                    class="card-img-top"
+                    alt="婚禮胸花｜人造花胸花"
+                  />
+                  <a
+                    href="#"
+                    class="heart d-flex align-items-center position-absolute"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="rgba(48,48,48,0.5)"
+                    >
+                      <path
+                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                        stroke="#f8f7f6"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <a href="#" class="d-flex">
+                    <img
+                      src="../assets/images/negaflower/logo/nega.jpg"
+                      alt="Nega Flower"
+                    />
+                    <div class="content ms-3">
+                      <p class="fs-9 mb-2">Nega Flower</p>
+                      <h5 class="fs-7 mb-1 bold-text">婚禮胸花｜人造花胸花</h5>
+                      <p class="card-text bold-text">NT$399</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <a href="#">
+                <div class="card-img position-relative">
+                  <img
+                    src="../assets/images/negaflower/美拉德永生花束.jpg"
+                    class="card-img-top"
+                    alt="美拉德永生花束"
+                  />
+                  <a
+                    href="#"
+                    class="heart d-flex align-items-center position-absolute"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="rgba(48,48,48,0.5)"
+                    >
+                      <path
+                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                        stroke="#f8f7f6"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="d-flex">
+                    <img
+                      src="../assets/images/negaflower/logo/nega.jpg"
+                      alt="Nega Flower"
+                    />
+                    <div class="content ms-3">
+                      <p class="fs-9 mb-2">Nega Flower</p>
+                      <h5 class="fs-7 mb-1 bold-text">美拉德永生花束</h5>
+                      <p class="card-text bold-text">NT$1,500</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <a href="#">
+                <div class="card-img position-relative">
+                  <img
+                    src="../assets/images/negaflower/奶油燕麥＿詳細1.png"
+                    class="card-img-top"
+                    alt="開幕花禮 | 奶油燕麥盆花"
+                  />
+                  <a
+                    href="#"
+                    class="heart d-flex align-items-center position-absolute"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="rgba(48,48,48,0.5)"
+                    >
+                      <path
+                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                        stroke="#f8f7f6"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <a href="#" class="d-flex">
+                    <img
+                      src="../assets/images/negaflower/logo/nega.jpg"
+                      alt="Nega Flower"
+                    />
+                    <div class="content ms-3">
+                      <p class="fs-9 mb-2">Nega Flower</p>
+                      <h5 class="fs-7 mb-1 bold-text">
+                        開幕花禮 | 奶油燕麥盆花
+                      </h5>
+                      <p class="card-text bold-text">NT$1,680</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <a href="#">
+                <div class="card-img position-relative">
+                  <img
+                    src="../assets/images/negaflower/鈔票花束｜奶茶色.jpg"
+                    class="card-img-top"
+                    alt="鈔票花束｜奶茶色"
+                  />
+                  <a
+                    href="#"
+                    class="heart d-flex align-items-center position-absolute"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="rgba(48,48,48,0.5)"
+                    >
+                      <path
+                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                        stroke="#f8f7f6"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <a href="#" class="d-flex">
+                    <img
+                      src="../assets/images/negaflower/logo/nega.jpg"
+                      alt="Nega Flower"
+                    />
+                    <div class="content ms-3">
+                      <p class="fs-9 mb-2">Nega Flower</p>
+                      <h5 class="fs-7 mb-1 bold-text">鈔票花束｜奶茶色</h5>
+                      <p class="card-text bold-text">NT$4,500</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-white-100 d-flex align-items-center position-absolute top-50 translate-middle"
+          >
+            <img
+              src="../assets/images/icons/chevron-left.png"
+              alt="chevron-left"
+            />
+          </a>
+          <a
+            href="#"
+            class="btn btn-white-100 d-flex align-items-center position-absolute top-50 start-100 translate-middle"
+          >
+            <img
+              src="../assets/images/icons/chevron-right.png"
+              alt="chevron-right"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
