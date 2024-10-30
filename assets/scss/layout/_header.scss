@@ -109,6 +109,10 @@ header {
         font-weight: 700;
         text-align: center;
     }
+
+    .secondaryNav .list li a:hover{
+        color: #4848484D;
+    }
 }
 
 @media (max-width:991px) {
