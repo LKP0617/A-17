@@ -13,15 +13,35 @@ header {
   width: 100%;
   margin: 0 auto;
 } */
+
 /*彈出視窗按鈕*/
+
 .modal-content {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
 }
-
-.modal-ogo {
+.modal-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-logo {
+    max-width: 100%;
     margin: 20px 0;
+}
+.extra-option a{
+    display: flex;
+    width: 30%;
+    text-align: left;
+    background: blue;
+}
+.extra-option div a{
+    display: flex;
+}
+.extra-option a:hover{
+border-bottom: 1px solid #000;
 }
 
 .btn-facebook {
@@ -33,6 +53,16 @@ header {
 .btn-google {
     background-color: #db4a39;
     color: #fff;
+}
+.modal-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modal-header .close {
+    border: none; 
+    outline: none;    
+    background: none;
 }
 
 /* 左對齊樣式 */

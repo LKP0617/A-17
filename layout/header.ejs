@@ -31,7 +31,8 @@
                     </li>
                     <li><a href="#" class="navIcon"><img src="../assets/images/header_footer/shopping-cart.png"
                                 alt=""></a></li>
-                    <li><a href="#" class="logInBtn" type="button" data-toggle="modal" data-target="#loginModal">註冊/登入</a></li>
+                    <li><a href="#" class="logInBtn" type="button" data-toggle="modal"
+                            data-target="#loginModal">註冊/登入</a></li>
                 </ul>
                 <div class="mobileNav">
                     <ul class="mobileNav-section">
@@ -56,32 +57,36 @@
             <!-- 關閉按鈕 -->
             <div class="modal-header border-0">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><img src="../assets/images/header_footer/x.png" alt=""></span>
                 </button>
             </div>
             <!-- 彈出視窗內容 -->
             <div class="modal-body">
                 <!-- Logo -->
-                <img src="logo.png" alt="拾柒" class="modal-logo" width="80">
-                <h5>登入會員</h5>
+                <div class="modal-title">
+                    <img class="modal-logo" src="../assets/images/header_footer/footer_logo.png" alt="拾柒">
+                </div>
                 <form>
                     <!-- 帳號欄位 -->
-                    <div class="form-group">
-                        <label for="username">登入拾柒帳號</label>
-                        <input type="text" class="form-control" id="username" placeholder="輸入帳號">
+                    <div class="form-group my-4 ">
+                        <label for="username" class="my-2">登入會員</label>
+                        <input type="text" class="form-control" id="username" placeholder="登入拾柒帳號">
                     </div>
                     <!-- 密碼欄位 -->
-                    <div class="form-group">
-                        <label for="password">輸入密碼</label>
+                    <div class="form-group  my-4 ">
+                        <label for="password" class="my-2">輸入密碼</label>
                         <input type="password" class="form-control" id="password" placeholder="輸入密碼">
                     </div>
                     <!-- 登入按鈕 -->
                     <button type="submit" class="btn btn-dark btn-block">登入拾柒</button>
                 </form>
                 <!-- 額外選項 -->
-                <div class="mt-3">
-                    <a href="#">忘記密碼？</a><br>
-                    還不是會員？<a href="#">立即加入會員</a>
+                <div class=" extra-option">
+                    <a href="#">忘記密碼？</a>
+                    <div>
+                        <p>還不是會員嗎？</p>
+                        <a href="#">立即加入會員</a>
+                    </div>
                 </div>
                 <!-- Facebook 登入按鈕 -->
                 <button class="btn btn-facebook btn-block">使用 Facebook 登入</button>
