@@ -10,60 +10,118 @@
 
 <body>
     <%- include('./layout/header'); -%>
+        <div class="container qa-bg">
+            <div class="content">
+                <h2 class="text-center mt-4">Q&A</h2>
+                <div class="accordion" id="qaAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading1">
+                            <a class="accordion-button" data-bs-toggle="collapse" href="#collapse1" role="button"
+                                aria-controls="collapse1">
+                                Q: 如何選擇適合我的商品?
+                            </a>
+                        </h3>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                            data-bs-parent="#qaAccordion">
+                            <div class="accordion-body Body2">
+                                我們的選品團隊精心挑選了各類獨特商品,並在每個產品頁面提供詳細的描述與建議搭配,
+                                幫助您找到最符合您需求的產品。                           
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="container">
-            <h2 class="text-center">Q&A</h2>
-            <div class="accordion" id="qaAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading2">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapse2"
+                                role="button" aria-controls="collapse2">
+                                Q: 商品都是正品嗎?
+                            </a>
+                        </h3>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                            data-bs-parent="#qaAccordion">
+                            <div class="accordion-body Body2">
+                                我們保證所有商品皆為品牌正品,直接來自於官方授權的供應商。每一件商品在上架前都經過嚴格檢驗,確保品質無虞。
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading1">
-                        <a class="accordion-button" data-bs-toggle="collapse" href="#collapse1" role="button"
-                            aria-controls="collapse1">
-                            如何選擇適合我的商品？
-                        </a>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
-                        data-bs-parent="#qaAccordion">
-                        <div class="accordion-body">
-                            我們的選品團隊精心挑選了各類型的商品，並在每個產品頁面提供詳細的描述與建議搭配，幫助您找到適合需求的商品。
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading3">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapse3"
+                                role="button" aria-controls="collapse3">
+                                Q: 我如何確定商品的尺寸或規格?
+                            </a>
+                        </h3>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                            data-bs-parent="#qaAccordion">
+                            <div class="accordion-body Body2">
+                                每個商品的尺寸或規格資訊都會詳細列在商品頁面,並附有尺寸表或參考圖。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading4">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapse4"
+                                role="button" aria-controls="collapse4">
+                                Q: 是否可以使用折扣碼?
+                            </a>
+                        </h3>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                            data-bs-parent="#qaAccordion">
+                            <div class="accordion-body Body2">
+                                我們接受有效的折扣碼,您可以在結帳時輸入折扣碼,系統會自動計算折扣金額。請注意,部分折扣碼可能僅適用於特定商品或活動期間。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading5">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapse5"
+                                role="button" aria-controls="collapse5">
+                                Q: 如何加入選品店的會員計劃?
+                            </a>
+                        </h3>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                            data-bs-parent="#qaAccordion">
+                            <div class="accordion-body Body2">
+                                您可以在我們的網站上免費註冊成為會員,享受會員專屬的優惠和活動通知。
+註冊過程簡單,只需填寫基本資料即可。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading6">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapse6"
+                                role="button" aria-controls="collapse6">
+                                Q: 如何獲取最新的選品資訊?
+                            </a>
+                        </h3>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                            data-bs-parent="#qaAccordion">
+                            <div class="accordion-body Body2">
+                                我們接受有效的折扣碼,您可以在結帳時輸入折扣碼,系統會自動計算折扣金額。請注意,部分折扣碼可能僅適用於特定商品或活動期間。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading7">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapse7"
+                                role="button" aria-controls="collapse7">
+                                Q: 如何參加選品店的活動或促銷?
+                            </a>
+                        </h3>
+                        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                            data-bs-parent="#qaAccordion">
+                            <div class="accordion-body Body2">
+                                我們接受有效的折扣碼,您可以在結帳時輸入折扣碼,系統會自動計算折扣金額。請注意,部分折扣碼可能僅適用於特定商品或活動期間。
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading2">
-                        <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapse2" role="button"
-                            aria-controls="collapse2">
-                            商品都是正品嗎？
-                        </a>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                        data-bs-parent="#qaAccordion">
-                        <div class="accordion-body">
-                            我們保證所有商品皆為品牌正品，直接來自官方授權的供應商。每一件商品在上架前都經過嚴格檢驗，確保品質無虞。
-                        </div>
-                    </div>
-                </div>
+            <%- include('./layout/footer'); -%>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading3">
-                        <a class="accordion-button collapsed" data-bs-toggle="collapse" href="#collapse3" role="button"
-                            aria-controls="collapse3">
-                            我如何確定商品的尺寸或規格？
-                        </a>
-                    </h2>
-                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                        data-bs-parent="#qaAccordion">
-                        <div class="accordion-body">
-                            每個商品的尺寸或規格資訊會詳列在商品頁面，並附有尺寸表或參考圖。
-                        </div>
-                    </div>
-                </div>
-
-
-                <%- include('./layout/footer'); -%>
-
-                    <script type="module" src="../main.js"></script>
+                <script type="module" src="../main.js"></script>
 </body>
 
 </html>
