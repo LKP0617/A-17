@@ -520,6 +520,7 @@ a{
     right: 11px;
     bottom: 12.5px;
     cursor: pointer;
+    width: 30px;
 }
 .product-card-img-heart.active {
     content: url(/assets/images/heart-red.png); /* 切換成紅色愛心 */
@@ -534,6 +535,20 @@ a{
     border-left: 1px solid #4848481A;
     border-bottom: 1px solid #4848481A;
 }
+.product-card-content-m{
+    display: none;
+    background-color: #ffffff;
+    border-right: 1px solid #4848481A;
+    border-left: 1px solid #4848481A;
+    border-bottom: 1px solid #4848481A;
+}
+.product-card-brandname{
+    padding-top: 8px;
+}
+.product-card-content-m h3, .product-card-content-m span{
+    font-size: 14px;
+    text-align: center;
+}
 .product-card-logo{
     width: 61px;
     height: 100%;
@@ -545,16 +560,46 @@ a{
 }
 .product-card-name{
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
 }
 
 /* 手機版 RWD 調整 */
-@media (max-width: 768px) {
+@media (max-width: 768px){
     .product-card{
         width: 50%;
     }
+}
+@media (max-width: 576px) {
     .hot-product-box{
         margin-top: 40px;
         padding-bottom: 40px;
+    }
+    .product-card-content-m{
+        display: block;
+    }
+    .product-card-content{
+        display: none;
+    }
+    .product-card-logo{
+        width: 24px;
+        height: 100%;
+    }
+    .product-card-brand{
+        font-size: 12px;
+    }
+    .product-card-name{
+        padding-top: 10px;
+    }
+    .product-card-text{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+    .product-card-price{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .product-card-img-heart{
+        width: 16.67px;
     }
 }
