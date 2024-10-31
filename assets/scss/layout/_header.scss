@@ -55,9 +55,6 @@ header {
     color: #484848;
     background: #F6F2E84D;
 }
-
-
-
 .extra-option a{
     font-weight: 700;
     font-size: 18px;
@@ -109,13 +106,13 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 24px;
 }
 .modal-header .close {
     border: none; 
     outline: none;    
     background: none;
 }
-
 /* 左對齊樣式 */
 .form-group label {
     text-align: left;
@@ -123,6 +120,15 @@ header {
     font-weight: bold;
 }
 
+
+/*搜尋彈窗*/
+.modal-body {
+    text-align: center;
+}
+.hashtag-link {
+    margin: 0.5rem;
+    text-decoration: none;
+}
 /*pc*/
 @media (min-width:992px) {
     header {

@@ -10,7 +10,7 @@
                 </a>
             </div>
             <div class="mobileIcon">
-                <a href="#" class="menuBTN">
+                <a href="#" class="menuBTN" data-bs-toggle="modal" data-bs-target="#searchModal">
                     <img src="../assets/images/header_footer/search.svg" alt="">
                 </a>
                 <a href="#" class="menuBTN forJs">
@@ -27,7 +27,7 @@
                     </a>
                 </div>
                 <ul class="pcNav">
-                    <li><a href="#" class="navIcon"><img src="../assets/images/header_footer/search.png" alt=""></a>
+                    <li><a href="#" class="navIcon" data-bs-toggle="modal" data-bs-target="#searchModal"><img src="../assets/images/header_footer/search.png" alt=""></a>
                     </li>
                     <li><a href="#" class="navIcon"><img src="../assets/images/header_footer/shopping-cart.png"
                                 alt=""></a></li>
@@ -93,6 +93,33 @@
                     <button class="btn btn-facebook btn-block">Facebook 登入</button>
                     <!-- Google 登入按鈕 -->
                     <button class="btn btn-google btn-block">Google 登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 搜尋彈窗 -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel"><i class="bi bi-search"></i> 搜尋商品</h5>
+                <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+            </div>
+            <div class="modal-body">
+                <!-- 輸入框和搜尋按鈕 -->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="輸入關鍵字">
+                    <a href="#" class="btn btn-secondary">搜尋</a>
+                </div>
+
+                <h6 class="mt-4">熱門分類</h6>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#" class="btn btn-outline-secondary hashtag-link">#花藝</a>
+                    <a href="#" class="btn btn-outline-secondary hashtag-link">#盆花</a>
+                    <a href="#" class="btn btn-outline-secondary hashtag-link">#開幕花禮</a>
+                    <a href="#" class="btn btn-outline-secondary hashtag-link">#陶器</a>
+                    <a href="#" class="btn btn-outline-secondary hashtag-link">#香氛</a>
                 </div>
             </div>
         </div>
