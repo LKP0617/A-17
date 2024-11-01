@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>拾柒商品詳情頁</title>
-    <script type="module" crossorigin src="/A-17/assets/main-da7f1dc1.js"></script>
-    <link rel="stylesheet" href="/A-17/assets/main-d8317a10.css">
+    <script type="module" crossorigin src="/A-17/assets/main-1115de14.js"></script>
+    <link rel="stylesheet" href="/A-17/assets/main-c8c669a2.css">
   </head>
 
   <body>
@@ -157,7 +161,7 @@
       <nav
         style="--bs-breadcrumb-divider: '>'"
         aria-label="breadcrumb"
-        class="mt-3 mt-md-7"
+        class="mt-3 mt-lg-7"
       >
         <ol class="breadcrumb bold-text">
           <li class="breadcrumb-item"><a href="#">首頁</a></li>
@@ -172,7 +176,7 @@
         <div class="col-12 col-md-6">
           <div
             id="carouselControls"
-            class="carousel slide mb-4"
+            class="carousel slide mb-4 carousel-img"
             data-bs-interval="false"
           >
             <div class="carousel-inner">
@@ -249,19 +253,25 @@
           </div>
         </div>
         <div class="col-12 col-md-6">
-          <h1 class="fs-4 mb-3 bold-text">測試版本- 開幕花禮 | 奶油燕麥盆花</h1>
-          <p class="mb-5">
+          <h1 class="fs-4 mb-3 bold-text">開幕花禮 | 奶油燕麥盆花</h1>
+          <p class="product-p mb-md-6">
             奶油燕麥盆花，結合柔和奶油色與天然燕麥材質傳遞低調優雅的開幕祝福，營造溫馨氛圍
             #開幕花禮 #花藝 #盆花
           </p>
-          <p class="fs-3 mb-5 bold-text">NT$1,680</p>
+          <p class="product-price fs-3 mb-md-6 bold-text">NT$1,680</p>
 
-          <select class="form-select mb-5" aria-label="Default select example">
+          <select
+            class="form-select mb-md-6"
+            aria-label="Default select example"
+          >
             <option selected>請選擇商品規格</option>
             <option value="1">奶油燕麥</option>
           </select>
 
-          <select class="form-select mb-5" aria-label="Default select example">
+          <select
+            class="form-select mb-md-6"
+            aria-label="Default select example"
+          >
             <option selected>數量</option>
             <option value="1">數量：1</option>
             <option value="2">數量：2</option>
@@ -270,7 +280,7 @@
             <option value="3">數量：5</option>
           </select>
 
-          <div class="info-btn d-flex row gx-3 mb-5">
+          <div class="info-btn d-flex row gx-3 mb-md-5">
             <div class="col-6">
               <div
                 class="buy-btn btn btn-primary-100 d-flex justify-content-center align-items-center fs-8 bold-text"
@@ -425,18 +435,20 @@
           </div>
         </div>
 
-        <!-- bootstrap -->
-        <div id="carouselSwiper" class="carousel slide d-block d-md-none">
-          <div class="carousel-inner mt-5 mb-4 d-flex">
-            <div class="carousel-item active">
+        <!-- Swiper -->
+        <div class="swiper mySwiper d-md-none">
+          <div class="swiper-wrapper mt-6 mb-4">
+            <div class="swiper-slide">
               <img
                 src="/A-17/assets/透明提袋-70203ead.png"
                 class="card-img-top border-radius-none mb-3"
                 alt="透明提袋"
               />
               <div class="d-flex flex-column align-items-center">
-                <p class="card-title mb-3 fs-9 fs-md-7">透明提袋50cm</p>
-                <div class="fs-7 fs-md-6 mb-3">NT$150</div>
+                <p class="card-title mb-3 fs-9 fs-md-7 bold-text">
+                  透明提袋50cm
+                </p>
+                <div class="fs-7 fs-md-6 mb-3 bold-text">NT$150</div>
               </div>
 
               <select
@@ -460,15 +472,15 @@
                 />加入購物車</a
               >
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide">
               <img
                 src="/A-17/assets/剪刀-c0f9e314.png"
                 class="card-img-top border-radius-none mb-3"
-                alt="剪刀"
+                alt="花卉剪刀"
               />
               <div class="d-flex flex-column align-items-center">
-                <p class="card-title mb-3 fs-9 fs-md-7">花卉剪刀</p>
-                <div class="fs-7 fs-md-6 mb-3">NT$800</div>
+                <p class="card-title mb-3 fs-9 fs-md-7 bold-text">花卉剪刀</p>
+                <div class="fs-7 fs-md-6 mb-3 bold-text">NT$800</div>
               </div>
 
               <select
@@ -492,15 +504,15 @@
                 />加入購物車</a
               >
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide">
               <img
                 src="/A-17/assets/噴罐-a5980be5.png"
                 class="card-img-top border-radius-none mb-3"
-                alt="噴罐"
+                alt="迷你噴壺"
               />
               <div class="d-flex flex-column align-items-center">
-                <p class="card-title mb-3 fs-9 fs-md-7">迷你噴壺</p>
-                <div class="fs-7 fs-md-6 mb-3">NT$160</div>
+                <p class="card-title mb-3 fs-9 fs-md-7 bold-text">迷你噴壺</p>
+                <div class="fs-7 fs-md-6 mb-3 bold-text">NT$160</div>
               </div>
 
               <select
@@ -524,15 +536,17 @@
                 />加入購物車</a
               >
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide">
               <img
                 src="/A-17/assets/卡片-84a5a9ef.png"
                 class="card-img-top border-radius-none mb-3"
                 alt="手工花藝卡片"
               />
               <div class="d-flex flex-column align-items-center">
-                <p class="card-title mb-3 fs-9 fs-md-7">手工花藝卡片</p>
-                <div class="fs-7 fs-md-6 mb-3">NT$300</div>
+                <p class="card-title mb-3 fs-9 fs-md-7 bold-text">
+                  手工花藝卡片
+                </p>
+                <div class="fs-7 fs-md-6 mb-3 bold-text">NT$300</div>
               </div>
 
               <select
@@ -557,29 +571,10 @@
               >
             </div>
           </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselSwiper"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselSwiper"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
 
         <div class="add-content d-none d-md-flex justify-content-center">
-          <div class="card border-0 my-md-5 bold-text">
+          <div class="card border-0 my-md-6 bold-text">
             <img
               src="/A-17/assets/透明提袋-70203ead.png"
               class="card-img-top border-radius-none mb-3"
@@ -610,7 +605,7 @@
             >
           </div>
 
-          <div class="card border-0 my-md-5 bold-text">
+          <div class="card border-0 my-md-6 bold-text">
             <img
               src="/A-17/assets/剪刀-c0f9e314.png"
               class="card-img-top border-radius-none mb-3"
@@ -641,7 +636,7 @@
             >
           </div>
 
-          <div class="card border-0 my-md-5 bold-text">
+          <div class="card border-0 my-md-6 bold-text">
             <img
               src="/A-17/assets/噴罐-a5980be5.png"
               class="card-img-top border-radius-none mb-3"
@@ -672,7 +667,7 @@
             >
           </div>
 
-          <div class="card border-0 my-md-5 bold-text">
+          <div class="card border-0 my-md-6 bold-text">
             <img
               src="/A-17/assets/卡片-84a5a9ef.png"
               class="card-img-top border-radius-none mb-3"
@@ -712,7 +707,7 @@
         <div class="shop-name d-flex align-items-center">
           <a href="#"
             ><img
-              class="shop-icon me-4"
+              class="shop-icon me-3 me-md-4"
               src="/A-17/assets/nega-81d18053.jpg"
               alt="negaflower"
           /></a>
@@ -728,7 +723,9 @@
 
       <div class="detail">
         <!-- 分頁 -->
-        <ul class="detail-nav nav justify-content-center my-7 fs-6 bold-text">
+        <ul
+          class="detail-nav nav justify-content-center my-6 my-md-5 my-lg-7 fs-6 bold-text"
+        >
           <li class="nav-item active">
             <a
               class="nav-link text-black-100 active"
@@ -748,17 +745,17 @@
         <!-- 分頁內容 -->
         <div class="tab-content">
           <div id="information" class="tab-pane fade in show active">
-            <div class="container-text text-center mb-7">
-              <p>
+            <div class="container-text text-center mb-6 mb-md-7">
+              <p class="mb-2 mb-md-1 text-black-100">
                 開幕花禮中的經典選擇。柔和的奶油色調，搭配天然燕麥材質，為新事業的開展帶來一股清新與自然的氣息。奶油色象徵著純潔與美好，傳遞出對新起點的祝福，而燕麥材質則以其質樸與柔和，展現了對長久發展的期許與支持。
               </p>
-              <p>
+              <p class="text-black-100">
                 盆花的設計兼具視覺效果與質感，奶油色的花卉與燕麥色的材質互相襯托，營造出一種低調而奢華的氛圍。不論是放置在入口迎賓，還是作為櫃台的展示品，都能為空間增添一抹雅緻與溫馨，讓人一見難忘。不僅適合開幕儀式，也非常適合作為其他重要場合的祝賀禮物。既展現了送禮者的品味，又傳遞了深厚的祝福與心意。選擇這款花禮，為重要時刻增添更多儀式感，讓您的祝福以最溫柔且具質感的方式傳遞到受禮者的心中。
               </p>
             </div>
             <div class="product-img">
               <div class="row">
-                <div class="img col mb-7">
+                <div class="img col mb-6 mb-md-7">
                   <img
                     src="/A-17/assets/奶油燕麥＿詳細1-6440ba88.png"
                     alt="奶油燕麥＿詳細1"
@@ -767,7 +764,7 @@
               </div>
 
               <div class="row">
-                <div class="img col mb-7">
+                <div class="img col mb-6 mb-md-7">
                   <img
                     src="/A-17/assets/奶油燕麥＿詳細2-0968290c.png"
                     alt="奶油燕麥＿詳細2"
@@ -777,7 +774,7 @@
             </div>
           </div>
           <div id="spec" class="tab-pane fade">
-            <table class="info-table text-center mb-7">
+            <table class="info-table text-center mb-6 mb-md-7">
               <tr>
                 <th>材質</th>
                 <td>乾燥花</td>
@@ -806,10 +803,10 @@
       <!-- 第四部份 -->
       <div class="rate">
         <div class="title">
-          <h4 class="bold-text">商品評價</h4>
-          <hr class="mb-5" />
+          <h4 class="bold-text pb-3 pb-md-0">商品評價</h4>
+          <hr class="mb-6 mt-4 d-none d-md-block" />
         </div>
-        <div class="content">
+        <div class="content mt-6 mt-md-0">
           <div class="user">
             <div class="user-top d-flex">
               <div class="avatar">
@@ -997,7 +994,7 @@
           </div>
 
           <div class="d-flex justify-content-center">
-            <div class="btn border border-black-100 mt-5 mb-7 bold-text">
+            <div class="btn border border-black-100 my-6 bold-text">
               <a href="#">查看所有評價(23)</a>
             </div>
           </div>
@@ -1005,43 +1002,41 @@
       </div>
 
       <!-- 第五部份 -->
-      <div class="other">
+      <div class="other mt-6">
         <div class="title">
-          <h4 class="bold-text">其他人也看了</h4>
-          <hr class="mb-7" />
+          <h4 class="bold-text pb-3 pb-md-0">其他人也看了</h4>
+          <hr class="mb-6 mt-4 d-none d-md-block" />
         </div>
-        <div class="row mb-7 position-relative">
+        <div class="row mb-7 position-relative d-none d-md-flex">
           <div class="col-3">
             <div class="card">
-              <a href="#">
-                <div class="card-img position-relative">
-                  <img
-                    src="/A-17/assets/婚禮胸花｜人造花胸花-38c6e224.jpg"
-                    class="card-img-top"
-                    alt="婚禮胸花｜人造花胸花"
-                  />
-                  <a
-                    href="#"
-                    class="heart d-flex align-items-center position-absolute"
+              <div class="card-img other-card-img position-relative">
+                <img
+                  src="/A-17/assets/婚禮胸花｜人造花胸花-38c6e224.jpg"
+                  class="card-img-top"
+                  alt="婚禮胸花｜人造花胸花"
+                />
+                <div
+                  class="heart-md heart d-flex align-items-center position-absolute"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    fill="rgba(48,48,48,0.5)"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="36"
-                      height="36"
-                      viewBox="0 0 24 24"
-                      fill="rgba(48,48,48,0.5)"
-                    >
-                      <path
-                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
-                        stroke="#f8f7f6"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
+                    <path
+                      d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                      stroke="#f8f7f6"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
-
+              </div>
+              <a href="#">
                 <div class="card-body">
                   <a href="#" class="d-flex">
                     <img
@@ -1061,34 +1056,33 @@
 
           <div class="col-3">
             <div class="card">
-              <a href="#">
-                <div class="card-img position-relative">
-                  <img
-                    src="/A-17/assets/美拉德永生花束-01ea8f46.jpg"
-                    class="card-img-top"
-                    alt="美拉德永生花束"
-                  />
-                  <a
-                    href="#"
-                    class="heart d-flex align-items-center position-absolute"
+              <div class="card-img other-card-img position-relative">
+                <img
+                  src="/A-17/assets/美拉德永生花束-01ea8f46.jpg"
+                  class="card-img-top"
+                  alt="美拉德永生花束"
+                />
+                <div
+                  class="heart-md heart d-flex align-items-center position-absolute"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    fill="rgba(48,48,48,0.5)"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="36"
-                      height="36"
-                      viewBox="0 0 24 24"
-                      fill="rgba(48,48,48,0.5)"
-                    >
-                      <path
-                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
-                        stroke="#f8f7f6"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
+                    <path
+                      d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                      stroke="#f8f7f6"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
+              </div>
+              <a href="#">
                 <div class="card-body">
                   <a href="#" class="d-flex">
                     <img
@@ -1108,35 +1102,33 @@
 
           <div class="col-3">
             <div class="card">
-              <a href="#">
-                <div class="card-img position-relative">
-                  <img
-                    src="/A-17/assets/奶油燕麥＿詳細1-6440ba88.png"
-                    class="card-img-top"
-                    alt="開幕花禮 | 奶油燕麥盆花"
-                  />
-                  <a
-                    href="#"
-                    class="heart d-flex align-items-center position-absolute"
+              <div class="card-img other-card-img position-relative">
+                <img
+                  src="/A-17/assets/奶油燕麥＿詳細1-6440ba88.png"
+                  class="card-img-top"
+                  alt="開幕花禮 | 奶油燕麥盆花"
+                />
+                <div
+                  class="heart-md heart d-flex align-items-center position-absolute"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    fill="rgba(48,48,48,0.5)"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="36"
-                      height="36"
-                      viewBox="0 0 24 24"
-                      fill="rgba(48,48,48,0.5)"
-                    >
-                      <path
-                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
-                        stroke="#f8f7f6"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
+                    <path
+                      d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                      stroke="#f8f7f6"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
-
+              </div>
+              <a href="#">
                 <div class="card-body">
                   <a href="#" class="d-flex">
                     <img
@@ -1158,49 +1150,46 @@
 
           <div class="col-3">
             <div class="card">
-              <a href="#">
-                <div class="card-img position-relative">
-                  <img
-                    src="/A-17/assets/鈔票花束｜奶茶色-d62b4b15.jpg"
-                    class="card-img-top"
-                    alt="鈔票花束｜奶茶色"
-                  />
-                  <a
-                    href="#"
-                    class="heart d-flex align-items-center position-absolute"
+              <div class="card-img other-card-img position-relative">
+                <img
+                  src="/A-17/assets/鈔票花束｜奶茶色-d62b4b15.jpg"
+                  class="card-img-top"
+                  alt="鈔票花束｜奶茶色"
+                />
+                <div
+                  class="heart-md heart d-flex align-items-center position-absolute"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    fill="rgba(48,48,48,0.5)"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="36"
-                      height="36"
-                      viewBox="0 0 24 24"
-                      fill="rgba(48,48,48,0.5)"
-                    >
-                      <path
-                        d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
-                        stroke="#f8f7f6"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="card-body">
-                  <a href="#" class="d-flex">
-                    <img
-                      src="/A-17/assets/nega-81d18053.jpg"
-                      alt="Nega Flower"
+                    <path
+                      d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                      stroke="#f8f7f6"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                     />
-                    <div class="content ms-3">
-                      <p class="fs-9 mb-2">Nega Flower</p>
-                      <h5 class="fs-7 mb-1 bold-text">鈔票花束｜奶茶色</h5>
-                      <p class="card-text bold-text">NT$4,500</p>
-                    </div></a
-                  >
+                  </svg>
                 </div>
-              </a>
+              </div>
+
+              <div class="card-body">
+                <a href="#" class="d-flex">
+                  <img
+                    src="/A-17/assets/nega-81d18053.jpg"
+                    alt="Nega Flower"
+                  />
+                  <div class="content ms-3">
+                    <p class="fs-9 mb-2">Nega Flower</p>
+                    <h5 class="fs-7 mb-1 bold-text">鈔票花束｜奶茶色</h5>
+                    <p class="card-text bold-text">NT$4,500</p>
+                  </div></a
+                >
+              </div>
             </div>
           </div>
           <a
@@ -1221,6 +1210,221 @@
               alt="chevron-right"
             />
           </a>
+        </div>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper d-md-none">
+        <div class="swiper-wrapper my-5">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img position-relative">
+                <img
+                  src="/A-17/assets/婚禮胸花｜人造花胸花-38c6e224.jpg"
+                  class="card-img-top"
+                  alt="婚禮胸花｜人造花胸花"
+                />
+                <div
+                  class="other-heart heart d-flex align-items-center position-absolute"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="rgba(48,48,48,0.5)"
+                  >
+                    <path
+                      d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                      stroke="#f8f7f6"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <a href="#">
+                <div class="card-body">
+                  <a href="#" class="d-flex flex-column">
+                    <div
+                      class="card-shop d-flex justify-content-center align-items-center my-2"
+                    >
+                      <img
+                        src="/A-17/assets/nega-81d18053.jpg"
+                        alt="Nega Flower"
+                      />
+                      <p class="fs-10 fs-md-9 ms-3">Nega Flower</p>
+                    </div>
+
+                    <div
+                      class="content d-flex flex-column align-items-center gap-1"
+                    >
+                      <h5 class="fs-9 bold-text">婚禮胸花｜人造花胸花</h5>
+                      <p class="card-text fs-9 bold-text">NT$399</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img position-relative">
+                <img
+                  src="/A-17/assets/美拉德永生花束-01ea8f46.jpg"
+                  class="card-img-top"
+                  alt="美拉德永生花束"
+                />
+                <div
+                  class="other-heart heart d-flex align-items-center position-absolute"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="rgba(48,48,48,0.5)"
+                  >
+                    <path
+                      d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                      stroke="#f8f7f6"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <a href="#">
+                <div class="card-body">
+                  <a href="#" class="d-flex flex-column">
+                    <div
+                      class="card-shop d-flex justify-content-center align-items-center my-2"
+                    >
+                      <img
+                        src="/A-17/assets/nega-81d18053.jpg"
+                        alt="Nega Flower"
+                      />
+                      <p class="fs-10 fs-md-9 ms-3">Nega Flower</p>
+                    </div>
+
+                    <div
+                      class="content d-flex flex-column align-items-center gap-1"
+                    >
+                      <h5 class="fs-9 bold-text">美拉德永生花束</h5>
+                      <p class="card-text fs-9 bold-text">NT$1,500</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img position-relative">
+                <img
+                  src="/A-17/assets/奶油燕麥＿詳細1-6440ba88.png"
+                  class="card-img-top"
+                  alt="開幕花禮 | 奶油燕麥盆花"
+                />
+                <div
+                  class="other-heart heart d-flex align-items-center position-absolute"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="rgba(48,48,48,0.5)"
+                  >
+                    <path
+                      d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                      stroke="#f8f7f6"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <a href="#">
+                <div class="card-body">
+                  <a href="#" class="d-flex flex-column">
+                    <div
+                      class="card-shop d-flex justify-content-center align-items-center my-2"
+                    >
+                      <img
+                        src="/A-17/assets/nega-81d18053.jpg"
+                        alt="Nega Flower"
+                      />
+                      <p class="fs-10 fs-md-9 ms-3">Nega Flower</p>
+                    </div>
+
+                    <div
+                      class="content d-flex flex-column align-items-center gap-1"
+                    >
+                      <h5 class="fs-9 bold-text">開幕花禮 | 奶油燕麥盆花</h5>
+                      <p class="card-text fs-9 bold-text">NT$1,680</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img position-relative">
+                <img
+                  src="/A-17/assets/鈔票花束｜奶茶色-d62b4b15.jpg"
+                  class="card-img-top"
+                  alt="鈔票花束｜奶茶色"
+                />
+                <div
+                  class="other-heart heart d-flex align-items-center position-absolute"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="rgba(48,48,48,0.5)"
+                  >
+                    <path
+                      d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
+                      stroke="#f8f7f6"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <a href="#">
+                <div class="card-body">
+                  <a href="#" class="d-flex flex-column">
+                    <div
+                      class="card-shop d-flex justify-content-center align-items-center my-2"
+                    >
+                      <img
+                        src="/A-17/assets/nega-81d18053.jpg"
+                        alt="Nega Flower"
+                      />
+                      <p class="fs-10 fs-md-9 ms-3">Nega Flower</p>
+                    </div>
+
+                    <div
+                      class="content d-flex flex-column align-items-center gap-1"
+                    >
+                      <h5 class="fs-9 bold-text">鈔票花束｜奶茶色</h5>
+                      <p class="card-text fs-9 bold-text">NT$4,500</p>
+                    </div></a
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1308,5 +1512,70 @@
     </div>
 </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      // 初始化 Swiper
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      // 卡片hover到切換顏色
+      const card = document.querySelectorAll(".other-card-img");
+
+      card.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          const img = card.querySelector("img");
+          img.style.filter = "brightness(80%)"; // 調整亮度，讓圖片變暗
+        });
+
+        card.addEventListener("mouseleave", () => {
+          const img = card.querySelector("img");
+          img.style.filter = "brightness(100%)"; // 恢復亮度
+        });
+      });
+
+      // 愛心點擊切換顏色功能
+      const hearts = document.querySelectorAll(".heart-md");
+
+      let isFilled = false;
+
+      hearts.forEach((hearts) => {
+        hearts.addEventListener("click", () => {
+          const svg = hearts.querySelector("svg");
+
+          if (isFilled == false) {
+            svg.setAttribute("fill", "#d33e41");
+            isFilled = true;
+          } else {
+            svg.setAttribute("fill", "rgba(48,48,48,0.5)");
+            isFilled = false;
+          }
+        });
+      });
+
+      // swiper
+      const swiperHearts = document.querySelectorAll(".other-heart");
+      let swiperIsFilled = false;
+
+      swiperHearts.forEach((hearts) => {
+        hearts.addEventListener("click", () => {
+          const swiperSvg = hearts.querySelector("svg");
+
+          if (swiperIsFilled == false) {
+            swiperSvg.setAttribute("fill", "#d33e41");
+            swiperIsFilled = true;
+          } else if (swiperIsFilled == true) {
+            swiperSvg.setAttribute("fill", "rgba(48,48,48,0.5)");
+            swiperIsFilled = false;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
