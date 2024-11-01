@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>購物車 - 購物清單</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container">
+
+            <div class="shopping_status"></div>
+
+            <div class="cart_content d-flex flex-row-reverse justify-content-between margin-bottom-1">
+
+                <div class="cartform_style total_price">
+                    <div class="total_price_title">
+                        <div class="price_style">
+                            <h6>金額小計</h6>
+                            <div class="price_style">
+                                <h6>NT$</h6>
+                                <h6>1234</h6>
+                            </div>
+                        </div>
+                        <div class="price_style">
+                            <h6>折扣購物金</h6>
+                            <div class="price_style">
+                                <h6>NT$</h6>
+                                <h6>1234</h6>
+                            </div>
+                        </div>
+                        <div class="price_style">
+                            <h6>運費總計</h6>
+                            <div class="price_style">
+                                <h6>NT$</h6>
+                                <h6>1234</h6>
+                            </div>
+                        </div>
+                        <div class="price_style">
+                            <h6>合計</h6>
+                            <div class="price_style">
+                                <h6>NT$</h6>
+                                <h6>1234</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="btn " href="#" role="button">前往結帳</a>
+                        <a class="btn " href="#" role="button">返回購物</a>
+                    </div>
+                </div>
+
+                <div class="cartform_style product_list">
+                    <div class="product_list_title">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="allProduct">
+                                全部商品
+                            </label>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <input class="form-check-input" type="checkbox" value="" id="nega_flower">
+                                    <label class="form-check-label" for="nega_flower">Nega Flower</label>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="nega_flower">
+                                    <img src="../assets/images/negaflower/negaflower_婚禮花藝.png" alt=""
+                                        style="width: 300px;">
+                                    <h5 class="">新娘捧花|永生海芋/玫瑰捧花</h5>
+                                    <div class="">
+                                        <select id="inputState" class="form-select">
+                                            <option selected>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                    <p>NT$550</p>
+                                    <a href="#" class="btn">刪除</a>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h6>可加購商品</h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
