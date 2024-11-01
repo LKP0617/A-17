@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>輪播測試</title>
+</head>
+
+<body>
+    <div class="brand-ads d-flex align-items-center">
+        <div class="swiper-container ad-banner-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="ad-banner" src="/images/negaflower/negaflower_ad01.png" alt="negaflower聖誕花禮早鳥優惠中">
+            </div>
+            <div class="swiper-slide">
+              <img class="ad-banner" src="/images/negaflower/negaflower_ad02.png" alt="negaflower每週鮮花">
+            </div>
+            <div class="swiper-slide">
+              <img class="ad-banner" src="/images/negaflower/negaflower_ad03.png" alt="negaflower婚禮系列">
+            </div>
+          </div>
+      
+          <!-- 左右箭頭導航 -->
+          <div class="swiper-button-prev">
+            <img src="/images/arrow-left.png" alt="輪播左按鈕">
+          </div>
+          <div class="swiper-button-next">
+            <img src="/images/arrow-right.png" alt="輪播右按鈕">
+          </div>
+      
+          <!-- 分頁點點 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const swiper = new Swiper('.swiper-container', {
+            loop: true, // 啟用無限循環
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+          });
+        });
+      </script> 
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>
