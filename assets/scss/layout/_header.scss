@@ -31,26 +31,74 @@ header {
     max-width: 100%;
     margin: 20px 0;
 }
-.extra-option a{
+.extra-option{
+    margin: 24px 0;
     display: flex;
-    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: left;
-    background: blue;
 }
-.extra-option div a{
+.login-btn{
+    width: 40%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 24px;
+    color: #484848;
+    background: #F5EFDF;
+    border: none;
+    border-radius: 100px;
+}
+.login-btn:hover,
+.login-btn:active{
+    color: #484848;
+    background: #F6F2E84D;
+}
+.extra-option a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 8px 0;
+    color: #484848;
+}
+.extra-option a span:hover,
+.extra-option a span:active,
+.ask-for .joinMember:hover,
+.ask-for .joinMember:active{
+    color: #1666df;
+    border-bottom: 1px solid #1666df;
+}
+.extra-option .ask-for{
     display: flex;
+    align-items: center;    
 }
-.extra-option a:hover{
-border-bottom: 1px solid #000;
+.ask-for p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 8px 0;
+}
+.ask-for .joinMember{
+    margin-left:24px;
+    font-weight: 700;
 }
 
+.social-login-btn button {
+    width: 40%;
+}
+.social-login-btn button:hover,
+.social-login-btn button:active{
+    border: 1px solid black;
+}
 .btn-facebook {
+    border-radius: 100px;
     background-color: #3b5998;
     color: #fff;
-    margin: 10px 0;
 }
 
 .btn-google {
+    border-radius: 100px;
     background-color: #db4a39;
     color: #fff;
 }
@@ -58,13 +106,13 @@ border-bottom: 1px solid #000;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 24px;
 }
 .modal-header .close {
     border: none; 
     outline: none;    
     background: none;
 }
-
 /* 左對齊樣式 */
 .form-group label {
     text-align: left;
@@ -72,6 +120,15 @@ border-bottom: 1px solid #000;
     font-weight: bold;
 }
 
+
+/*搜尋彈窗*/
+.modal-body {
+    text-align: center;
+}
+.hashtag-link {
+    margin: 0.5rem;
+    text-decoration: none;
+}
 /*pc*/
 @media (min-width:992px) {
     header {
