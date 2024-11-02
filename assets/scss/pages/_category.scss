@@ -1,0 +1,30 @@
+.category-container{
+    max-width: 1296px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.leftbar-title, .leftbar-list{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.category-leftbar ul{
+    gap: 16px;
+}
+.category-leftbar-btn{
+    background-color: rgba(246, 242, 232, 1);
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 700;
+    border-radius: 48;
+}
+
+
+.category-top-bar-icon{
+    gap: 32px;
+}
+.category-top-bar{
+    margin-bottom: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
