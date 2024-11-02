@@ -603,3 +603,20 @@ a{
         width: 16.67px;
     }
 }
+
+
+/*輪播測試*/
+
+.brand-swiper .swiper-slide.brandSwiper-slide-img1 {
+    background-image: url(/images/negaflower/negaflower_ad01.png);
+  }
+  .brand-swiper .swiper-slide.brandSwiper-slide-img2 {
+    background-image: url(/images/negaflower/negaflower_ad02.png);
+  }
+  .brand-swiper .swiper-slide.brandSwiper-slide-img3 {
+    background-image: url(/images/negaflower/negaflower_ad03.png);
+  }
+  brand-swiper {
+    width: 100%;
+    overflow: hidden;
+  }
