@@ -21,15 +21,13 @@
 // }
 .qa-bg {
     margin-bottom: 90px;
-
-    .content {
-        width: 50%;
-        margin-bottom: 80px;
-    }
+}
+.content {
+    width: 60%;
+    margin-bottom: 80px;
+    margin: 0 auto;
 }
 
-// .container{
-// }
 
 .accordion-body {
     text-align: center;
@@ -43,10 +41,14 @@
     border: none;
     margin: 24px 0;
 }
-
-.accordion-header a {
-    display: block;
+.accordion-header {
     text-align: center;
+}
+.accordion-header a {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // margin: 0 auto;
     background: #F6F2E8;
     border-radius: 10px;
 }
@@ -58,4 +60,17 @@
 
 .accordion-collapse {
     background-color: none;
+}
+
+@media (max-width:991px) {
+    .accordion-body {
+        text-align: left;
+        padding: 0;
+        padding-top: 24px;
+    }
+    .content{
+        width: 50%;
+    }
+
+    
 }
