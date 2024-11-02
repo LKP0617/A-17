@@ -297,6 +297,24 @@ p {
   }
 }
 
+@media (max-width: 992px) {
+  .info-bottom-item {
+    max-width: 471px;
+  }
+  .other {
+    .row {
+      max-width: 100%;
+    }
+    .other-card-md {
+      max-width: 100%;
+      height: 100%;
+    }
+    .chevron {
+      display: none !important;
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .carousel-img {
     .carousel-inner {
