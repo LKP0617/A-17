@@ -1,24 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>輪播測試</title>
+  </head>
+  
+  <body>
+    <%- include('./layout/header'); -%>
+  
+    <div class="brands">
+      <div class="brand_container">
+        <div class="brand_swiper">
+          <div class="swiper mySwiper margin-bottom-1 position-relative">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="ad-banner" src="/images/negaflower/negaflower_ad01.png" alt="negaflower聖誕花禮早鳥優惠中"></div>
+              <div class="swiper-slide"><img class="ad-banner" src="/images/negaflower/negaflower_ad02.png" alt="negaflower每週鮮花"></div>
+              <div class="swiper-slide"><img class="ad-banner" src="/images/negaflower/negaflower_ad03.png" alt="negaflower婚禮系列"></div>
+            </div>
+            <div class="swiper-button-next rounded-circle position-absolute">
+              <img src="../assets/images/icons/chevron-right.png" alt="chevron-right">
+            </div>
+            <div class="swiper-button-prev rounded-circle position-absolute">
+              <img src="../assets/images/icons/chevron-left.png" alt="chevron-left">
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 </head>
-<body>
-    <swiper-container class="brand-swiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
-    css-mode="true">
-        <swiper-slide>
-            <img class="ad-banner" src="/images/negaflower/negaflower_ad01.png" alt="negaflower聖誕花禮早鳥優惠中">
-        </swiper-slide>
-        <swiper-slide>
-            <img class="ad-banner" src="/images/negaflower/negaflower_ad02.png" alt="negaflower每週鮮花">
-        </swiper-slide>
-        <swiper-slide>
-            <img class="ad-banner" src="/images/negaflower/negaflower_ad03.png" alt="negaflower婚禮系列">
-        </swiper-slide>
-       
+
     </swiper-container>
     <style>
         swiper-container {
