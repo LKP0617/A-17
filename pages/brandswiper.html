@@ -8,30 +8,39 @@
   
   <body>
     <%- include('./layout/header'); -%>
-  
-    <div class="brands">
-      <div class="brand_container">
-        <div class="brand-swiper">
-          <div class="swiper brandSwiper margin-bottom-1 position-relative">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide brandSwiper-slide-img1"></div>
-              <div class="swiper-slide brandSwiper-slide-img2"></div>
-              <div class="swiper-slide brandSwiper-slide-img3"></div>
-            </div>
-            <div class="swiper-button-next rounded-circle position-absolute">
-              <img src="../assets/images/icons/chevron-right.png" alt="chevron-right">
-            </div>
-            <div class="swiper-button-prev rounded-circle position-absolute">
-              <img src="../assets/images/icons/chevron-left.png" alt="chevron-left">
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-</head>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
+    <swiper-container class="brand-swiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+    css-mode="true">
+        <swiper-slide>
+            <img class="ad-banner" src="/images/negaflower/negaflower_ad01.png" alt="negaflower聖誕花禮早鳥優惠中">
+        </swiper-slide>
+        <swiper-slide>
+            <img class="ad-banner" src="/images/negaflower/negaflower_ad02.png" alt="negaflower每週鮮花">
+        </swiper-slide>
+        <swiper-slide>
+            <img class="ad-banner" src="/images/negaflower/negaflower_ad03.png" alt="negaflower婚禮系列">
+        </swiper-slide>
+        
+    </swiper-container>
+    <style>
+        swiper-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
 </body>
 </html>

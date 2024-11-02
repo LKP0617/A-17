@@ -605,7 +605,7 @@ a{
 }
 
 
-/*輪播測試*/
+/*輪播測試
 
 .brand-swiper .swiper-slide.brandSwiper-slide-img1 {
     background-image: url(/images/negaflower/negaflower_ad01.png);
@@ -620,3 +620,18 @@ a{
     width: 100%;
     overflow: hidden;
   }
+*/
+
+.swiper-pagination-bullet, .swiper-pagination-bullet, .swiper-pagination-bullet{
+    background-color: #48484880;
+  }
+.swiper-pagination-bullet-active, .swiper-pagination-bullet-active, .swiper-pagination-bullet-active{
+    background-color: #382511;
+  }
+
+.swiper-pagination-bullet {
+    background-color: #382511;
+    width: 16px;
+    height: 16px;
+    padding: 0 4px
+}
