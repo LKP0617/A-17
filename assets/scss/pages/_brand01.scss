@@ -267,6 +267,9 @@ a{
 #mobileCarousel {
     display: none;
 }
+#mobileCarouselTao {
+    display: none;
+}
 
   /* 當螢幕寬度小於768px（手機）時顯示手機版輪播 */
 @media (max-width: 768px) {
@@ -274,6 +277,14 @@ a{
       display: none;
     }
     #mobileCarousel {
+      display: block;
+    }
+}
+@media (max-width: 768px) {
+    #desktopCarouselTao {
+      display: none;
+    }
+    #mobileCarouselTao {
       display: block;
     }
 }

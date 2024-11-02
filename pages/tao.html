@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>陶之家品牌館</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 </head>
 <body>
     <%- include('./layout/header'); -%>
@@ -16,32 +17,67 @@
     
     <div class="brand-name">
         <div class="container p12">
-            <img class="brand-logo" style="width: 100%;" src="/assets/images/tao/logo/taologo.png" alt="taologo" >
+            <img class="brand-logo" style="width: 30px;" src="/assets/images/tao/logo/taologo.png" alt="taologo" >
             <h1 class="brand-title branding-h3 main-text">陶之家 品牌館</h1>
             <p class="brand-story branding-h4 main-text">我們以大地的質樸和手工的溫度，創造出一件件富有靈魂的陶藝作品。<br>每一件陶作不僅是生活用品，更是情感的載體，訴說對生活的熱愛與細膩的體察。<br>帶著自然與手感的印記，願成為你生活中最溫暖的陪伴。</p>
             <p class="brand-story-m branding-h4 main-text">我們以大地的質樸和手工的溫度，創造出一件件富有靈魂的陶藝作品。每一件陶作不僅是生活用品，更是情感的載體，訴說對生活的熱愛與細膩的體察。帶著自然與手感的印記，願成為你生活中最溫暖的陪伴。</p>
         </div>
     </div>
     
-    <div class="brand-ads d-flex align-items-center">
-        <div class="ad-banner-container">
-            <img class="ad-banner active" src="/assets/images/tao/tao_ad01.png" alt="陶之家傢飾品系列">
-            <img class="ad-banner" src="/assets/images/tao/tao_ad02.png" alt="陶之家灰陶系列">
-            <img class="ad-banner" src="/assets/images/tao/tao_ad03.png" alt="陶之家茶杯系列">
+    <!-- 桌面版輪播 -->
+    <div id="desktopCarouselTao" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#desktopCarouselTao" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#desktopCarouselTao" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#desktopCarouselTao" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <img class="ad-banner-leftarrow" src="/assets/images/arrow-left.png" alt="輪播左按鈕">
-        <img class="ad-banner-rightarrow" src="/assets/images/arrow-right.png" alt="輪播右按鈕">
-        <ul class="banner-dot d-flex flex-direction-row">
-            <li>
-                <div class="dot dot-active"></div>
-            </li>
-            <li>
-                <div class="dot"></div>
-            </li>
-            <li>
-                <div class="dot"></div>
-            </li>
-        </ul>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/assets/images/tao/tao_ad01.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/images/tao/tao_ad02.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/images/tao/tao_ad03.png" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#desktopCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#desktopCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- 手機版輪播 -->
+    <div id="mobileCarouselTao" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mobileCarouselTao" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mobileCarouselTao" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mobileCarouselTao" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/assets/images/tao/tao_ad01_m.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/images/tao/tao_ad02_m.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/images/tao/tao_ad03_m.png" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
     </div>
     
     <div class="product-category p-12">
