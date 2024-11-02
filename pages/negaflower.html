@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Negaflower品牌館</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,27 +27,61 @@
                 </div>
             </div>
 
-            <div class="brand-ads d-flex align-items-center">
-                <div class="ad-banner-container">
-                    <img class="ad-banner active" src="/assets/images/negaflower/negaflower_ad01.png"
-                        alt="negaflower聖誕花禮早鳥優惠中">
-                    <img class="ad-banner" src="/assets/images/negaflower/negaflower_ad02.png" alt="negaflower每週鮮花">
-                    <img class="ad-banner" src="/assets/images/negaflower/negaflower_ad03.png" alt="negaflower婚禮系列">
-                </div>
-                <img class="ad-banner-leftarrow" src="/assets/images/arrow-left.png" alt="輪播左按鈕">
-                <img class="ad-banner-rightarrow" src="/assets/images/arrow-right.png" alt="輪播右按鈕">
-                <ul class="banner-dot d-flex flex-direction-row">
-                    <li>
-                        <div class="dot dot-active"></div>
-                    </li>
-                    <li>
-                        <div class="dot"></div>
-                    </li>
-                    <li>
-                        <div class="dot"></div>
-                    </li>
-                </ul>
-            </div>
+            <!-- 桌面版輪播 -->
+    <div id="desktopCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#desktopCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#desktopCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#desktopCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/images/negaflower/negaflower_ad01.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/negaflower/negaflower_ad02.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/negaflower/negaflower_ad03.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#desktopCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#desktopCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- 手機版輪播 -->
+    <div id="mobileCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/images/negaflower/negaflower_ad01_m.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/negaflower/negaflower_ad02_m.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/negaflower/negaflower_ad03_m.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
             <div class="product-category p-12">
                 <div class="container text-align-center">
@@ -316,15 +350,13 @@
                         </div>
 
 
-
-
-
-
                     </div>
                 </div>
             </div>
                 <%- include('./layout/footer'); -%>
-                <script type="module" src="../main.js"></script>
+                
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
                 <script>
                     // 選取所有具有 'heart' class 的元素
                     const hearts = document.querySelectorAll('.heart');
@@ -336,87 +368,8 @@
                             heart.classList.toggle('active');
                         });
                     });
-
-                    document.addEventListener('DOMContentLoaded', function() {
-                        // 選取輪播圖片、箭頭和指示點
-                        const banners = document.querySelectorAll('.ad-banner');
-                        const leftArrow = document.querySelector('.ad-banner-leftarrow');
-                        const rightArrow = document.querySelector('.ad-banner-rightarrow');
-                        const dots = document.querySelectorAll('.dot');
-                        let currentIndex = 0; // 當前顯示的圖片索引
-
-                        // 初始化顯示第一張圖片和指示點
-                        function showBanner(index) {
-                            banners.forEach((banner, i) => {
-                                banner.classList.toggle('active', i === index);
-                            });
-                            dots.forEach((dot, i) => {
-                                dot.classList.toggle('dot-active', i === index);
-                            });
-                        }
-
-                        // 顯示指定索引的圖片
-                        function updateBanner(index) {
-                            currentIndex = (index + banners.length) % banners.length; // 確保索引在範圍內循環
-                            showBanner(currentIndex);
-                        }
-
-                        // 左箭頭點擊事件
-                        leftArrow.addEventListener('click', () => {
-                            updateBanner(currentIndex - 1);
-                        });
-
-                        // 右箭頭點擊事件
-                        rightArrow.addEventListener('click', () => {
-                            updateBanner(currentIndex + 1);
-                        });
-
-                        // 輪播指示點點擊事件
-                        dots.forEach((dot, i) => {
-                            dot.addEventListener('click', () => {
-                                updateBanner(i);
-                            });
-                        });
-
-                        // 初始化顯示第一張圖片
-                        showBanner(currentIndex);
-                    });
-
-                    document.addEventListener('DOMContentLoaded', function() {
-                        const banners = document.querySelectorAll('.ad-banner');
-                        let currentIndex = 0; // 當前顯示的圖片索引
-
-                        // 檢測是否為手機版，並加載對應的圖片
-                        function loadImages() {
-                            const isMobile = window.innerWidth <= 768;
-                            banners.forEach((banner, index) => {
-                                if (isMobile) {
-                                    banner.src = `/assets/images/negaflower/negaflower_ad0${index + 1}_m.png`;
-                                } else {
-                                    banner.src = `/assets/images/negaflower/negaflower_ad0${index + 1}.png`;
-                                }
-                            });
-                        }
-
-                        // 初始化圖片
-                        loadImages();
-
-                        // 當視窗大小改變時，動態切換圖片
-                        window.addEventListener('resize', loadImages);
-
-                        // 初始化顯示第一張圖片和指示點
-                        function showBanner(index) {
-                            banners.forEach((banner, i) => {
-                                banner.classList.toggle('active', i === index);
-                            });
-                        }
-
-                        // 顯示第一張圖片
-                        showBanner(currentIndex);
-                    });
-
-
-                </script>    
+                </script>  
+                <script type="module" src="../main.js"></script>  
             
     </body>
 
