@@ -1,4 +1,4 @@
-import './assets/scss/layout/standard.scss';/*讓我放最下面覆蓋 */
+import './assets/scss/layout/standard.scss';/*讓我放最下面覆蓋*/
 
 
 import './assets/scss/all.scss';

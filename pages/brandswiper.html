@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Demo</title>
+  
+  <!-- 引入 Swiper 的 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- 輪播區塊 -->
+  <div class="brand-ads d-flex align-items-center">
+    <div class="swiper-container ad-banner-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="ad-banner" src="/assets/images/negaflower/negaflower_ad01.png" alt="negaflower聖誕花禮早鳥優惠中">
+        </div>
+        <div class="swiper-slide">
+          <img class="ad-banner" src="/assets/images/negaflower/negaflower_ad02.png" alt="negaflower每週鮮花">
+        </div>
+        <div class="swiper-slide">
+          <img class="ad-banner" src="/assets/images/negaflower/negaflower_ad03.png" alt="negaflower婚禮系列">
+        </div>
+      </div>
+
+      <!-- 左右箭頭導航 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- 分頁點點 -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- 引入 Swiper 的 JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- 初始化 Swiper -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.swiper-container', {
+        loop: true, // 啟用無限循環
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    });
+  </script>
+  <script type="module" src="../main.js"></script>
+</body>
+</html>

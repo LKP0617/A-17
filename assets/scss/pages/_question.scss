@@ -47,15 +47,15 @@
 .accordion-header a {
     display: block;
     text-align: center;
-    background: #4848484D;
+    background: #F6F2E8;
     border-radius: 10px;
 }
 
 .accordion-header a:not(.collapsed) {
-    background: #4848481A;
+    background: #F5EFDF;
     color: #48484880;
 }
 
 .accordion-collapse {
-    background-color: #F8E7D81A;
+    background-color: none;
 }
