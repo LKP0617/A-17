@@ -51,12 +51,12 @@
                             <h6>小計</h6>
                             <div class="d-flex gap-1">
                                 <h6>NT$</h6>
-                                <h6>1234</h6>
+                                <h6>1,680</h6>
                             </div>
                         </div>
                     </div>
                     <div class="total_price_footer d-flex flex-column gap-2 align-items-center">
-                        <a class="btn rounded-pill d-flex justify-content-center gap-1" href="#" role="button">
+                        <a class="btn rounded-pill d-flex justify-content-center gap-1" href="#" role="button" data-toggle="modal" data-target="#loginModal">
                             <p>前往結帳</p>
                             <img src="../assets/images/icons/chevron-right.png" alt="chevron-left" style="width: 12px;">
                         </a>
@@ -89,18 +89,20 @@
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <input class="form-check-input" type="checkbox" value="" id="nega_flower">
-                                    <img src="../assets/images/negaflower/negaflower_婚禮花藝.png" alt="negaflower_婚禮花藝"
+                                    <img src="../assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg" alt="開幕花禮｜奶油燕麥盆花"
                                         style="width: 20%;">
-                                    <p class="">新娘捧花|永生海芋/玫瑰捧花</p>
+                                    <p class="">開幕花禮 | 奶油燕麥盆花</p>
                                     <div class="">
                                         <select id="inputState" class="form-select">
                                             <option selected>1</option>
                                             <option>2</option>
                                             <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
                                         </select>
                                     </div>
-                                    <p>NT$ 550</p>
-                                    <a href="#" class="btn border border-1">刪除</a>
+                                    <p>NT$ 1,680</p>
+                                    <a href="#" class="btn border border-1 delbtn">刪除</a>
                                 </div>
                             </div>
 
@@ -108,7 +110,7 @@
                                 <button class="btn d-flex align-items-center gap-1 justify-content-center w-100"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#brand_1_plusProduct"
                                     aria-expanded="false" aria-controls="brand_1_plusProduct">
-                                    <img src="../assets/images/icons/plus.png" alt="" style="width: 24px;">
+                                    <img src="../assets/images/icons/plus.png" alt="plus" style="width: 24px;">
                                     <h6>可加購商品</h6>
                                 </button>
                             </div>
@@ -118,12 +120,9 @@
 
                                     <div class="card border-2 px-0 rounded-bottom-0">
                                         <div class="position-relative">
-                                            <img src="../assets/images/negaflower/可可棕配色零食花束.jpg" class="card-img-top"
-                                                alt="可可棕配色零食花束">
-                                            <button
-                                                class="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                                <img class="heart-icon px-1 py-1"
-                                                    src="../assets/images/icons/heart_white.svg" alt="heart">
+                                            <img src="../assets/images/透明提袋.png" class="card-img-top" alt="可可棕配色零食花束">
+                                            <button class="plus-btn position-absolute bottom-0 end-0 border-1 rounded-circle p-0">
+                                                <img class="plus-icon px-1 py-1" src="../assets/images/icons/plus.png" alt="plus">
                                             </button>
                                         </div>
                                         <div class="card-body d-flex gap-3">
@@ -132,19 +131,16 @@
                                             <div class="d-flex flex-column justify-content-center">
                                                 <p class="fs-9 mb-2">Nega Flower</p>
                                                 <p class="fw-bold text-truncate">透明提袋50cm</p>
-                                                <p class="fw-bold mt-1">NT$ 150</p>
+                                                <p class="fw-bold mt-1">NT$ 30</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card border-2 px-0 rounded-bottom-0">
                                         <div class="position-relative">
-                                            <img src="../assets/images/negaflower/可可棕配色零食花束.jpg" class="card-img-top"
-                                                alt="可可棕配色零食花束">
-                                            <button
-                                                class="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                                <img class="heart-icon px-1 py-1"
-                                                    src="../assets/images/icons/heart_white.svg" alt="heart">
+                                            <img src="../assets/images/透明提袋.png" class="card-img-top" alt="可可棕配色零食花束">
+                                            <button class="plus-btn position-absolute bottom-0 end-0 border-1 rounded-circle p-0">
+                                                <img class="plus-icon px-1 py-1" src="../assets/images/icons/plus.png" alt="plus">
                                             </button>
                                         </div>
                                         <div class="card-body d-flex gap-3">
@@ -152,20 +148,17 @@
                                                 style="width: 61px; height: 61px;">
                                             <div class="d-flex flex-column justify-content-center">
                                                 <p class="fs-9 mb-2">Nega Flower</p>
-                                                <p class="fw-bold text-truncate">透明提袋50cm</p>
-                                                <p class="fw-bold mt-1">NT$ 150</p>
+                                                <p class="fw-bold text-truncate">透明提袋100cm</p>
+                                                <p class="fw-bold mt-1">NT$ 40</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card border-2 px-0 rounded-bottom-0">
                                         <div class="position-relative">
-                                            <img src="../assets/images/negaflower/可可棕配色零食花束.jpg" class="card-img-top"
-                                                alt="可可棕配色零食花束">
-                                            <button
-                                                class="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                                <img class="heart-icon px-1 py-1"
-                                                    src="../assets/images/icons/heart_white.svg" alt="heart">
+                                            <img src="../assets/images/透明提袋.png" class="card-img-top" alt="可可棕配色零食花束">
+                                            <button class="plus-btn position-absolute bottom-0 end-0 border-1 rounded-circle p-0">
+                                                <img class="plus-icon px-1 py-1" src="../assets/images/icons/plus.png" alt="plus">
                                             </button>
                                         </div>
                                         <div class="card-body d-flex gap-3">
@@ -173,19 +166,17 @@
                                                 style="width: 61px; height: 61px;">
                                             <div class="d-flex flex-column justify-content-center">
                                                 <p class="fs-9 mb-2">Nega Flower</p>
-                                                <p class="fw-bold text-truncate">透明提袋50cm</p>
-                                                <p class="fw-bold mt-1">NT$ 150</p>
+                                                <p class="fw-bold text-truncate">透明提袋150cm</p>
+                                                <p class="fw-bold mt-1">NT$ 50</p>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="card border-2 px-0 rounded-bottom-0">
                                         <div class="position-relative">
-                                            <img src="../assets/images/negaflower/可可棕配色零食花束.jpg" class="card-img-top"
-                                                alt="可可棕配色零食花束">
-                                            <button
-                                                class="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                                <img class="heart-icon px-1 py-1"
-                                                    src="../assets/images/icons/heart_white.svg" alt="heart">
+                                            <img src="../assets/images/剪刀.png" class="card-img-top" alt="剪刀">
+                                            <button class="plus-btn position-absolute bottom-0 end-0 border-1 rounded-circle p-0">
+                                                <img class="plus-icon px-1 py-1" src="../assets/images/icons/plus.png" alt="plus">
                                             </button>
                                         </div>
                                         <div class="card-body d-flex gap-3">
@@ -193,8 +184,44 @@
                                                 style="width: 61px; height: 61px;">
                                             <div class="d-flex flex-column justify-content-center">
                                                 <p class="fs-9 mb-2">Nega Flower</p>
-                                                <p class="fw-bold text-truncate">透明提袋50cm</p>
-                                                <p class="fw-bold mt-1">NT$ 150</p>
+                                                <p class="fw-bold text-truncate">剪刀</p>
+                                                <p class="fw-bold mt-1">NT$ 250</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card border-2 px-0 rounded-bottom-0">
+                                        <div class="position-relative">
+                                            <img src="../assets/images/噴罐.png" class="card-img-top" alt="噴罐">
+                                            <button class="plus-btn position-absolute bottom-0 end-0 border-1 rounded-circle p-0">
+                                                <img class="plus-icon px-1 py-1" src="../assets/images/icons/plus.png" alt="plus">
+                                            </button>
+                                        </div>
+                                        <div class="card-body d-flex gap-3">
+                                            <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega"
+                                                style="width: 61px; height: 61px;">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="fs-9 mb-2">Nega Flower</p>
+                                                <p class="fw-bold text-truncate">噴罐</p>
+                                                <p class="fw-bold mt-1">NT$ 80</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card border-2 px-0 rounded-bottom-0">
+                                        <div class="position-relative">
+                                            <img src="../assets/images/卡片.png" class="card-img-top" alt="卡片">
+                                            <button class="plus-btn position-absolute bottom-0 end-0 border-1 rounded-circle p-0">
+                                                <img class="plus-icon px-1 py-1" src="../assets/images/icons/plus.png" alt="plus">
+                                            </button>
+                                        </div>
+                                        <div class="card-body d-flex gap-3">
+                                            <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega"
+                                                style="width: 61px; height: 61px;">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="fs-9 mb-2">Nega Flower</p>
+                                                <p class="fw-bold text-truncate">卡片</p>
+                                                <p class="fw-bold mt-1">NT$ 50</p>
                                             </div>
                                         </div>
                                     </div>

@@ -30,7 +30,7 @@
 }
 
 .product_list {
-    // flex-grow: 1;
+    flex-grow: 1;
     margin-right: 20px;
 }
 
@@ -73,6 +73,13 @@
         background-color: #F6F2E8;
     }
 
+    .delbtn {
+        &:hover {
+            background-color: red;
+            color: #ffffff;
+        }
+    }
+
     .card-footer {
         padding: 0;
         background-color: #F6F2E8;
@@ -81,6 +88,21 @@
     .shopcart_plusProduct {
         .card {
             width: calc(33.33% - 11px);
+
+            .plus-btn {
+                background-color: #ffffff;
+                border: #ffffff;
+                margin: 8px;
+
+                &:hover {
+                    background-color: #F5E9CB;
+                    border: #F5E9CB;
+                }
+
+                .plus-icon {
+                    width: 36px;
+                }
+            }
         }
     }
 }
