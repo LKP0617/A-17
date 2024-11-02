@@ -239,14 +239,14 @@ header {
         color: #4848484D;
     }
 
-    .secondaryNav {
+    .secondary-nav {
         max-width: 100%;
         margin: 0 auto;
         border: 1px solid #4848481A;
 
     }
 
-    .secondaryNav .list {
+    .secondary-nav .nav-list {
         width: 50%;
         margin: auto;
         display: flex;
@@ -257,14 +257,14 @@ header {
 
     }
 
-    .list li a {
+    .nav-list li a {
         display: block;
         color: #484848;
         font-weight: 700;
         text-align: center;
     }
 
-    .secondaryNav .list li a:hover {
+    .secondary-nav .nav-list li a:hover {
         color: #4848484D;
     }
 }
@@ -317,7 +317,7 @@ header {
         background: #F5EFDF;
     }
 
-    .secondaryNav {
+    .secondary-nav {
         display: none;
     }
 
