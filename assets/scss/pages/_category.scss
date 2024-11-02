@@ -196,14 +196,10 @@ a{
     row-gap: 24px;
 }
 
-
 .category-container{
     max-width: 1296px;
     margin: 0 auto;
     margin-top: 80px;
-}
-.category-leftbar{
-    padding-right: 24px;
 }
 
 .leftbar-title, .leftbar-list{
@@ -213,24 +209,23 @@ a{
 .category-leftbar ul{
     gap: 16px;
 }
-.category-leftbar-btn{
-    background-color: rgba(246, 242, 232, 1);
-    font-size: 15px;
-    line-height: 1.4;
-    font-weight: 700;
-    border-radius: 20px;
-    text-align: center;
-    padding: 12px 0px;
-    font-family: 'gensen-r';
+.category-leftbar-cost{
+    border: 1px solid rgba(72, 72, 72, 0.1);
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(72, 72, 72, 0.4);
 }
-
-.category-leftbar .accordion-button{
-    padding: 17px 0px;
+.category-leftbar-cost-dash{
+    margin: 0px 8px;
+    color: rgba(72, 72, 72, 0.4);
 }
-.category-leftbar .accordion{
-    margin: 0px 0px;
-}
-
 .category-top-bar-icon{
     gap: 32px;
 }
@@ -238,4 +233,145 @@ a{
     margin-bottom: 40px;
     padding-left: 12px;
     padding-right: 12px;
+}
+.category-top-bar-title-m{
+    display: none;
+}
+.category-leftbar-m{
+    display: none;
+}
+.category-top-bar-filter svg{
+    margin-right: 8px;
+    margin-left: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.category-top-bar-filter span{
+    margin-right: 32px;
+}
+.category-top-bar-rank svg{
+    margin-left: 8px;
+    margin-right: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.category-top-bar-rank span{
+    margin-left: 32px;
+}
+
+/* 手機版 RWD 調整 */
+@media (max-width: 768px) {
+    .category-leftbar{
+        display: none;
+    }
+    .category-mainContent{
+        width: 100%;
+    }
+    .category-product-card.product-card{
+        width: 50%;
+    }
+    .category-top-bar-title{
+        display: none;
+    }
+    .category-top-bar-icon{
+        display: flex;
+        align-items: start;
+        gap: 8px;
+    }
+    .category-top-bar{
+        display: block;
+        margin-bottom: 16px;
+    }
+    .category-top-bar-title-m{
+        display: block;
+        h2{
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+            font-family: 'gensen-b';
+        }
+        hr{
+            border: 1.5px solid #484848;
+            width: 80px;
+            margin: 0 auto;
+            margin-top: 16px;
+            margin-bottom: 20px;
+        
+        }
+    }
+    .category-leftbar-m{
+        display: block;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .category-leftbar-m-list{
+        gap: 8px;
+    }
+    .category-m-btn{
+        padding: 8px 21px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(72, 72, 72, 1);
+        border-radius: 20px;
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 700;
+        a{
+            color: rgba(72, 72, 72, 1);
+        }
+    }
+    .category-top-bar-filter svg{
+        margin-left: 16px;
+    }
+    .category-top-bar-filter span{
+        margin-right: 16px;
+    }
+    .category-top-bar-rank svg{
+        margin-right: 16px;
+    }
+    .category-top-bar-rank span{
+        margin-left: 16px;
+    }
+}
+
+
+
+/* 手機版 RWD 調整 */
+@media (max-width: 768px){
+    .product-card{
+        width: 50%;
+    }
+}
+@media (max-width: 576px) {
+    .hot-product-box{
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+    .product-card-content-m{
+        display: block;
+    }
+    .product-card-content{
+        display: none;
+    }
+    .product-card-logo{
+        width: 24px;
+        height: 100%;
+    }
+    .product-card-brand{
+        font-size: 12px;
+    }
+    .product-card-name{
+        padding-top: 10px;
+    }
+    .product-card-text{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+    .product-card-price{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .product-card-img-heart{
+        width: 16.67px;
+    }
 }
