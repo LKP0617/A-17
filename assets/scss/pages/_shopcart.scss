@@ -1,17 +1,86 @@
-.cartform_style {
-    border: 2px solid #F6F2E8;
-    border-radius: 8px;
-    box-shadow: 0px 1px 2px #a4a4a4;
+.shopping_status {
+    margin: 80px 0;
+
+    .progress-stacked {
+        height: 40px;
+
+        .progress {
+            height: 40px;
+        }
+    }
+
+    .progress-bar {
+        color: #484848;
+        background-color: #F6F2E8;
+    }
+
+    .stepbar1 {
+        background-color: #F5E9CB;
+    }
+
+    .stepbar2,
+    .stepbar3 {
+        color: #ffffff;
+    }
 }
 
-.total_price_title {
-    border-bottom: 1px solid #F6F2E8;
+.cartform_style {
+    border: 3px solid #F5E9CB;
+    border-radius: 8px;
 }
-.price_style {
-    display: flex;
-    justify-content: space-between;
+
+.product_list {
+    // flex-grow: 1;
+    margin-right: 20px;
+}
+
+
+.total_price {
+    width: 300px;
+    height: auto;
+    background-color: #F5E9CB;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+
+    .total_price_title {
+        padding: 12px;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .total_price_footer {
+        padding: 12px;
+
+        a {
+            width: 50%;
+            border: 1px solid #F8F7F6;
+            background-color: #F8F7F6;
+            color: #484848;
+
+            &:hover {
+                background-color: #F6F2E8;
+            }
+        }
+    }
 }
 
 .product_list_title {
-    background-color: #F6F2E8;
+    background-color: #F5E9CB;
+}
+
+.brand_product {
+    .card-header {
+        background-color: #F6F2E8;
+    }
+
+    .card-footer {
+        padding: 0;
+        background-color: #F6F2E8;
+    }
+
+    .shopcart_plusProduct {
+        .card {
+            width: calc(33.33% - 11px);
+        }
+    }
 }
