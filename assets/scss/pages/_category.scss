@@ -413,6 +413,12 @@ a{
 }
 
 .category-pagination{
+    margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    .page-link{
+        color: rgba(72, 72, 72, 1);
+        border: 0px;
+    }
 }
+
