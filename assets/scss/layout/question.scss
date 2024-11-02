@@ -1,0 +1,59 @@
+h2 {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.2;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.Body2 {
+	font-size: 14px;
+	line-height: 1.4;
+	color: #484848;
+}
+
+.container {
+    max-width: 100%;
+}
+.container{
+    background: black;
+}
+.content {
+    width: 50%;
+    margin-bottom: 80px;
+}
+.container{
+    margin-bottom: 90px;
+}
+
+
+.accordion-body {
+    text-align: center;
+}
+.accordion{
+    margin:  24px 0;
+}
+.accordion-item{
+    border: none;
+    margin: 24px 0;
+}
+
+.accordion-header a {
+    display: block;
+    text-align: center;
+    background: #4848484D;
+    border-radius: 10px;
+}
+
+.accordion-header a:not(.collapsed){
+    background: #4848481A;
+    color: #48484880;
+}
+
+.accordion-collapse{
+    background-color: #F8E7D81A;
+}
