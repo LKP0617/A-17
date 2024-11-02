@@ -12,6 +12,10 @@
     .progress-bar {
         color: #484848;
         background-color: #F6F2E8;
+
+        p {
+            font-size: 20px;
+        }
     }
 
     .stepbar1 {
@@ -86,6 +90,8 @@
     }
 
     .shopcart_plusProduct {
+        margin: 16px;
+
         .card {
             width: calc(33.33% - 11px);
 
@@ -101,6 +107,90 @@
 
                 .plus-icon {
                     width: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .shopping_status {
+        margin: 40px 0;
+
+        .progress-stacked {
+            height: 30px;
+
+            .progress {
+                height: 30px;
+            }
+        }
+
+        .progress-bar {
+            p {
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    .cart_content {
+        .total_price {
+            width: 100%;
+            margin-bottom: 20px;
+            top: auto;
+            position: relative;
+        }
+
+        .product_list {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .brand_product {
+        .card-body {
+            padding: 8px;
+
+            .cartproduct-list {
+                gap: 4px;
+                align-items: center;
+            }
+
+            .product_num {
+                .form-select {
+                    margin-bottom: 0;
+                }
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            a {
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+
+        .shopcart_plusProduct {
+            margin: 16px 0;
+
+            .card {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                border-radius: 0px;
+                align-items: center;
+                height: 150px;
+
+                img.card-img-top {
+                    width: 150px;
+                }
+
+                .plus-btn {
+                    .plus-icon {
+                        width: 18px;
+                    }
                 }
             }
         }
