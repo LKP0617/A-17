@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>購物車 - 購物清單</title>
-  <script type="module" crossorigin src="/A-17/assets/main-d141ee0d.js"></script>
-  <link rel="stylesheet" href="/A-17/assets/main-6656c8a0.css">
+  <script type="module" crossorigin src="/A-17/assets/main-8906dfab.js"></script>
+  <link rel="stylesheet" href="/A-17/assets/main-c9b26e21.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
             </div>
             <div class="mobileIcon">
                 <a href="#" class="menuBTN" data-bs-toggle="modal" data-bs-target="#searchModal">
-                    <img src="/A-17/assets/search-4ba9090a.svg" alt="">
+                    <img src="/A-17/assets/search-17ba0460.svg" alt="">
                 </a>
                 <a href="#" class="menuBTN forJs">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA+SURBVHgB7dIxDQAgDETRgxrCRHekstcEhi4hDCiAhebe9AV8QNIrJ9y9mVnHAyRHRMzdFZKeLpJ7ukg+sABf0BgKpn1rkgAAAABJRU5ErkJggg==" alt="">
@@ -166,72 +166,85 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->        <div class="container">
 
-            <div class="shopping_status"></div>
+            <div class="shopping_status">
+                <div class="progress-stacked rounded-pill">
+                    <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 33.33%">
+                        <div class="progress-bar stepbar1 fs-6">選擇結帳商品</div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 33.33%">
+                        <div class="progress-bar stepbar2 fs-6">填寫地址與付款方式</div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 33.33%">
+                        <div class="progress-bar stepbar3 fs-6">訂單成立</div>
+                    </div>
+                </div>
+            </div>
 
             <div class="cart_content d-flex flex-row-reverse justify-content-between margin-bottom-1">
 
-                <div class="cartform_style total_price">
+                <div class="cartform_style total_price col-3">
                     <div class="total_price_title">
-                        <div class="price_style">
-                            <h6>金額小計</h6>
-                            <div class="price_style">
-                                <h6>NT$</h6>
-                                <h6>1234</h6>
+                        <div class="product_total d-flex justify-content-between mb-2">
+                            <div class="col-5 d-flex justify-content-between align-items-center">
+                                <p>共</p>
+                                <h6>1</h6>
+                                <p>項商品</p>
+                            </div>
+                            <h6 class="px-1">,</h6>
+                            <div class="col-5 d-flex justify-content-between align-items-center">
+                                <p>數量</p>
+                                <h6>1</h6>
+                                <p>個</p>
                             </div>
                         </div>
-                        <div class="price_style">
-                            <h6>折扣購物金</h6>
-                            <div class="price_style">
-                                <h6>NT$</h6>
-                                <h6>1234</h6>
-                            </div>
-                        </div>
-                        <div class="price_style">
-                            <h6>運費總計</h6>
-                            <div class="price_style">
-                                <h6>NT$</h6>
-                                <h6>1234</h6>
-                            </div>
-                        </div>
-                        <div class="price_style">
-                            <h6>合計</h6>
-                            <div class="price_style">
+                        <div class="pricetotal d-flex gap-2 justify-content-end">
+                            <h6>小計</h6>
+                            <div class="d-flex gap-1">
                                 <h6>NT$</h6>
                                 <h6>1234</h6>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <a class="btn " href="#" role="button">前往結帳</a>
-                        <a class="btn " href="#" role="button">返回購物</a>
+                    <div class="total_price_footer d-flex flex-column gap-2 align-items-center">
+                        <a class="btn rounded-pill d-flex justify-content-center gap-1" href="#" role="button">
+                            <p>前往結帳</p>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgB7dqxjcJQEITh5a4V59cCocPrADoBKkF04RA6gNwBpbAjgURCAMHujJhPsmy98PfKwcoRZmZmZmZmZmb2TX6jyDiO62EY/uZ5voSQkkCIk7d9Xv8ZaZGRjiHiJ+ptMtg2RJRMUE7MOScHj8v70VJlksq+QRnjpBipLBAoRioNBGqRygOBUqSWQKASqS0QKERqDQTskdoDAXMkikDAGokmEDBGogoEbJHoAgFTJMpAwBKJNhAwRKIOBN2R6APBi0jXivVtx0bxU4toIBHovqLdPB1tp2k6RIGWt/KOF3F2UYQ6UHccoA3EEAcoA7HEAbpATHGAKhBbHKAJxBgHKAKxxoH2QMxxoDUQexxoC6QQB1oCqcSB8kBKcaA0kFocKAukGAdKAj39o/ggEQc6FmYycUphivJahZmZmZmZmZmZGbEbeS/xIw03D9IAAAAASUVORK5CYII=" alt="chevron-left" style="width: 12px;">
+                        </a>
+                        <a class="btn rounded-pill d-flex justify-content-center gap-1" href="#" role="button">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFOSURBVHgB7dqxccIADEZhkaziPitQuswGySZxJsgIuWzhMmwAvQtGQbozdxRAh/TreN+dz+DylZLMAAAAAAAA8ExerZlxHD+HYXhbluVgCVoF8jiTv378efdIx4xIL9bEGufLkrUIdCXONM/znyXYmLgbcb4tiXSg6jhBNpBCnCAZSCVOkAukFCdIBVKLE2QCKcYJEoFU44TyQMpxQmkg9TihLFCHOKEkUJc4IT1QpzghNVC3OCEtUMc4ISVQjEn99XvxqUWcUDUwk59DnaXMpH12vPcZcvzcrp+2/n/j3/9NXNrQ3mPsOkZK3Wp0jJS+9ukWqWQv1ilS2eKwS6TSzWqHSOWrZ/VIErt55UgyxwuqkaSuOxQjyZ2/qEWSvA9SiiR7QKUSSfrCTCGS/AledaQWN4o3InGjeGkd0U6G+2K+7c+HAQAAAAAAAA9wAmNG8iPmrDTPAAAAAElFTkSuQmCC" alt="chevron-left" style="width: 12px;">
+                            <p>返回購物</p>
+                        </a>
                     </div>
                 </div>
 
-                <div class="cartform_style product_list">
-                    <div class="product_list_title">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                            <label class="form-check-label" for="allProduct">
-                                全部商品
-                            </label>
+                <div class="cartform_style product_list col-7">
+                    <div class="product_list_title p-2">
+                        <div class="form-check d-flex align-items-center gap-2">
+                            <input class="form-check-input" type="checkbox" value="" id="allProduct">
+                            <label class="form-check-label" for="allProduct">全部商品</label>
                         </div>
                     </div>
-                    <div class="product">
-                        <div class="card">
+
+                    <div class="brand_product">
+
+                        <div class="card mt-3 m-3 border-2">
                             <div class="card-header d-flex justify-content-between align-items-center">
                                 <div class="">
-                                    <input class="form-check-input" type="checkbox" value="" id="nega_flower">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="nega_flower">
                                     <label class="form-check-label" for="nega_flower">Nega Flower</label>
                                 </div>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="card-body">
-                                <div class="d-flex gap-3 align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <input class="form-check-input" type="checkbox" value="" id="nega_flower">
-                                    <img src="/A-17/assets/negaflower_婚禮花藝-76146b52.png" alt=""
-                                        style="width: 300px;">
-                                    <h5 class="">新娘捧花|永生海芋/玫瑰捧花</h5>
+                                    <img src="/A-17/assets/negaflower_婚禮花藝-76146b52.png" alt="negaflower_婚禮花藝"
+                                        style="width: 20%;">
+                                    <p class="">新娘捧花|永生海芋/玫瑰捧花</p>
                                     <div class="">
                                         <select id="inputState" class="form-select">
                                             <option selected>1</option>
@@ -239,14 +252,146 @@
                                             <option>3</option>
                                         </select>
                                     </div>
-                                    <p>NT$550</p>
-                                    <a href="#" class="btn">刪除</a>
+                                    <p>NT$ 550</p>
+                                    <a href="#" class="btn border border-1">刪除</a>
                                 </div>
                             </div>
-                            <div class="card-footer">
-                                <h6>可加購商品</h6>
-                                
+
+                            <div class="card-footer border-bottom border-2">
+                                <button class="btn d-flex align-items-center gap-1 justify-content-center w-100"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#brand_1_plusProduct"
+                                    aria-expanded="false" aria-controls="brand_1_plusProduct">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB7dmxCcJAFIDhpw6iRXpXsEzpBrqJOom4RUpXsE8RN/ECKQIiPxwpnvB/8LhLmR+uuYuQJEmSJCmZTSTStu25aZp93/evSCJNoDFOWe5ljiXSkCXSOvLYzva7SCJToJQMBAwEDAQMBAwEDAQMBAwEDAQMBAwEDAQMBAwEDAQMBAwEVlFpukPexnIO04ye0yxl6LruERWqAs0u2P/JuSaSRwx4xEB1oKWV4JeyXKfPa/mhWyTgEQMGAgYCBgIGAgYCBgIGAgYCBgIGAgYCBgIGAgYCBgIGAgYCmQK9Z/sh9G18CChzCkmSJEmS9NsHLZAo2AKQpbkAAAAASUVORK5CYII=" alt="" style="width: 24px;">
+                                    <h6>可加購商品</h6>
+                                </button>
                             </div>
+
+                            <div class="collapse" id="brand_1_plusProduct">
+                                <div class="shopcart_plusProduct d-flex gap-3 flex-wrap m-3">
+
+                                    <div class="card border-2 px-0 rounded-bottom-0">
+                                        <div class="position-relative">
+                                            <img src="/A-17/assets/可可棕配色零食花束-d4820ee0.jpg" class="card-img-top"
+                                                alt="可可棕配色零食花束">
+                                            <button
+                                                class="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                                <img class="heart-icon px-1 py-1"
+                                                    src="/A-17/assets/heart_white-cc3f947b.svg" alt="heart">
+                                            </button>
+                                        </div>
+                                        <div class="card-body d-flex gap-3">
+                                            <img src="/A-17/assets/nega-81d18053.jpg" alt="nega"
+                                                style="width: 61px; height: 61px;">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="fs-9 mb-2">Nega Flower</p>
+                                                <p class="fw-bold text-truncate">透明提袋50cm</p>
+                                                <p class="fw-bold mt-1">NT$ 150</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card border-2 px-0 rounded-bottom-0">
+                                        <div class="position-relative">
+                                            <img src="/A-17/assets/可可棕配色零食花束-d4820ee0.jpg" class="card-img-top"
+                                                alt="可可棕配色零食花束">
+                                            <button
+                                                class="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                                <img class="heart-icon px-1 py-1"
+                                                    src="/A-17/assets/heart_white-cc3f947b.svg" alt="heart">
+                                            </button>
+                                        </div>
+                                        <div class="card-body d-flex gap-3">
+                                            <img src="/A-17/assets/nega-81d18053.jpg" alt="nega"
+                                                style="width: 61px; height: 61px;">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="fs-9 mb-2">Nega Flower</p>
+                                                <p class="fw-bold text-truncate">透明提袋50cm</p>
+                                                <p class="fw-bold mt-1">NT$ 150</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card border-2 px-0 rounded-bottom-0">
+                                        <div class="position-relative">
+                                            <img src="/A-17/assets/可可棕配色零食花束-d4820ee0.jpg" class="card-img-top"
+                                                alt="可可棕配色零食花束">
+                                            <button
+                                                class="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                                <img class="heart-icon px-1 py-1"
+                                                    src="/A-17/assets/heart_white-cc3f947b.svg" alt="heart">
+                                            </button>
+                                        </div>
+                                        <div class="card-body d-flex gap-3">
+                                            <img src="/A-17/assets/nega-81d18053.jpg" alt="nega"
+                                                style="width: 61px; height: 61px;">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="fs-9 mb-2">Nega Flower</p>
+                                                <p class="fw-bold text-truncate">透明提袋50cm</p>
+                                                <p class="fw-bold mt-1">NT$ 150</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card border-2 px-0 rounded-bottom-0">
+                                        <div class="position-relative">
+                                            <img src="/A-17/assets/可可棕配色零食花束-d4820ee0.jpg" class="card-img-top"
+                                                alt="可可棕配色零食花束">
+                                            <button
+                                                class="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                                <img class="heart-icon px-1 py-1"
+                                                    src="/A-17/assets/heart_white-cc3f947b.svg" alt="heart">
+                                            </button>
+                                        </div>
+                                        <div class="card-body d-flex gap-3">
+                                            <img src="/A-17/assets/nega-81d18053.jpg" alt="nega"
+                                                style="width: 61px; height: 61px;">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="fs-9 mb-2">Nega Flower</p>
+                                                <p class="fw-bold text-truncate">透明提袋50cm</p>
+                                                <p class="fw-bold mt-1">NT$ 150</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- <div class="card-footer border-top border-bottom border-2">
+                                <button class="btn d-flex justify-content-center w-100" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <h6>選擇收件地與取貨方式</h6>
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="collapseExample">
+
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        選擇收件地
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">台灣地區</a></li>
+                                        <li><a class="dropdown-item" href="#">外島地區</a></li>
+                                        <li><a class="dropdown-item" href="#">海外地區</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        選擇取貨方式
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">超商取貨</a></li>
+                                        <li><a class="dropdown-item" href="#">超商取貨</a></li>
+                                        <li><a class="dropdown-item" href="#">宅配到府</a></li>
+                                    </ul>
+                                </div>
+
+                            </div> -->
                         </div>
                     </div>
                 </div>
