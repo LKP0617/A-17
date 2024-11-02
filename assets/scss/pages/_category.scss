@@ -202,6 +202,9 @@ a{
     margin: 0 auto;
     margin-top: 80px;
 }
+.category-leftbar{
+    padding-right: 24px;
+}
 
 .leftbar-title, .leftbar-list{
     padding-top: 16px;
@@ -216,6 +219,10 @@ a{
     line-height: 1.4;
     font-weight: 700;
     border-radius: 48;
+}
+
+.category-leftbar .accordion-button{
+    padding: 17px 0px;
 }
 
 .category-top-bar-icon{
