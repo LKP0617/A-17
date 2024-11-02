@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商品總覽</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+    <div class="category">
+        <div class="container category-container d-flex">
+            <div class="category-leftbar col-3 d-flex flex-direction-column">
+                <ul class="d-flex flex-direction-column text-align-start">
+                    <li class="title leftbar-title">全部商品</li>
+                    <li class="banner leftbar-list">花藝</li>
+                    <li class="body-1 leftbar-list"> 香氛</li>
+                    <li class="body-1 leftbar-list">陶器</li>
+                </ul>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          品牌
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Negaflower
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  陶之家
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  SOS香氛
+                                </label>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          價格
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">最低金額-最高金額</div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="category-leftbar-btn">套用篩選</button>
+            </div>
+            <div class="category-mainContent col-9">
+                <div class="category-top-bar d-flex justify-content-space-between align-items-center">
+                    <div class="category-top-bar-title">
+                        <h2 class="h4">全部商品</h2>
+                    </div>
+                    <div class="category-top-bar-icon d-flex">
+                        <div class="category-top-bar-filter">
+                            <img src="" alt="">
+                            <span>篩選</span>
+                        </div>
+                        <div class="category-top-bar-rank">
+                            <span>排序</span>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="category-product-card d-flex flex-wrap-wrap row-gap-24">
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/negaflower/可可棕配色零食花束.jpg" alt="可可棕配色零食花束">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                                <h3 class="product-card-name title main-text">零食花束｜可可棕配色</h3>
+                                <span class="product-card-price title main-text">NT$399</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">零食花束｜可可棕</h3>
+                                <span class="product-card-price title main-text">NT$399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg" alt="開幕花禮｜奶油燕麥盆花">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                                <h3 class="product-card-name title main-text">開幕花禮｜奶油燕麥盆花</h3>
+                                <span class="product-card-price title main-text">NT$1680</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">開幕花禮｜奶油燕麥盆花</h3>
+                                <span class="product-card-price title main-text">NT$1680</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/negaflower/美拉德永生花束.jpg" alt="美拉德永生花束">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                                <h3 class="product-card-name title main-text">美拉德永生花束</h3>
+                                <span class="product-card-price title main-text">NT$1500</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">美拉德永生花束</h3>
+                                <span class="product-card-price title main-text">NT$1500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/negaflower/鈔票花束｜奶茶色.jpg" alt="鈔票花束｜奶茶色">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                                <h3 class="product-card-name title main-text">鈔票花束｜奶茶色</h3>
+                                <span class="product-card-price title main-text">NT$4500</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">鈔票花束｜奶茶色</h3>
+                                <span class="product-card-price title main-text">NT$4500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/negaflower/新娘捧花｜永生海芋／玫瑰捧花.jpg" alt="新娘捧花｜永生海芋／玫瑰捧花">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                                <h3 class="product-card-name title main-text">新娘捧花｜永生海芋／玫</h3>
+                                <span class="product-card-price title main-text">NT$1600</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">新娘捧花｜永生海芋／</h3>
+                                <span class="product-card-price title main-text">NT$1600</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/negaflower/婚禮胸花｜氣質香檳粉.jpg" alt="婚禮胸花｜氣質香檳粉">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                                <h3 class="product-card-name title main-text">婚禮胸花｜氣質香檳粉</h3>
+                                <span class="product-card-price title main-text">NT$350</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">婚禮胸花｜氣質香檳粉</h3>
+                                <span class="product-card-price title main-text">NT$350</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/negaflower/熊熊抱抱桶永生玫瑰花束.jpg" alt="熊熊抱抱桶永生玫瑰花束">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                                <h3 class="product-card-name title main-text">熊熊抱抱桶永生玫瑰花束</h3>
+                                <span class="product-card-price title main-text">NT$1899</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">熊熊抱抱桶永生玫瑰花束</h3>
+                                <span class="product-card-price title main-text">NT$1899</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/negaflower/開幕花禮｜乾燥花名片座.jpg" alt="開幕花禮｜乾燥花名片座">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                                <h3 class="product-card-name title main-text">開幕花禮｜乾燥花名片座</h3>
+                                <span class="product-card-price title main-text">NT$560</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/negaflower/logo/nega.jpg" alt="negaflowerlogo">
+                                <h4 class="product-card-brand body-2 main-text">Nega Flower</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">開幕花禮｜乾燥花名片座</h3>
+                                <span class="product-card-price title main-text">NT$560</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/tao/白陶系列｜小點心盤子.png" alt="白陶系列｜小點心盤子">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/tao/logo/taologo.png" alt="taologo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">陶之家</h4>
+                                <h3 class="product-card-name title main-text">白陶系列｜小點心盤子</h3>
+                                <span class="product-card-price title main-text">NT$399</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/tao/logo/taologo.png" alt="taologo">
+                                <h4 class="product-card-brand body-2 main-text">陶之家</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">白陶系列｜小點心盤子</h3>
+                                <span class="product-card-price title main-text">NT$399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/tao/白陶系列｜日常小碗.png" alt="白陶系列｜日常小碗">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/tao/logo/taologo.png" alt="taologo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">陶之家</h4>
+                                <h3 class="product-card-name title main-text">白陶系列｜日常小碗</h3>
+                                <span class="product-card-price title main-text">NT$1680</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/tao/logo/taologo.png" alt="taologo">
+                                <h4 class="product-card-brand body-2 main-text">陶之家</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">白陶系列｜日常小碗</h3>
+                                <span class="product-card-price title main-text">NT$1680</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/tao/調味儲物罐｜原色.png" alt="調味儲物罐｜原色">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/tao/logo/taologo.png" alt="taologo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">陶之家</h4>
+                                <h3 class="product-card-name title main-text">調味儲物罐｜原色</h3>
+                                <span class="product-card-price title main-text">NT$1500</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/tao/logo/taologo.png" alt="taologo">
+                                <h4 class="product-card-brand body-2 main-text">陶之家</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">調味儲物罐｜原色</h3>
+                                <span class="product-card-price title main-text">NT$1500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-4">
+                        <div class="product-card-top">
+                            <img class="product-card-img" src="/assets/images/tao/調味儲物罐｜灰釉.png" alt="調味儲物罐｜灰釉">
+                            <div class="product-card-img-hover"></div>
+                            <img class="heart product-card-img-heart" src="/assets/images/heart.png" alt="產品收藏按鈕">
+                        </div>
+                        <div class="product-card-content d-flex">
+                            <img class="product-card-logo" src="/assets/images/tao/logo/taologo.png" alt="taologo">
+                            <div class="product-card-text text-align-start">
+                                <h4 class="product-card-brand body-2 main-text">陶之家</h4>
+                                <h3 class="product-card-name title main-text">調味儲物罐｜灰釉</h3>
+                                <span class="product-card-price title main-text">NT$1500</span>
+                            </div>
+                        </div>
+                        <div class="product-card-content-m">
+                            <div class="product-card-brandname d-flex flex-direction-row justify-content-center align-items-center">
+                                <img class="product-card-logo" src="/assets/images/tao/logo/taologo.png" alt="taologo">
+                                <h4 class="product-card-brand body-2 main-text">陶之家</h4>
+                            </div>
+                            <div class="product-card-text text-align-start">
+                                <h3 class="product-card-name title main-text">調味儲物罐｜灰釉</h3>
+                                <span class="product-card-price title main-text">NT$1500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+
+
+</html>
