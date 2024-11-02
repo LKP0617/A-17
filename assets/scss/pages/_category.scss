@@ -196,6 +196,24 @@ a{
     row-gap: 24px;
 }
 
+
+/* 隱藏手機版輪播在桌面和平板尺寸 */
+#mobileCarouselCate {
+    display: none;
+}
+
+  /* 當螢幕寬度小於768px（手機）時顯示手機版輪播 */
+
+@media (max-width: 768px) {
+    #desktopCarouselCate {
+      display: none;
+    }
+    #mobileCarouselCate {
+      display: block;
+    }
+}
+
+
 .category-container{
     max-width: 1296px;
     margin: 0 auto;
