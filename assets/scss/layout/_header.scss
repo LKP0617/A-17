@@ -129,6 +129,18 @@ header {
     margin: 0.5rem;
     text-decoration: none;
 }
+
+.modal-body a{
+    color: #484848;
+    background: #F6F2E8;
+    border: none;
+}
+.modal-body a:hover,
+.modal-body a:active{
+    background: #F5EFDF;
+    color: #484848;
+}
+
 /*pc*/
 @media (min-width:992px) {
     header {
