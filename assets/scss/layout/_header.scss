@@ -21,17 +21,20 @@ header {
     padding: 20px;
     text-align: center;
 }
-.modal-title{
+
+.modal-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .modal-logo {
     max-width: 100%;
     margin: 20px 0;
 }
-.extra-option{
+
+.extra-option {
     margin: 24px 0;
     display: flex;
     flex-direction: column;
@@ -39,7 +42,8 @@ header {
     align-items: center;
     text-align: left;
 }
-.login-btn{
+
+.login-btn {
     width: 40%;
     font-weight: 700;
     font-size: 18px;
@@ -50,47 +54,55 @@ header {
     border: none;
     border-radius: 100px;
 }
+
 .login-btn:hover,
-.login-btn:active{
+.login-btn:active {
     color: #484848;
     background: #F6F2E84D;
 }
-.extra-option a{
+
+.extra-option a {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.4;
     margin: 8px 0;
     color: #484848;
 }
+
 .extra-option a span:hover,
 .extra-option a span:active,
 .ask-for .joinMember:hover,
-.ask-for .joinMember:active{
+.ask-for .joinMember:active {
     color: #1666df;
     border-bottom: 1px solid #1666df;
 }
-.extra-option .ask-for{
+
+.extra-option .ask-for {
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
-.ask-for p{
+
+.ask-for p {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.4;
     margin: 8px 0;
 }
-.ask-for .joinMember{
-    margin-left:24px;
+
+.ask-for .joinMember {
+    margin-left: 24px;
     font-weight: 700;
 }
 
 .social-login-btn button {
     width: 40%;
 }
+
 .social-login-btn button:hover,
-.social-login-btn button:active{
+.social-login-btn button:active {
     border: 1px solid black;
 }
+
 .btn-facebook {
     border-radius: 100px;
     background-color: #3b5998;
@@ -102,17 +114,20 @@ header {
     background-color: #db4a39;
     color: #fff;
 }
-.modal-header{
+
+.modal-header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 24px;
 }
+
 .modal-header .close {
-    border: none; 
-    outline: none;    
+    border: none;
+    outline: none;
     background: none;
 }
+
 /* 左對齊樣式 */
 .form-group label {
     text-align: left;
@@ -125,18 +140,20 @@ header {
 .modal-body {
     text-align: center;
 }
+
 .hashtag-link {
     margin: 0.5rem;
     text-decoration: none;
 }
 
-.modal-body a{
+.modal-body a {
     color: #484848;
     background: #F6F2E8;
     border: none;
 }
+
 .modal-body a:hover,
-.modal-body a:active{
+.modal-body a:active {
     background: #F5EFDF;
     color: #484848;
 }
@@ -146,7 +163,7 @@ header {
 
 /*下拉選單*/
 
-.dropdown-menu{
+.dropdown-menu {
     color: #484848;
     background: #FFFFFFDE;
 }
@@ -254,8 +271,52 @@ header {
 
 @media (max-width:991px) {
 
-    .mobileNav .dropdown-menu{
+    .accordion {
+        margin: 0;
+        text-align: left;
+        width: 20%;
     }
+
+
+    .accordion-header a {
+        display: block;
+        padding: 0;
+        text-align: left;
+        background: none;
+        color: #484848;
+    }
+
+
+    .mobileNav {
+        width: 88%;
+        margin: 0 auto;
+    }
+
+    .mobileNav-section li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .mobileNav li:last-child {
+        margin-bottom: 24px;
+        border-bottom: 1px solid #4848481A;
+    }
+
+    .mobileNav-section a {
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: #484848;
+    }
+
+    .mobileNav-section a:hover,
+    .mobileNav-section a:active {
+        color: #484848;
+        background: #F5EFDF;
+    }
+
     .secondaryNav {
         display: none;
     }
@@ -298,7 +359,7 @@ header {
     }
 
 
-    .ortherModal{
+    .ortherModal {
         z-index: 9999;
     }
 
@@ -328,37 +389,7 @@ header {
         height: 40px;
     }
 
-    .mobileNav {
-        width: 88%;
-        margin: 0 auto;
-    }
 
-    .navBAR .mobileNav-section li {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        width: 95%;
-        height: 37px;
-        padding: 24px 0;
-    }
-
-    .navBAR .mobileNav li:last-child {
-        padding-bottom: 48px;
-        border-bottom: 1px solid #4848481A;
-    }
-
-    .navBAR .mobileNav-section a {
-        font-size: 15px;
-        line-height: 1.4;
-        font-weight: 700;
-        color: #484848;
-    }
-
-    .navBAR .mobileNav-section a:hover,
-    .navBAR .mobileNav-section a:active {
-        color: #4848484D;
-    }
 
     .mobile-list-btn {
         display: flex;
