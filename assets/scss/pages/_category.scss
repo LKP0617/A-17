@@ -244,6 +244,17 @@ a{
     margin: 0px 8px;
     color: rgba(72, 72, 72, 0.4);
 }
+.category-leftbar-btn{
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgba(246, 242, 232, 1);
+    border-radius: 20px;
+    a{
+        display: block;
+    }
+}
+
 .category-leftbar .accordion .accordion-button{
     padding: 17px 0px;
 }
