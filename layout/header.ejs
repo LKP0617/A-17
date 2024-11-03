@@ -146,16 +146,17 @@
     </div>
 </div>
 
+
 <div class="secondary-nav">
     <ul class="nav-list">
         <li><a href="productCategory.html" class="h6">商品總覽</a></li>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" id="brandDropdown" role="button" data-bs-toggle="dropdown"
+            <a href="javascript:;" class="dropdown-toggle" id="brandDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">嚴選品牌</a>
             <ul class=" h6 dropdown-menu" aria-labelledby="brandDropdown">
                 <li><a class="dropdown-item text-start mb-2" href="negaflower.html">negaflower</a></li>
                 <li><a class="dropdown-item text-start mb-2" href="tao.html">陶之家</a></li>
-                <li><a class="dropdown-item text-start mb-2" href="#">SOS香氛</a></li>
+                <li><a class="dropdown-item text-start mb-2" href="javascript:;">SOS香氛</a></li>
             </ul>
         </li>
         <li><a href="#" class="h6">最新消息</a></li>
@@ -163,3 +164,7 @@
         <li><a href="question.html" class="h6">Q&A</a></li>
     </ul>
 </div>
+<script>
+    new bootstrap.Dropdown(document.getElementById('brandDropdown')).toggle();
+
+</script>
