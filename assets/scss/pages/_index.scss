@@ -62,10 +62,16 @@
 
     @media (max-width: 410px) {
 
-      &.swiper-slide-img1,
-      &.swiper-slide-img2,
-      &.swiper-slide-img3 {
+      &.swiper-slide-img1 {
+        background-image: url(../images/brands_sos_mobile.png);
+      }
+
+      &.swiper-slide-img2 {
         background-image: url(../images/brands_negaflower_mobile.png);
+      }
+
+      &.swiper-slide-img3 {
+        background-image: url(../images/brands_陶之家_mobile.png);
       }
     }
   }
@@ -111,6 +117,7 @@
   }
 
   @media (max-width: 765px) {
+
     .swiper-button-next,
     .swiper-button-prev {
       display: none;
